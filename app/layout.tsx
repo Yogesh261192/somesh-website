@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next'
+import Script from 'next/script'
 import { Inter, DM_Sans } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
@@ -16,9 +17,9 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'delhiphysioathome Delhi NCR | Professional Home Physiotherapy Services',
+  title: 'Delhi NCR |Indirapuram| Vasundhara | Professional Home Physiotherapy Services',
   description: 'Get expert physiotherapy treatment at your doorstep in Delhi, Noida, Gurgaon, and Ghaziabad. Certified physiotherapists for back pain, sports injuries, post-surgery rehab, and elderly care.',
-  keywords: 'home physiotherapy Delhi, physiotherapist near me, back pain treatment, sports injury recovery, post surgery rehabilitation, elderly physiotherapy, Delhi NCR physiotherapy',
+  keywords: 'home physiotherapy Delhi, physiotherapist near me, back pain treatment, sports injury recovery, post surgery rehabilitation, elderly physiotherapy, Delhi NCR physiotherapy,physiotherapy near vasundhara physiotherapy near noida sector 62, physiotherapy near indirapuram ,physiotherapy near ghaziabad',
   generator: 'v0.app',
   openGraph: {
     title: 'delhiphysioathome Delhi NCR | Professional Home Physiotherapy Services',
@@ -58,6 +59,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script 
+          async 
+          src="https://www.googletagmanager.com/gtag/js?id=G-JC5F20EXDT"
+          strategy="afterInteractive"
+        />
+        <Script 
+          id="google-analytics" 
+          strategy="afterInteractive"
+        >
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-JC5F20EXDT');
+          `}
+        </Script>
+      </head>
       <body className={`${inter.variable} ${dmSans.variable} font-sans antialiased`}>
         <Header />
         <main>{children}</main>
