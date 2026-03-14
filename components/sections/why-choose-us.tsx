@@ -48,7 +48,7 @@ export function WhyChooseUsSection() {
             className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-balance"
             style={{ fontFamily: 'var(--font-display)' }}
           >
-            Why Choose PhysioCare?
+            Why Choose delhiphysioathome?
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
             We are committed to providing the best physiotherapy experience for our patients.

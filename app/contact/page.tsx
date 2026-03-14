@@ -5,21 +5,21 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Phone, Mail, MapPin, Clock } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Contact & Book Appointment | PhysioCare Delhi NCR",
+  title: "Contact & Book Appointment | delhiphysioathome Delhi NCR",
   description: "Book your home physiotherapy session in Delhi NCR. Contact us via phone, WhatsApp, or fill out our booking form. We serve Delhi, Noida, Gurgaon, and Ghaziabad.",
 }
 
 const contactInfo = [
   {
     title: "Phone",
-    value: "+91 81307 17272",
-    href: "tel:+918130717272",
+    value: "+91 81301 71272",
+    href: "tel:+918130171272",
     icon: Phone,
   },
   {
     title: "Email",
-    value: "info@physiocare.in",
-    href: "mailto:info@physiocare.in",
+    value: "info@delhiphysioathome.in",
+    href: "mailto:info@delhiphysioathome.in",
     icon: Mail,
   },
   {
@@ -86,7 +86,7 @@ export default function ContactPage() {
                 <div className="grid gap-4 sm:grid-cols-2 mb-8">
                   <Button size="lg" className="h-auto py-4 flex-col gap-2" asChild>
                     <a
-                      href="https://wa.me/918130717272?text=Hi,%20I%20would%20like%20to%20book%20a%20physiotherapy%20session"
+                      href="https://wa.me/918130171272?text=Hi,%20I%20would%20like%20to%20book%20a%20physiotherapy%20session"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -97,7 +97,7 @@ export default function ContactPage() {
                     </a>
                   </Button>
                   <Button size="lg" variant="outline" className="h-auto py-4 flex-col gap-2" asChild>
-                    <a href="tel:+918130717272">
+                    <a href="tel:+918130171272">
                       <Phone className="h-6 w-6" />
                       <span>Call Now</span>
                     </a>
@@ -156,7 +156,7 @@ export default function ContactPage() {
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="PhysioCare Delhi NCR Service Area"
+                    title="delhiphysioathome Delhi NCR Service Area"
                   />
                 </div>
               </div>

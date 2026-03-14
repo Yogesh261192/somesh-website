@@ -16,29 +16,30 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'PhysioCare Delhi NCR | Professional Home Physiotherapy Services',
+  title: 'delhiphysioathome Delhi NCR | Professional Home Physiotherapy Services',
   description: 'Get expert physiotherapy treatment at your doorstep in Delhi, Noida, Gurgaon, and Ghaziabad. Certified physiotherapists for back pain, sports injuries, post-surgery rehab, and elderly care.',
   keywords: 'home physiotherapy Delhi, physiotherapist near me, back pain treatment, sports injury recovery, post surgery rehabilitation, elderly physiotherapy, Delhi NCR physiotherapy',
   generator: 'v0.app',
   openGraph: {
-    title: 'PhysioCare Delhi NCR | Professional Home Physiotherapy Services',
+    title: 'delhiphysioathome Delhi NCR | Professional Home Physiotherapy Services',
     description: 'Get expert physiotherapy treatment at your doorstep. Certified physiotherapists for all your recovery needs.',
     type: 'website',
   },
   icons: {
     icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
+      {url:'/favicon.ico'},
+      // {
+      //   url: '/icon-light-32x32.png',
+      //   media: '(prefers-color-scheme: light)',
+      // },
+      // {
+      //   url: '/icon-dark-32x32.png',
+      //   media: '(prefers-color-scheme: dark)',
+      // },
+      // {
+      //   url: '/icon.svg',
+      //   type: 'image/svg+xml',
+      // },
     ],
     apple: '/apple-icon.png',
   },

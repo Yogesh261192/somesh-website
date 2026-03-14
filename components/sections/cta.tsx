@@ -22,7 +22,7 @@ export function CTASection() {
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
               <Button size="lg" variant="secondary" className="gap-2" asChild>
                 <a
-                  href="https://wa.me/918130717272?text=Hi,%20I%20would%20like%20to%20book%20a%20physiotherapy%20session"
+                  href="https://wa.me/918130171272?text=Hi,%20I%20would%20like%20to%20book%20a%20physiotherapy%20session"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -36,9 +36,9 @@ export function CTASection() {
                 className="gap-2 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground"
                 asChild
               >
-                <a href="tel:+918130717272">
+                <a href="tel:+918130171272">
                   <Phone className="h-4 w-4" />
-                  Call +91 81307 17272
+                  Call +91 81301 71272
                 </a>
               </Button>
             </div>

@@ -4,11 +4,11 @@ import { Badge } from "@/components/ui/badge"
 
 const doctors = [
   {
-    name: "Dr. Priya Sharma",
-    qualification: "BPT, MPT Orthopedics",
+    name: "Dr. Somesh Mamgain",
+    qualification: "BPT",
     experience: "8+ Years",
     specializations: ["Orthopedic Rehab", "Sports Injuries", "Spine Care"],
-    bio: "Dr. Priya specializes in orthopedic rehabilitation and sports injuries. She has helped over 1500 patients recover from chronic pain and post-surgical conditions.",
+    bio: "Dr. Somesh specializes in orthopedic rehabilitation, elderly care, and sports injuries. He has helped over 1500 patients recover from chronic pain and post-surgical conditions.",
     image: null,
   },
   {
@@ -77,7 +77,7 @@ export function DoctorsSection() {
                     
                     <Button className="w-full sm:w-auto" asChild>
                       <a
-                        href="https://wa.me/918130717272?text=Hi,%20I%20would%20like%20to%20book%20an%20appointment%20with%20${doctor.name}"
+                        href="https://wa.me/918130171272?text=Hi,%20I%20would%20like%20to%20book%20an%20appointment%20with%20${doctor.name}"
                         target="_blank"
                         rel="noopener noreferrer"
                       >

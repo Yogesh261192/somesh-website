@@ -4,8 +4,8 @@ import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle, ArrowRight, Users, Target, Heart, Award } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "About Us | PhysioCare Delhi NCR",
-  description: "Learn about PhysioCare's mission to provide quality home physiotherapy services in Delhi NCR. Our certified physiotherapists bring expert care to your doorstep.",
+  title: "About Us | delhiphysioathome Delhi NCR",
+  description: "Learn about delhiphysioathome's mission to provide quality home physiotherapy services in Delhi NCR. Our certified physiotherapists bring expert care to your doorstep.",
 }
 
 const values = [
@@ -50,7 +50,7 @@ export default function AboutPage() {
               className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl text-balance"
               style={{ fontFamily: 'var(--font-display)' }}
             >
-              About PhysioCare
+              About delhiphysioathome
             </h1>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
               We are a team of certified physiotherapists dedicated to providing quality home-based physiotherapy services across Delhi NCR. Our mission is to help patients recover comfortably without the hassle of traveling to clinics.
@@ -71,7 +71,7 @@ export default function AboutPage() {
                 Our Mission
               </h2>
               <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
-                At PhysioCare, we believe that quality healthcare should be accessible and convenient for everyone. Many patients, especially the elderly and those recovering from surgery, find it difficult to travel to clinics regularly for their physiotherapy sessions.
+                At delhiphysioathome, we believe that quality healthcare should be accessible and convenient for everyone. Many patients, especially the elderly and those recovering from surgery, find it difficult to travel to clinics regularly for their physiotherapy sessions.
               </p>
               <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
                 That&apos;s why we bring professional physiotherapy services directly to your doorstep. Our certified physiotherapists use the same techniques and equipment as clinic-based therapy, ensuring you receive the same quality of care in the comfort of your home.
@@ -173,12 +173,12 @@ export default function AboutPage() {
               Ready to Experience the Difference?
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              Book your first home physiotherapy session and see why thousands of patients trust PhysioCare for their recovery.
+              Book your first home physiotherapy session and see why thousands of patients trust delhiphysioathome for their recovery.
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
               <Button size="lg" className="gap-2" asChild>
                 <a
-                  href="https://wa.me/918130717272?text=Hi,%20I%20would%20like%20to%20book%20a%20physiotherapy%20session"
+                  href="https://wa.me/918130171272?text=Hi,%20I%20would%20like%20to%20book%20a%20physiotherapy%20session"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

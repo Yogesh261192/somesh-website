@@ -38,23 +38,23 @@ export function Footer() {
                 <span className="text-lg font-bold text-primary-foreground">P</span>
               </div>
               <span className="text-xl font-bold" style={{ fontFamily: 'var(--font-display)' }}>
-                PhysioCare
+                delhiphysioathome
               </span>
             </div>
             <p className="text-sm text-background/70 leading-relaxed">
               Professional home physiotherapy services in Delhi NCR. We bring expert care to your doorstep for faster recovery and better health.
             </p>
             <div className="flex flex-col gap-3 pt-2">
-              <a href="tel:+918130717272" className="flex items-center gap-2 text-sm text-background/80 hover:text-background transition-colors">
+              <a href="tel:+918130171272" className="flex items-center gap-2 text-sm text-background/80 hover:text-background transition-colors">
                 <Phone className="h-4 w-4" />
-                <span>+91 81307 17272</span>
+                <span>+91 81301 71272</span>
               </a>
-              <a href="mailto:info@physiocare.in" className="flex items-center gap-2 text-sm text-background/80 hover:text-background transition-colors">
+              <a href="mailto:info@delhiphysioathome.in" className="flex items-center gap-2 text-sm text-background/80 hover:text-background transition-colors">
                 <Mail className="h-4 w-4" />
-                <span>info@physiocare.in</span>
+                <span>info@delhiphysioathome.in</span>
               </a>
               <a 
-                href="https://wa.me/918130717272" 
+                href="https://wa.me/918130171272" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-sm text-background/80 hover:text-background transition-colors"
@@ -112,7 +112,7 @@ export function Footer() {
 
         <div className="mt-12 border-t border-background/20 pt-8">
           <p className="text-center text-sm text-background/60">
-            &copy; {new Date().getFullYear()} PhysioCare Delhi NCR. All rights reserved.
+            &copy; {new Date().getFullYear()} delhiphysioathome Delhi NCR. All rights reserved.
           </p>
         </div>
       </div>

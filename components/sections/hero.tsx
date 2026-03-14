@@ -16,7 +16,7 @@ export function HeroSection() {
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
           <div className="space-y-8">
             <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5">
-              <span className="text-sm font-medium text-primary">Trusted by 2000+ Patients in Delhi NCR</span>
+              <span className="text-sm font-medium text-primary">Trusted by 200+ Patients in Delhi NCR</span>
             </div>
             
             <h1 
@@ -42,7 +42,7 @@ export function HeroSection() {
             <div className="flex flex-col gap-4 sm:flex-row">
               <Button size="lg" className="gap-2" asChild>
                 <a
-                  href="https://wa.me/918130717272?text=Hi,%20I%20would%20like%20to%20book%20a%20physiotherapy%20session"
+                  href="https://wa.me/918130171272?text=Hi,%20I%20would%20like%20to%20book%20a%20physiotherapy%20session"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

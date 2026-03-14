@@ -34,7 +34,7 @@ const testimonials = [
     name: "Vikram Sharma",
     location: "Indirapuram",
     rating: 5,
-    text: "Neck pain and constant headaches were affecting my work. After 2 months of physiotherapy, I'm completely pain-free. Thank you PhysioCare team!",
+    text: "Neck pain and constant headaches were affecting my work. After 2 months of physiotherapy, I'm completely pain-free. Thank you delhiphysioathome team!",
   },
 ]
 

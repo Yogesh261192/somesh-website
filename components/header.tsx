@@ -21,11 +21,11 @@ export function Header() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary">
-              <span className="text-lg font-bold text-primary-foreground">P</span>
+            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white">
+              <img src="/favicon.ico" alt="delhiphysioathome" className="text-lg font-bold text-primary-foreground rounded-full" />
             </div>
             <span className="text-xl font-bold text-foreground" style={{ fontFamily: 'var(--font-display)' }}>
-              PhysioCare
+              DelhiPhysio@Home
             </span>
           </Link>
         </div>
@@ -55,14 +55,14 @@ export function Header() {
         
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-4">
           <Button variant="outline" size="sm" asChild>
-            <a href="tel:+918130717272" className="flex items-center gap-2">
+            <a href="tel:+918130171272" className="flex items-center gap-2">
               <Phone className="h-4 w-4" />
               <span>Call Now</span>
             </a>
           </Button>
           <Button size="sm" asChild>
             <a
-              href="https://wa.me/918130717272?text=Hi,%20I%20would%20like%20to%20book%20a%20physiotherapy%20session"
+              href="https://wa.me/918130171272?text=Hi,%20I%20would%20like%20to%20book%20a%20physiotherapy%20session"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -83,7 +83,7 @@ export function Header() {
                   <span className="text-lg font-bold text-primary-foreground">P</span>
                 </div>
                 <span className="text-xl font-bold text-foreground" style={{ fontFamily: 'var(--font-display)' }}>
-                  PhysioCare
+                  delhiphysioathome
                 </span>
               </Link>
               <button
@@ -111,14 +111,14 @@ export function Header() {
                 </div>
                 <div className="py-6 space-y-3">
                   <Button variant="outline" className="w-full" asChild>
-                    <a href="tel:+918130717272" className="flex items-center justify-center gap-2">
+                    <a href="tel:+918130171272" className="flex items-center justify-center gap-2">
                       <Phone className="h-4 w-4" />
                       <span>Call Now</span>
                     </a>
                   </Button>
                   <Button className="w-full" asChild>
                     <a
-                      href="https://wa.me/918130717272?text=Hi,%20I%20would%20like%20to%20book%20a%20physiotherapy%20session"
+                      href="https://wa.me/918130171272?text=Hi,%20I%20would%20like%20to%20book%20a%20physiotherapy%20session"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
