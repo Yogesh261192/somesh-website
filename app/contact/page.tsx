@@ -145,20 +145,30 @@ export default function ContactPage() {
                   className="text-lg font-semibold text-foreground mb-4"
                   style={{ fontFamily: 'var(--font-display)' }}
                 >
-                  Our Coverage Area
+                  Our Location
                 </h3>
                 <div className="aspect-video rounded-xl bg-muted border border-border overflow-hidden">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448196.5259957282!2d76.76357433890046!3d28.643684824010247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.0!2d77.064!3d28.549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x3cbe66a24b5fd89e!2sPhysio%20at%20home!5e0!3m2!1sen!2sin!4v1234567890"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="delhiphysioathome Delhi NCR Service Area"
+                    title="Physio at home Location"
                   />
                 </div>
+                <p className="text-sm text-muted-foreground mt-3">
+                  <a 
+                    href="https://www.google.com/maps/place/Physio+at+home/data=!4m2!3m1!1s0x0:0x3cbe66a24b5fd89e?sa=X&ved=1t:2428&hl=en&gl=in&ictx=111"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary hover:underline"
+                  >
+                    Open in Google Maps →
+                  </a>
+                </p>
               </div>
             </div>
           </div>

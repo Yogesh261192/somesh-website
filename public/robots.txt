@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+Allow: /services/
+Allow: /app/
+Allow: /public/
+
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.pdf$
+
+# Slower crawl rate for large archives
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+# Specific rules for Google
+User-agent: Googlebot
+Allow: /
+
+# Specify sitemap
+Sitemap: https://delhiphysioathome.com/sitemap.xml
+Sitemap: https://delhiphysioathome.com/public/sitemap.xml

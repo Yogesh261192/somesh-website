@@ -19,7 +19,7 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: 'Delhi NCR |Indirapuram| Vasundhara | Professional Home Physiotherapy Services',
   description: 'Get expert physiotherapy treatment at your doorstep in Delhi, Noida, Gurgaon, and Ghaziabad. Certified physiotherapists for back pain, sports injuries, post-surgery rehab, and elderly care.',
-  keywords: 'home physiotherapy Delhi, physiotherapist near me, back pain treatment, sports injury recovery, post surgery rehabilitation, elderly physiotherapy, Delhi NCR physiotherapy,physiotherapy near vasundhara physiotherapy near noida sector 62, physiotherapy near indirapuram ,physiotherapy near ghaziabad',
+  keywords: 'home physiotherapy Delhi, physiotherapist near me, back pain treatment, sports injury recovery, post surgery rehabilitation, elderly physiotherapy, Delhi NCR physiotherapy, physiotherapy vasundhara, physiotherapy ghaziabad, physiotherapy noida, physiotherapy indirapuram, physiotherapy raj nagar, physiotherapy vaishali, physiotherapist vasundhara, best physiotherapist ghaziabad, home physiotherapy service, physical therapy near me',
   generator: 'v0.app',
   openGraph: {
     title: 'delhiphysioathome Delhi NCR | Professional Home Physiotherapy Services',
