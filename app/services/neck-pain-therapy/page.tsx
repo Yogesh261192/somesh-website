@@ -91,11 +91,11 @@ export default function NeckPainTherapy() {
 
             <h2 className="text-3xl font-bold mt-8 mb-4">Comprehensive Neck Pain Therapy Services</h2>
             <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-lg mb-6">
-              <Image
-                src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=400&fit=crop"
+              <Image 
+                src="/assets/services/neck_pain_service.png"
                 alt="Neck Pain Therapy Services"
                 fill
-                className="object-cover"
+                className="object-contain w-full"
               />
             </div>
             <p>
@@ -108,13 +108,13 @@ export default function NeckPainTherapy() {
             </p>
 
             <h3 className="text-2xl font-bold mt-6 mb-3">Manual Therapy Techniques</h3>
-            <div className="relative h-64 w-full rounded-lg overflow-hidden shadow-lg mb-6 float-right ml-6 md:w-1/3">
+            <div className="relative w-full rounded-lg overflow-hidden shadow-lg mb-6 float-right ml-6 md:w-1/3">
               <Image
-                src="https://images.unsplash.com/photo-1631217090470-d9b3f6e85610?w=400&h=300&fit=crop"
+                src="/assets/services/Techniques.png"
                 alt="Professional manual therapy and cervical massage"
                 width={400}
                 height={300}
-                className="object-cover"
+                className="object-contain w-full"
               />
             </div>
             <p>
@@ -133,24 +133,25 @@ export default function NeckPainTherapy() {
             <p>
               Exercise is vital in neck pain therapy. Our customized programs include:
             </p>
-            <div className="relative h-64 w-full rounded-lg overflow-hidden shadow-lg mb-6 float-left mr-6 md:w-1/3">
-              <Image
-                src="https://images.unsplash.com/photo-1552196527-e098f1dbc834?w=400&h=300&fit=crop"
-                alt="Woman performing neck strengthening exercises"
-                width={400}
-                height={300}
-                className="object-cover"
-              />
-            </div>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>Neck strengthening exercises targeting deep cervical flexors</li>
-              <li>Postural correction exercises for better alignment</li>
-              <li>Stretching routines for increased flexibility</li>
-              <li>Stabilization exercises for cervical stability</li>
-              <li>Progressive resistance training</li>
-              <li>Functional movement patterns for daily activities</li>
-            </ul>
-
+            <div className="flex flex-col sm:flex-row gap-4 items-start">
+  <div className="flex-shrink-0 w-56">
+    <Image
+      src="/assets/services/neck_health.png"
+      alt="Woman performing neck strengthening exercises"
+      width={400}
+      height={300}
+      className="object-contain w-full rounded-lg shadow-lg"
+    />
+  </div>
+  <ul className="list-disc pl-6 space-y-2">
+    <li>Neck strengthening exercises targeting deep cervical flexors</li>
+    <li>Postural correction exercises for better alignment</li>
+    <li>Stretching routines for increased flexibility</li>
+    <li>Stabilization exercises for cervical stability</li>
+    <li>Progressive resistance training</li>
+    <li>Functional movement patterns for daily activities</li>
+  </ul>
+</div>
             <h3 className="text-2xl font-bold mt-6 mb-3">Modalities and Technology</h3>
             <p>
               Our neck pain therapy in Vasundhara, Ghaziabad, Noida, Indirapuram, Raj Nagar, and Vaishali utilizes modern therapeutic modalities:
@@ -192,7 +193,7 @@ export default function NeckPainTherapy() {
             </ul>
 
             <h2 className="text-3xl font-bold mt-8 mb-4">Whiplash Injury Recovery</h2>
-            <div className="relative h-64 w-full rounded-lg overflow-hidden shadow-lg mb-6">
+            <div className="relative w-full rounded-lg shadow-lg">
               <Image
                 src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800&h=300&fit=crop"
                 alt="Professional physiotherapist providing whiplash injury treatment"
