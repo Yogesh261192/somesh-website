@@ -79,11 +79,11 @@ export function Header() {
           <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-background px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-border">
             <div className="flex items-center justify-between">
               <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2" onClick={() => setMobileMenuOpen(false)}>
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary">
-                  <span className="text-lg font-bold text-primary-foreground">P</span>
-                </div>
+               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white">
+              <img src="/favicon.ico" alt="delhiphysioathome" className="text-lg font-bold text-primary-foreground rounded-full" />
+            </div>
                 <span className="text-xl font-bold text-foreground" style={{ fontFamily: 'var(--font-display)' }}>
-                  delhiphysioathome
+                  DelhiPhysio@Home
                 </span>
               </Link>
               <button
@@ -102,7 +102,7 @@ export function Header() {
                     <Link
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium text-foreground hover:bg-muted"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-100"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {item.name}

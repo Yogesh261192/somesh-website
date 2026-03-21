@@ -9,7 +9,7 @@ const doctors = [
     experience: "8+ Years",
     specializations: ["Orthopedic Rehab", "Sports Injuries", "Spine Care"],
     bio: "Dr. Somesh specializes in orthopedic rehabilitation, elderly care, and sports injuries. He has helped over 1500 patients recover from chronic pain and post-surgical conditions.",
-    image: null,
+    image: "/assets/services/Somesh.jpeg",
   },
   {
     name: "Dr. Sarita Yadav",
@@ -41,20 +41,28 @@ export function DoctorsSection() {
           {doctors.map((doctor) => (
             <Card key={doctor.name} className="overflow-hidden border-border/50">
               <CardContent className="p-0">
-                <div className="flex flex-col sm:flex-row">
-                  {/* Photo placeholder */}
-                  <div className="relative aspect-square w-full sm:w-48 flex-shrink-0 bg-muted">
-                    <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-primary/10 to-accent/10">
-                      <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary/20">
-                        <svg className="h-10 w-10 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-                        </svg>
+                <div className="flex flex-col">
+                  {/* Photo */}
+                  <div className="relative w-full h-80 flex-shrink-0 bg-muted">
+                    {doctor.image ? (
+                      <img
+                        src={doctor.image}
+                        alt={doctor.name}
+                        className="absolute inset-0 w-full h-full object-cover object-center"
+                      />
+                    ) : (
+                      <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-primary/10 to-accent/10">
+                        <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary/20">
+                          <svg className="h-10 w-10 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                          </svg>
+                        </div>
                       </div>
-                    </div>
+                    )}
                   </div>
                   
                   {/* Content */}
-                  <div className="flex flex-1 flex-col p-6">
+                  <div className="flex flex-1 flex-col p-6 items-center text-center">
                     <div className="mb-3">
                       <h3 className="text-xl font-semibold text-foreground" style={{ fontFamily: 'var(--font-display)' }}>
                         {doctor.name}
@@ -77,7 +85,7 @@ export function DoctorsSection() {
                     
                     <Button className="w-full sm:w-auto" asChild>
                       <a
-                        href="https://wa.me/918130171272?text=Hi,%20I%20would%20like%20to%20book%20an%20appointment%20with%20${doctor.name}"
+                        href={`https://wa.me/918130171272?text=Hi,%20I%20would%20like%20to%20book%20an%20appointment%20with%20${doctor.name}`}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
