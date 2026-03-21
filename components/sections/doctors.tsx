@@ -12,7 +12,7 @@ const doctors = [
     image: null,
   },
   {
-    name: "Dr. Rahul Verma",
+    name: "Dr. Sarita Yadav",
     qualification: "BPT, MPT Neurology",
     experience: "6+ Years",
     specializations: ["Neurological Rehab", "Stroke Recovery", "Elderly Care"],
