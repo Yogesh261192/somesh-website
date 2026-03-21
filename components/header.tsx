@@ -74,90 +74,97 @@ export function Header() {
         </nav>
       </header>
 
-      {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div style={{
-          position: 'fixed',
-          top: 0, left: 0, right: 0, bottom: 'auto',
-height: '700px',
-overflow: 'hidden',
-borderradius: '0 0 12px 12px',
-          zIndex: 9999,
-          backgroundColor: 'white',
-          display: 'flex',
-          flexDirection: 'column'
-        }}>
-          {/* Top bar */}
+        <>
+          <div
+            onClick={() => setMobileMenuOpen(false)}
+            style={{
+              position: 'fixed',
+              top: 0, left: 0, right: 0, bottom: 0,
+              zIndex: 9998,
+              backgroundColor: 'rgba(0,0,0,0.3)'
+            }}
+          />
           <div style={{
+            position: 'fixed',
+            top: 0, left: 0, right: 0,
+            zIndex: 9999,
+            backgroundColor: 'white',
+            borderRadius: '0 0 16px 16px',
+            boxShadow: '0 10px 25px rgba(0,0,0,0.15)',
             display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            padding: '16px 24px',
-            borderBottom: '1px solid #e5e7eb'
+            flexDirection: 'column'
           }}>
-            <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '8px' }} onClick={() => setMobileMenuOpen(false)}>
-              <img src="/favicon.ico" alt="DelhiPhysio@Home" style={{ width: '40px', height: '40px', borderRadius: '50%' }} />
-              <span style={{ fontSize: '20px', fontWeight: 'bold', color: '#111827' }}>DelhiPhysio@Home</span>
-            </Link>
-            <button onClick={() => setMobileMenuOpen(false)} style={{ padding: '8px', color: '#374151' }}>
-              <X className="h-6 w-6" />
-            </button>
-          </div>
-
-          {/* Nav links */}
-          <div style={{ display: 'flex', flexDirection: 'column', padding: '16px 24px', gap: '4px' }}>
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                style={{
-                  display: 'block',
-                  padding: '12px',
-                  fontSize: '18px',
-                  fontWeight: '500',
-                  color: '#111827',
-                  borderRadius: '8px'
-                }}
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                {item.name}
-              </Link>
-            ))}
-          </div>
-
-          {/* Buttons */}
-          <div style={{
-            marginTop: 'auto',
-            padding: '16px 24px',
-            borderTop: '1px solid #e5e7eb',
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '12px'
-          }}>
-            <a href="tel:+918130171272" style={{
-              display: 'flex', alignItems: 'center', justifyContent: 'center',
-              gap: '8px', padding: '12px', border: '1px solid #e5e7eb',
-              borderRadius: '8px', color: '#111827', fontWeight: '500',
-              textDecoration: 'none'
+            <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              padding: '16px 24px',
+              borderBottom: '1px solid #e5e7eb'
             }}>
-              <Phone className="h-4 w-4" />
-              Call Now
-            </a>
-            <a
-              href="https://wa.me/918130171272?text=Hi,%20I%20would%20like%20to%20book%20a%20physiotherapy%20session"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
+              <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '8px', textDecoration: 'none' }} onClick={() => setMobileMenuOpen(false)}>
+                <img src="/favicon.ico" alt="DelhiPhysio@Home" style={{ width: '36px', height: '36px', borderRadius: '50%' }} />
+                <span style={{ fontSize: '18px', fontWeight: 'bold', color: '#111827' }}>DelhiPhysio@Home</span>
+              </Link>
+              <button onClick={() => setMobileMenuOpen(false)} style={{ padding: '8px', color: '#374151', background: 'none', border: 'none', cursor: 'pointer' }}>
+                <X className="h-6 w-6" />
+              </button>
+            </div>
+
+            <div style={{ display: 'flex', flexDirection: 'column', padding: '8px 16px' }}>
+              {navigation.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  style={{
+                    display: 'block',
+                    padding: '12px 16px',
+                    fontSize: '16px',
+                    fontWeight: '500',
+                    color: '#111827',
+                    borderRadius: '8px',
+                    textDecoration: 'none'
+                  }}
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
+
+            <div style={{
+              padding: '12px 24px 20px',
+              borderTop: '1px solid #e5e7eb',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '10px'
+            }}>
+              <a href="tel:+918130171272" style={{
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
-                padding: '12px', backgroundColor: '#15803d',
-                color: 'white', borderRadius: '8px', fontWeight: '500',
-                textDecoration: 'none'
-              }}
-            >
-              Book on WhatsApp
-            </a>
+                gap: '8px', padding: '11px',
+                border: '1px solid #d1d5db',
+                borderRadius: '8px', color: '#111827',
+                fontWeight: '500', textDecoration: 'none'
+              }}>
+                <Phone className="h-4 w-4" />
+                Call Now
+              </a>
+              <a
+                href="https://wa.me/918130171272?text=Hi,%20I%20would%20like%20to%20book%20a%20physiotherapy%20session"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  padding: '11px', backgroundColor: '#15803d',
+                  color: 'white', borderRadius: '8px',
+                  fontWeight: '500', textDecoration: 'none'
+                }}
+              >
+                Book on WhatsApp
+              </a>
+            </div>
           </div>
-        </div>
+        </>
       )}
     </>
   )
