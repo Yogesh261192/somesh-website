@@ -6,11 +6,11 @@ import { Button } from "@/components/ui/button"
 import { Menu, X, Phone } from "lucide-react"
 
 const navigation = [
-  { name: "Home", href: "/" },
   { name: "Services", href: "/#services" },
   { name: "Our Team", href: "/#doctors" },
   { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" },
+  { name: "Blogs", href: "/blogs" },
 ]
 
 export function Header() {
