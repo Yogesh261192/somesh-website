@@ -9,7 +9,7 @@ const doctors = [
     experience: "8+ Years",
     specializations: ["Orthopedic Rehab", "Sports Injuries", "Spine Care"],
     bio: "Dr. Somesh specializes in orthopedic rehabilitation, elderly care, and sports injuries. He has helped over 1500 patients recover from chronic pain and post-surgical conditions.",
-    image: "/assets/services/Somesh.jpeg",
+    image: "/assets/services/Somesh1.jpeg",
   },
   {
     name: "Dr. Sarita Yadav",
@@ -17,7 +17,7 @@ const doctors = [
     experience: "8+ Years",
     specializations: ["Neurological Rehab", "Stroke Recovery", "Elderly Care"],
     bio: "Dr.Sarita is an expert in neurological rehabilitation, specializing in stroke recovery and mobility improvement for elderly patients.",
-    image: null,
+    image: "/assets/services/sarita.jpeg",
   }
 ]
 
@@ -48,7 +48,7 @@ export function DoctorsSection() {
                       <img
                         src={doctor.image}
                         alt={doctor.name}
-                        className="absolute inset-0 w-full h-full object-cover object-center"
+                        className="absolute inset-0 w-full h-full object-contain object-center"
                       />
                     ) : (
                       <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-primary/10 to-accent/10">
