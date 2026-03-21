@@ -79,7 +79,7 @@ export function Header() {
             className="fixed inset-0 z-[100] bg-black/50"
             onClick={() => setMobileMenuOpen(false)} 
           />
-          <div className="fixed inset-0 z-[101] flex flex-col bg-white">
+          <div className="fixed inset-0 z-[101] flex flex-col bg-white lg:hidden">
             {/* Header */}
             <div className="flex items-center justify-between px-6 py-4 border-b border-gray-200">
               <Link href="/" className="flex items-center gap-2" onClick={() => setMobileMenuOpen(false)}>
