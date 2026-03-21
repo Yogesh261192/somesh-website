@@ -16,9 +16,9 @@ const doctors = [
     qualification: "BPT",
     experience: "8+ Years",
     specializations: ["Neurological Rehab", "Stroke Recovery", "Elderly Care"],
-    bio: "Dr. Rahul is an expert in neurological rehabilitation, specializing in stroke recovery and mobility improvement for elderly patients.",
+    bio: "Dr.Sarita is an expert in neurological rehabilitation, specializing in stroke recovery and mobility improvement for elderly patients.",
     image: null,
-
+  }
 ]
 
 export function DoctorsSection() {
