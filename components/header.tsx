@@ -22,7 +22,7 @@ export function Header() {
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2">
             <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white">
-              <img src="/favicon.ico" alt="delhiphysioathome" className="text-lg font-bold text-primary-foreground rounded-full" />
+              <img src="/favicon.ico" alt="delhiphysioathome" className="rounded-full" />
             </div>
             <span className="text-xl font-bold text-foreground" style={{ fontFamily: 'var(--font-display)' }}>
               DelhiPhysio@Home
@@ -74,62 +74,65 @@ export function Header() {
       
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 z-50 lg:hidden">
-          <div className="fixed inset-0 bg-foreground/20 backdrop-blur-sm" onClick={() => setMobileMenuOpen(false)} />
-          <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-background px-6 py-6">
-            <div className="flex items-center justify-between">
-              <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2" onClick={() => setMobileMenuOpen(false)}>
-               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white">
-              <img src="/favicon.ico" alt="delhiphysioathome" className="text-lg font-bold text-primary-foreground rounded-full" />
-            </div>
-                <span className="text-xl font-bold text-foreground" style={{ fontFamily: 'var(--font-display)' }}>
+        <>
+          <div 
+            className="fixed inset-0 z-[100] bg-black/50"
+            onClick={() => setMobileMenuOpen(false)} 
+          />
+          <div className="fixed inset-0 z-[101] flex flex-col bg-white">
+            {/* Header */}
+            <div className="flex items-center justify-between px-6 py-4 border-b border-gray-200">
+              <Link href="/" className="flex items-center gap-2" onClick={() => setMobileMenuOpen(false)}>
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white border border-gray-100">
+                  <img src="/favicon.ico" alt="delhiphysioathome" className="rounded-full" />
+                </div>
+                <span className="text-xl font-bold text-gray-900" style={{ fontFamily: 'var(--font-display)' }}>
                   DelhiPhysio@Home
                 </span>
               </Link>
               <button
                 type="button"
-                className="-m-2.5 rounded-md p-2.5 text-foreground"
+                className="rounded-md p-2 text-gray-700"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                <span className="sr-only">Close menu</span>
-                <X className="h-6 w-6" aria-hidden="true" />
+                <X className="h-6 w-6" />
               </button>
             </div>
-            <div className="mt-6 flow-root">
-              <div className="-my-6 divide-y divide-border">
-                <div className="space-y-2 py-6">
-                  {navigation.map((item) => (
-                    <Link
-                      key={item.name}
-                      href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-100"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      {item.name}
-                    </Link>
-                  ))}
-                </div>
-                <div className="py-6 space-y-3">
-                  <Button variant="outline" className="w-full" asChild>
-                    <a href="tel:+918130171272" className="flex items-center justify-center gap-2">
-                      <Phone className="h-4 w-4" />
-                      <span>Call Now</span>
-                    </a>
-                  </Button>
-                  <Button className="w-full" asChild>
-                    <a
-                      href="https://wa.me/918130171272?text=Hi,%20I%20would%20like%20to%20book%20a%20physiotherapy%20session"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Book on WhatsApp
-                    </a>
-                  </Button>
-                </div>
-              </div>
+
+            {/* Nav links */}
+            <div className="flex flex-col px-6 py-4 gap-1">
+              {navigation.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className="block rounded-lg px-3 py-3 text-lg font-medium text-gray-900 hover:bg-gray-100"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
+
+            {/* Buttons */}
+            <div className="px-6 py-4 border-t border-gray-200 flex flex-col gap-3 mt-auto">
+              <Button variant="outline" className="w-full" asChild>
+                <a href="tel:+918130171272" className="flex items-center justify-center gap-2">
+                  <Phone className="h-4 w-4" />
+                  <span>Call Now</span>
+                </a>
+              </Button>
+              <Button className="w-full" asChild>
+                <a
+                  href="https://wa.me/918130171272?text=Hi,%20I%20would%20like%20to%20book%20a%20physiotherapy%20session"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Book on WhatsApp
+                </a>
+              </Button>
             </div>
           </div>
-        </div>
+        </>
       )}
     </header>
   )
