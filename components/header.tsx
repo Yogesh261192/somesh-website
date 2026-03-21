@@ -74,7 +74,7 @@ export function Header() {
       
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 z-50 lg:hidden">
+        <div className="fixed inset-0 z-[199]">
           <div className="fixed inset-0 z-[199] bg-black/50" onClick={() => setMobileMenuOpen(false)} />
           <div className="fixed inset-0 z-[200] w-full bg-white px-6 py-6 flex flex-col">
             <div className="flex items-center justify-between">
