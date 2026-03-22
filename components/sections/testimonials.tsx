@@ -164,8 +164,9 @@ export function TestimonialsSection() {
               href="your_google_review_link_here"
               target="_blank"
               rel="noopener noreferrer"
-              classname="inline-flex items-center gap-3 rounded-full border border-border bg-background px-6 py-3 text-sm font-semibold text-foreground shadow-sm hover:shadow-md transition-shadow"
-            >
+              classname="inline-flex items-center gap-3 rounded-full border border-border bg-background px-6 py-3 text-sm font-semibold text-foreground shadow-sm hover:shadow-md transition-shadow">
+              </div>
+            
               <img
                 src="https://www.google.com/favicon.ico"
                 alt="google"
