@@ -7,16 +7,16 @@ const doctors = [
     name: "Dr. Somesh Mamgain",
     qualification: "BPT",
     experience: "8+ Years",
-    specializations: ["Orthopedic Rehab", "Sports Injuries", "Spine Care"],
-    bio: "Dr. Somesh specializes in orthopedic rehabilitation, elderly care, and sports injuries. He has helped over 1500 patients recover from chronic pain and post-surgical conditions.",
+    specializations: ["Stroke Rehab", "Post TKR/THR Rehab", "Spine Sports Rehab"],
+    bio: "Dr. Somesh specializes in Post-Op Orthopedic rehabilitation, elderly care, and sports injuries. He has helped over 1500 patients recover from chronic pain and post-surgical conditions.",
     image: "/assets/services/Somesh1.jpeg",
   },
   {
     name: "Dr. Sarita Yadav",
     qualification: "BPT",
     experience: "8+ Years",
-    specializations: ["Neurological Rehab", "Stroke Recovery", "Elderly Care"],
-    bio: "Dr.Sarita is an expert in neurological rehabilitation, specializing in stroke recovery and mobility improvement for elderly patients.",
+    specializations: ["Neurological Rehab", "Sports Injury Recovery", "Elderly Care"],
+    bio: "Dr.Sarita is an expert in Cardio and neurological rehabilitation, specializing in stroke recovery and mobility improvement for elderly patients.",
     image: "/assets/services/Sarita.jpeg",
   }
 ]
