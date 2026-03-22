@@ -92,7 +92,7 @@ export default function NeckPainTherapy() {
             <h2 className="text-3xl font-bold mt-8 mb-4">Comprehensive Neck Pain Therapy Services</h2>
             <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-lg mb-6">
               <Image 
-                src="/assets/services/neck_pain_service.png"
+                src="/assets/services/Neck_pain_service.png"
                 alt="Neck Pain Therapy Services"
                 fill
                 className="object-contain w-full"
