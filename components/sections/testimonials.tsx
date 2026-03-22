@@ -10,7 +10,7 @@ const testimonials = [
     name: "Ankit Gupta",
     location: "Delhi",
     rating: 5,
-    text: "After my knee surgery, I was worried about recovery. Dr. Priya's home visits made everything so convenient. Within 3 months, I was walking normally again. Highly recommended!",
+    text: "After my knee surgery, I was worried about recovery. Dr.Sarita's home visits made everything so convenient. Within 3 months, I was walking normally again. Highly recommended!",
   },
   {
     name: "Meera Singh",
@@ -22,7 +22,7 @@ const testimonials = [
     name: "Rajesh Kumar",
     location: "Noida",
     rating: 5,
-    text: "My father is 75 years old and had mobility issues. The elderly care program by Dr. Rahul has improved his balance and confidence significantly. Excellent service!",
+    text: "My father is 75 years old and had mobility issues. The elderly care program by Dr. Somesh has improved his balance and confidence significantly. Excellent service!",
   },
   {
     name: "Priya Malhotra",
