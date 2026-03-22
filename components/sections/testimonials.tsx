@@ -172,7 +172,7 @@ export function TestimonialsSection() {
                 width={18}
                 height={18}
               />
-              ⭐ see our google reviews →
+              ⭐ see our google reviews {'>'}
             </a>
           </div>
 
