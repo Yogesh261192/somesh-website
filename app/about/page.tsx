@@ -33,7 +33,7 @@ const values = [
 
 const stats = [
   { number: "2000+", label: "Patients Treated" },
-  { number: "5+", label: "Years Experience" },
+  { number: "8+", label: "Years Experience" },
   { number: "6", label: "Cities Covered" },
   { number: "98%", label: "Satisfaction Rate" },
 ]
