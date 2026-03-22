@@ -30,13 +30,13 @@ const content = {
           { title: "1. Fix Your Screen Height", desc: "Your screen should be at eye level — not too low or too high. Tilting your head forward puts 4-5x more pressure on the cervical spine." },
           { title: "2. Take a Break Every 45 Minutes", desc: "Even a 2-3 minute break gives your muscles a chance to relax. Set a reminder on your phone." },
           { title: "3. Do These 3 Simple Stretches Daily", desc: "Chin Tuck: Pull your chin inward, hold for 5 seconds — repeat 10 times. Shoulder Roll: Roll both shoulders backward — 10 times. Cat-Cow Stretch: On all fours, arch your back up and down — 10 times." },
-          { title: "4. Fix Your Sleeping Position", desc: "A pillow that's too thick or too thin can cause back and neck pain. Use a medium-firm pillow that keeps your neck in a neutral position." },
+          { title: "4. Fix Your Sleeping Position", desc: "A pillow that is too thick or too thin can cause back and neck pain. Use a medium-firm pillow that keeps your neck in a neutral position." },
           { title: "5. Stay Hydrated", desc: "Spinal discs are 80% water. Dehydration directly affects disc health. Drink at least 2.5-3 litres of water daily." }
         ]
       },
       {
         heading: "Why Physiotherapy Is Essential",
-        content: "Most people take painkillers or ignore the pain — but this only provides temporary relief. If pain has lasted more than 2 weeks, it's a sign you need professional help. A certified physiotherapist diagnoses your exact problem and creates a personalized exercise plan. Manual therapy, dry needling, and targeted exercises treat the root cause — not just the symptoms. And the best part? You don't need to visit a clinic. DelhiPhysio@Home's certified physiotherapists come to your home across Delhi, Noida, Ghaziabad, Indirapuram, and Gurgaon."
+        content: "Most people take painkillers or ignore the pain — but this only provides temporary relief. If pain has lasted more than 2 weeks, it is a sign you need professional help. A certified physiotherapist diagnoses your exact problem and creates a personalized exercise plan. Manual therapy, dry needling, and targeted exercises treat the root cause — not just the symptoms. And the best part? You do not need to visit a clinic. DelhiPhysio@Home certified physiotherapists come to your home across Delhi, Noida, Ghaziabad, Indirapuram, and Gurgaon."
       },
       {
         heading: "When to See a Doctor Immediately",
@@ -56,56 +56,56 @@ const content = {
     backLink: "← View All Blogs"
   },
   hi: {
-    category: "Back & Neck Pain",
-    date: "March 21, 2026",
-    title: "Desk Job Kar Rahe Ho? Back & Neck Pain Ko Ignore Mat Karo — Young Professionals Ke Liye Complete Guide",
-    intro: "25 se 35 saal ki umar mein back pain aur neck pain ka hona aajkal aam baat ho gayi hai. Lagatar laptop pe kaam, galat posture, aur kam physical activity — yeh sab milkar aapki sehat bigaad rahe hain. Jaanein kya karna chahiye.",
+    category: "पीठ और गर्दन दर्द",
+    date: "२१ मार्च २०२६",
+    title: "डेस्क जॉब कर रहे हैं? पीठ और गर्दन दर्द को नज़रअंदाज़ न करें — युवा पेशेवरों के लिए संपूर्ण गाइड",
+    intro: "अगर आपकी उम्र २५ से ३५ के बीच है और आप दिन में ८-१० घंटे लैपटॉप के सामने बैठते हैं, तो आपको पीठ और गर्दन दर्द का खतरा बहुत अधिक है। गलत पोस्चर, गलत कुर्सी की ऊंचाई और बैठे रहने की आदत — ये सब मिलकर आपकी रीढ़ को नुकसान पहुंचा रहे हैं।",
     sections: [
       {
-        heading: "Kyun Ho Raha Hai Yeh Dard?",
-        content: "Agar aap din mein 8-10 ghante laptop ya computer ke saamne baithte hain, toh aapki spine par bahut zyada pressure aata hai. Galat chair, screen ki height aur sar ko aage jhukane ki aadat — yeh sab milkar cervical spondylosis, muscle stiffness aur chronic back pain ka karan bante hain. Studies ke mutabik, 25-35 saal ke professionals mein back aur neck pain ke cases pichle 5 saalon mein 40% se zyada badhe hain — aur iska sabse bada karan hai sedentary lifestyle aur work from home culture."
+        heading: "यह दर्द क्यों हो रहा है?",
+        content: "लंबे समय तक बैठने से रीढ़ की हड्डी पर बहुत अधिक दबाव पड़ता है। स्क्रीन की तरफ झुककर देखने से सर्वाइकल वर्टिब्रा पर ४-५ गुना अधिक दबाव पड़ता है। अध्ययनों के अनुसार, पिछले ५ वर्षों में २५-३५ आयु वर्ग के पेशेवरों में पीठ और गर्दन दर्द के मामले ४०% से अधिक बढ़े हैं — जिसका मुख्य कारण बैठे रहने की जीवनशैली और घर से काम करने की संस्कृति है।"
       },
       {
-        heading: "Sabse Common Symptoms Jo Ignore Nahi Karne Chahiye",
+        heading: "ये लक्षण कभी नज़रअंदाज़ न करें",
         list: [
-          "Subah uthte waqt gardan ya kamar mein akadahat",
-          "Lambe time baithne ke baad uthna mushkil lagta ho",
-          "Sar dard jo gardan se shuru hota ho",
-          "Haath ya ungliyon mein soonapan ya jhanjhanahat",
-          "Shoulders mein constant tightness",
-          "Kaam karte waqt concentrate karna mushkil lagta ho"
+          "सुबह उठते समय गर्दन या पीठ में अकड़न",
+          "लंबे समय बैठने के बाद उठने में कठिनाई",
+          "सिरदर्द जो गर्दन से शुरू होता हो",
+          "हाथों या उंगलियों में सुन्नपन या झनझनाहट",
+          "कंधों में लगातार खिंचाव",
+          "काम करते समय ध्यान केंद्रित करने में कठिनाई"
         ]
       },
       {
-        heading: "5 Cheezen Jo Aap Abhi Se Kar Sakte Hain",
+        heading: "५ काम जो आप अभी से कर सकते हैं",
         tips: [
-          { title: "1. Screen Ki Height Theek Karein", desc: "Aapki screen aankho ke level par honi chahiye — neeche ya zyada upar nahi. Sar ko aage jhukana cervical vertebrae par 4-5 guna zyada pressure dalta hai." },
-          { title: "2. Har 45 Minute Mein Ek Baar Uthein", desc: "Sirf 2-3 minute ka break bhi muscles ko relax karne ka mauka deta hai. Phone mein reminder set karein." },
-          { title: "3. Yeh 3 Simple Stretches Rozana Karein", desc: "Chin Tuck: Thodhi ko andar ki taraf kheenchein, 5 second rokein — 10 baar karein. Shoulder Roll: Dono kandhon ko peeche ki taraf ghoomayein — 10 baar. Cat-Cow Stretch: Charon haath-paon par aayein aur kamar ko upar-neeche karein — 10 baar." },
-          { title: "4. Sone Ka Tarika Theek Karein", desc: "Bahut zyada mota ya bahut patla takiya back aur neck pain ka karan ban sakta hai. Ek medium-firm pillow use karein jo gardan ko neutral position mein rakhe." },
-          { title: "5. Paani Poora Piyein", desc: "Spinal discs ka 80% hissa paani hota hai. Dehydration directly disc health ko affect karta hai. Din mein kam se kam 2.5-3 litre paani piyein." }
+          { title: "१. स्क्रीन की ऊंचाई ठीक करें", desc: "आपकी स्क्रीन आंखों के स्तर पर होनी चाहिए — न बहुत नीची, न बहुत ऊंची। सिर को आगे झुकाने से सर्वाइकल स्पाइन पर ४-५ गुना अधिक दबाव पड़ता है।" },
+          { title: "२. हर ४५ मिनट में एक बार उठें", desc: "सिर्फ २-३ मिनट का ब्रेक भी मांसपेशियों को आराम देता है। अपने फोन में रिमाइंडर सेट करें।" },
+          { title: "३. रोज़ ये ३ सरल स्ट्रेच करें", desc: "चिन टक: ठुड्डी को अंदर की तरफ खींचें, ५ सेकंड रोकें — १० बार दोहराएं। शोल्डर रोल: दोनों कंधों को पीछे की तरफ घुमाएं — १० बार। कैट-काउ स्ट्रेच: चारों हाथ-पांव पर आएं और कमर को ऊपर-नीचे करें — १० बार।" },
+          { title: "४. सोने का तरीका ठीक करें", desc: "बहुत मोटा या पतला तकिया पीठ और गर्दन दर्द का कारण बन सकता है। एक मध्यम-कठोर तकिया उपयोग करें जो गर्दन को सही स्थिति में रखे।" },
+          { title: "५. पर्याप्त पानी पिएं", desc: "स्पाइनल डिस्क का ८०% हिस्सा पानी होता है। पानी की कमी सीधे डिस्क के स्वास्थ्य को प्रभावित करती है। दिन में कम से कम २.५-३ लीटर पानी पिएं।" }
         ]
       },
       {
-        heading: "Physiotherapy Kyun Zaroori Hai?",
-        content: "Bahut log pain killers kha lete hain ya dard ko ignore karte hain — lekin yeh sirf temporary relief deta hai. Agar dard 2 hafte se zyada hai, toh yeh sign hai ki aapko professional help chahiye. Ek certified physiotherapist aapki exact problem diagnose karke personalized exercise plan banata hai. Manual therapy, dry needling, aur targeted exercises se root cause treat hota hai — sirf symptoms nahi. Aur sabse achhi baat? Ab clinic jaane ki zaroorat nahi. DelhiPhysio@Home ke certified physiotherapists aapke ghar aate hain — Delhi, Noida, Ghaziabad, Indirapuram aur Gurgaon mein."
+        heading: "फिजियोथेरेपी क्यों ज़रूरी है?",
+        content: "अधिकतर लोग दर्द निवारक दवाएं लेते हैं या दर्द को नज़रअंदाज़ करते हैं — लेकिन यह केवल अस्थायी राहत देता है। अगर दर्द २ सप्ताह से अधिक है, तो यह संकेत है कि आपको पेशेवर मदद की ज़रूरत है। एक प्रमाणित फिजियोथेरेपिस्ट आपकी सटीक समस्या का निदान करके व्यक्तिगत व्यायाम योजना बनाता है। मैनुअल थेरेपी, ड्राई नीडलिंग और लक्षित व्यायाम से मूल कारण का उपचार होता है — केवल लक्षणों का नहीं। और सबसे अच्छी बात? अब क्लिनिक जाने की ज़रूरत नहीं। DelhiPhysio@Home के प्रमाणित फिजियोथेरेपिस्ट आपके घर आते हैं — दिल्ली, नोएडा, गाजियाबाद, इंदिरापुरम और गुरुग्राम में।"
       },
       {
-        heading: "Kab Turant Doctor Se Milna Chahiye?",
+        heading: "तुरंत डॉक्टर से कब मिलें?",
         list: [
-          "Haath ya paon mein kamzori aa rahi ho",
-          "Dard raat ko zyada hota ho",
-          "Bladder ya bowel control mein takleef ho",
-          "Dard 4 hafte se zyada ho aur badh raha ho"
+          "हाथों या पांवों में कमज़ोरी आ रही हो",
+          "रात को दर्द अधिक होता हो",
+          "मूत्राशय या आंत पर नियंत्रण में कठिनाई हो",
+          "दर्द ४ सप्ताह से अधिक हो और बढ़ रहा हो"
         ],
         warning: true
       }
     ],
-    ctaTitle: "Ghar Baithe Physiotherapy Book Karein",
-    ctaDesc: "Delhi NCR mein certified physiotherapists aapke ghar aakar treatment denge. Pehla consultation book karein aaj hi.",
-    ctaWhatsApp: "WhatsApp Par Book Karein",
-    ctaCall: "Call Karein: +91 81301 71272",
-    backLink: "← Sabhi Blogs Dekhein"
+    ctaTitle: "घर पर फिजियोथेरेपी बुक करें",
+    ctaDesc: "दिल्ली NCR में प्रमाणित फिजियोथेरेपिस्ट आपके घर आकर इलाज करेंगे। आज ही अपना पहला सत्र बुक करें।",
+    ctaWhatsApp: "WhatsApp पर बुक करें",
+    ctaCall: "कॉल करें: +91 81301 71272",
+    backLink: "← सभी ब्लॉग देखें"
   }
 }
 
