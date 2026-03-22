@@ -35,7 +35,7 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary">
-                <span className="text-lg font-bold text-primary-foreground">P</span>
+                <img src="/favicon.ico" alt="DelhiPhysio@Home" className="w-8 h-8 rounded-full" />
               </div>
               <span className="text-xl font-bold" style={{ fontFamily: 'var(--font-display)' }}>
                 delhiphysioathome
