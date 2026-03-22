@@ -44,9 +44,11 @@ export function TestimonialsSection() {
 
   useEffect(() => {
     if (!isAutoPlaying) return
+    
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % testimonials.length)
     }, 5000)
+    
     return () => clearInterval(interval)
   }, [isAutoPlaying])
 
@@ -69,7 +71,7 @@ export function TestimonialsSection() {
     <section className="bg-muted/30 py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <h2
+          <h2 
             className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-balance"
             style={{ fontFamily: 'var(--font-display)' }}
           >
@@ -82,7 +84,7 @@ export function TestimonialsSection() {
 
         <div className="relative max-w-3xl mx-auto">
           <div className="overflow-hidden">
-            <div
+            <div 
               className="flex transition-transform duration-500 ease-in-out"
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
@@ -155,25 +157,6 @@ export function TestimonialsSection() {
               />
             ))}
           </div>
-
-          {/* Google Reviews Button */}
-          <div className="mt-8 flex justify-center">
-            
-              href="YOUR_GOOGLE_REVIEW_LINK_HERE"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 rounded-full border border-border bg-background px-6 py-3 text-sm font-semibold text-foreground shadow-sm hover:shadow-md transition-shadow"
-            >
-              <img
-                src="https://www.google.com/favicon.ico"
-                alt="Google"
-                width={18}
-                height={18}
-              />
-              ⭐ See our Google Reviews
-            </a>
-          </div>
-
         </div>
       </div>
     </section>
