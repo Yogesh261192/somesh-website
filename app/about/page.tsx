@@ -4,8 +4,8 @@ import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle, ArrowRight, Users, Target, Heart, Award } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "About Us | delhiphysioathome Delhi NCR",
-  description: "Learn about delhiphysioathome's mission to provide quality home physiotherapy services in Delhi NCR. Our certified physiotherapists bring expert care to your doorstep.",
+  title: "About Us | Delhi Physio At Home — Home Physiotherapy in Ghaziabad & Delhi NCR",
+  description: "Delhi Physio At Home provides expert physiotherapist home visits in Ghaziabad, Indirapuram, Raj Nagar, Noida & Delhi NCR. Certified physios, same-day booking available.",
 }
 
 const values = [
