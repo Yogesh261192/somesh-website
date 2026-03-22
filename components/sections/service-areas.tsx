@@ -3,7 +3,7 @@ import { MapPin, ArrowRight } from "lucide-react"
 
 const areas = [
   { name: "Delhi", description: "All areas including South Delhi, North Delhi, East Delhi, West Delhi" },
-  { name: "Ghaziabad", description: "Indirapuram, Vaishali, Kaushambi, Vasundhara, Raj Nagar" },
+  { name: "Ghaziabad", description: "Indirapuram, Vaishali, Kaushambi, Loni, Vasundhara, Raj Nagar" },
   { name: "Noida", description: "All sectors including Greater Noida and Noida Extension" },
   { name: "Gurgaon", description: "All sectors including DLF, Sohna Road, Golf Course Road" },
   { name: "Indirapuram", description: "Niti Khand, Shakti Khand, Gyan Khand, Ahinsa Khand" },

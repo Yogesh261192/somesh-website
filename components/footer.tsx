@@ -24,6 +24,7 @@ const serviceAreas = [
   "Gurgaon",
   "Indirapuram",
   "Raj Nagar",
+  "Loni",
 ]
 
 export function Footer() {
