@@ -157,6 +157,25 @@ export function TestimonialsSection() {
               />
             ))}
           </div>
+
+          {/* google reviews button */}
+          <div classname="mt-8 flex justify-center">
+            
+              href="your_google_review_link_here"
+              target="_blank"
+              rel="noopener noreferrer"
+              classname="inline-flex items-center gap-3 rounded-full border border-border bg-background px-6 py-3 text-sm font-semibold text-foreground shadow-sm hover:shadow-md transition-shadow"
+            >
+              <img
+                src="https://www.google.com/favicon.ico"
+                alt="google"
+                width={18}
+                height={18}
+              />
+              ⭐ see our google reviews →
+            </a>
+          </div>
+
         </div>
       </div>
     </section>
