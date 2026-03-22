@@ -2,8 +2,8 @@ import Link from "next/link"
 
 const blogs = [
   {
-    title: "Desk Job Kar Rahe Ho? Back & Neck Pain Ko Ignore Mat Karo",
-    excerpt: "25-35 saal ke professionals ke liye complete guide — causes, prevention tips aur physiotherapy ke fayde.",
+    title: "Desk Job? Don't Ignore Back & Neck Pain — Complete Guide for Young Professionals",
+    excerpt: "A complete guide for 25-35 year old professionals — causes, prevention tips and the role of physiotherapy.25-35 saal ke professionals ke liye complete guide — causes, prevention tips aur physiotherapy ke fayde.",
     date: "March 21, 2026",
     slug: "desk-job-back-neck-pain",
     category: "Back & Neck Pain"
