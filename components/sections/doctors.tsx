@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge"
 const doctors = [
   {
     name: "Dr. Somesh Mamgain",
-    qualification: "BPT",
+    qualification: "BPT, MIAP",
     experience: "8+ Years",
     specializations: ["Stroke Rehab", "Post TKR/THR Rehab", "Sports Rehab"],
     bio: "Dr. Somesh specializes in Post-Op Orthopedic rehabilitation, elderly care, and sports injuries. He has helped over 1500 patients recover from chronic pain and post-surgical conditions.",
