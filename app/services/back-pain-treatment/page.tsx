@@ -45,7 +45,7 @@ export default function BackPainTreatment() {
             </div>
             <div className="relative h-80 w-full rounded-lg overflow-hidden shadow-lg">
               <Image
-                src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&h=600&fit=crop"
+                src="/back-pain-hero.png"
                 alt="Patient with back pain touching lower back"
                 fill
                 className="object-cover"
@@ -85,10 +85,10 @@ export default function BackPainTreatment() {
             <h2 className="text-3xl font-bold mt-8 mb-4">Our Back Pain Treatment Approach</h2>
             <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-lg mb-6">
               <Image
-                src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=400&fit=crop"
+                src="/back-PAIN-treatment.png"
                 alt="Professional Physiotherapy Treatment"
                 fill
-                className="object-cover"
+                className="object-cover object-bottom"
               />
             </div>
             <p>
