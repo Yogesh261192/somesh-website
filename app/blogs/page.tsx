@@ -2,6 +2,13 @@ import Link from "next/link"
 
 const blogs = [
   {
+    title: "Knee Surgery Recovery at Home in Delhi NCR: A Complete Guide",
+    excerpt: "Everything you need to know about post-operative physiotherapy at home after knee replacement or ACL surgery in Delhi, Ghaziabad, Noida & Gurgaon.",
+    date: "March 23, 2026",
+    slug: "knee-surgery-recovery-delhi-ncr",
+    category: "Post-Surgery Recovery"
+  },
+  {
     title: "Desk Job? Don't Ignore Back & Neck Pain — Complete Guide for Young Professionals",
     excerpt: "A complete guide for 25-35 year old professionals — causes, prevention tips and the role of physiotherapy.25-35 saal ke professionals ke liye complete guide — causes, prevention tips aur physiotherapy ke fayde.",
     date: "March 21, 2026",

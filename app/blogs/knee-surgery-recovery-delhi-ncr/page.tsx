@@ -68,7 +68,7 @@ All of this happens in the comfort of your home — no waiting rooms, no travel 
 ✅ Personalised treatment plans — no generic routines
 ✅ Flexible scheduling — morning, evening, weekends
 ✅ Same-day & next-day bookings available
-✅ 1500+ patients successfully treated
+✅ 2000+ patients successfully treated
 ✅ 8+ years of clinical experience`,
       },
       {
