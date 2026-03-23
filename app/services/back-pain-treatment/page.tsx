@@ -85,7 +85,7 @@ export default function BackPainTreatment() {
             <h2 className="text-3xl font-bold mt-8 mb-4">Our Back Pain Treatment Approach</h2>
             <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-lg mb-6">
               <Image
-                src="/back-PAIN-treatment.png"
+                src="/back-pain-treatment.png"
                 alt="Professional Physiotherapy Treatment"
                 fill
                 className="object-cover object-bottom"
