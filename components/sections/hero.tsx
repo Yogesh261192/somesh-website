@@ -63,8 +63,8 @@ export function HeroSection() {
           <div className="relative lg:pl-8">
             <div className="relative aspect-square overflow-hidden rounded-2xl bg-muted shadow-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=600&h=600&fit=crop"
-                alt="Doctor consulting with patient in physiotherapy"
+                src="/hero-image.png"
+                alt="Delhi Physio At Home - Home Visit Physiotherapy Session"
                 fill
                 className="object-cover"
                 priority
