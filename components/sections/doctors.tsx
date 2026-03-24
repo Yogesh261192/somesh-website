@@ -17,7 +17,7 @@ const doctors = [
     experience: "8+ Years",
     specializations: ["Neurological Rehab", "Sports Injury Recovery", "Elderly Care"],
     bio: "Dr.Sarita is an expert in Cardio and neurological rehabilitation, specializing in stroke recovery and mobility improvement for elderly patients.",
-    image: "/assets/services/Sarita.jpeg",
+    image: "/assets/services/sarita1.png",
   }
 ]
 
