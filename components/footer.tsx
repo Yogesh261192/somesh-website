@@ -51,9 +51,9 @@ export function Footer() {
                 <Phone className="h-4 w-4" />
                 <span>+91 81301 71272</span>
               </a>
-              <a href="mailto:info@delhiphysioathome.in" className="flex items-center gap-2 text-sm text-background/80 hover:text-background transition-colors">
+              <a href="mailto:info@delhiphysioathome.com" className="flex items-center gap-2 text-sm text-background/80 hover:text-background transition-colors">
                 <Mail className="h-4 w-4" />
-                <span>info@delhiphysioathome.in</span>
+                <span>info@delhiphysioathome.com</span>
               </a>
               <a 
                 href="https://wa.me/918130171272" 

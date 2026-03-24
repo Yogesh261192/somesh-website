@@ -18,8 +18,8 @@ const contactInfo = [
   },
   {
     title: "Email",
-    value: "info@delhiphysioathome.in",
-    href: "mailto:info@delhiphysioathome.in",
+    value: "info@delhiphysioathome.com",
+    href: "mailto:info@delhiphysioathome.com",
     icon: Mail,
   },
   {
