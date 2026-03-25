@@ -42,7 +42,7 @@ const faqs = [
   },
   {
     question: "What areas do you serve?",
-    answer: "We provide home physiotherapy services across Delhi NCR including Delhi, Noida, Gurgaon, Ghaziabad, Indirapuram, Raj Nagar, and Loni. If you're outside these areas, please contact us to discuss availability."
+    answer: "We provide home physiotherapy services across Delhi NCR including Delhi, Shahdara, Noida, Gurgaon, Ghaziabad, Indirapuram, Raj Nagar, and Loni. If you're outside these areas, please contact us to discuss availability."
   },
   {
     question: "Do you provide emergency services?",

@@ -6,7 +6,6 @@ const quickLinks = [
   { name: "Services", href: "/#services" },
   { name: "Our Team", href: "/#doctors" },
   { name: "About Us", href: "/about" },
-  { name: "FAQs", href: "/faqs" },
   { name: "Contact", href: "/contact" },
   { name: "Blogs", href: "/blogs" },
 ]
@@ -21,6 +20,7 @@ const services = [
 
 const serviceAreas = [
   "Delhi",
+  "Shahdara",
   "Ghaziabad",
   "Noida",
   "Gurgaon",
