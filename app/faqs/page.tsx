@@ -53,10 +53,6 @@ const faqs = [
     answer: "Our physiotherapists come equipped with portable treatment tools including therapeutic ultrasound machines, TENS units, exercise bands, resistance equipment, and manual therapy tools. We also provide home exercise programs and education."
   },
   {
-    question: "Is physiotherapy covered by insurance?",
-    answer: "Many health insurance policies cover physiotherapy treatments. We can provide the necessary documentation for insurance claims. Please check with your insurance provider for coverage details and let us know if you need assistance with paperwork."
-  },
-  {
     question: "Can I get physiotherapy if I'm bedridden?",
     answer: "Yes, we specialize in treating patients who are bedridden or have mobility challenges. Our physiotherapists can provide treatment in your bedroom and adapt exercises to your current abilities. We focus on gentle, effective techniques suitable for your condition."
   },
