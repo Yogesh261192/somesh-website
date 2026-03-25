@@ -11,11 +11,11 @@ const quickLinks = [
 ]
 
 const services = [
-  "Back Pain Treatment",
-  "Neck Pain Therapy",
-  "Post Surgery Rehabilitation",
-  "Sports Injury Recovery",
-  "Elderly Mobility Physiotherapy",
+  { label: "Back Pain Treatment", href: "/services/back-pain-treatment" },
+  { label: "Neck Pain Therapy", href: "/services/neck-pain-therapy" },
+  { label: "Post Surgery Rehabilitation", href: "/services/post-surgery-rehabilitation" },
+  { label: "Sports Injury Recovery", href: "/services/sports-injury-recovery" },
+  { label: "Elderly Mobility Physiotherapy", href: "/services/elderly-mobility-physiotherapy" },
 ]
 
 const serviceAreas = [
@@ -88,16 +88,21 @@ export function Footer() {
           </div>
 
           {/* Services */}
-          <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider">Our Services</h3>
-            <ul className="mt-4 space-y-2">
-              {services.map((service) => (
-                <li key={service}>
-                  <span className="text-sm text-background/70">{service}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+<div>
+  <h3 className="text-sm font-semibold uppercase tracking-wider">Our Services</h3>
+  <ul className="mt-4 space-y-2">
+    {services.map((service) => (
+      <li key={service.href}>
+        <Link 
+          href={service.href}
+          className="text-sm text-background/70 hover:text-background transition-colors"
+        >
+          {service.label}
+        </Link>
+      </li>
+    ))}
+  </ul>
+</div>
 
           {/* Service Areas */}
           <div>
