@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X, Phone } from "lucide-react"
 
@@ -16,11 +16,32 @@ const navigation = [
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [showBanner, setShowBanner] = useState(false)
+
+  useEffect(() => {
+    const now = new Date()
+    const isRamNavami = 
+      now.getFullYear() === 2026 && 
+      now.getMonth() === 2 && 
+      now.getDate() === 26
+
+    if (isRamNavami) {
+      setShowBanner(true)
+    }
+  }, [])
 
   return (
     <>
+      {/* Dynamic Ram Navami Banner */}
+      {showBanner && (
+        <div className="w-full bg-[#FF9933] py-2 px-4 text-center text-white font-semibold text-sm sm:text-base shadow-md">
+          🙏 Shubh Ram Navami! May Lord Rama heal every pain and bless you with great health. ✨
+        </div>
+      )}
+
       <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+          {/* ... Baaki ka logo aur nav code same rahega ... */}
           <div className="flex lg:flex-1">
             <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2">
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white">
@@ -75,6 +96,7 @@ export function Header() {
         </nav>
       </header>
 
+      {/* ... Mobile Menu Code ... */}
       {mobileMenuOpen && (
         <>
           <div
