@@ -17,33 +17,28 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Delhi NCR |Indirapuram| Vasundhara | Professional Home Physiotherapy Services',
-  description: 'Get expert physiotherapy treatment at your doorstep in Delhi, Noida, Gurgaon, and Ghaziabad. Certified physiotherapists for back pain, sports injuries, post-surgery rehab, and elderly care.',
-  keywords: 'home physiotherapy Delhi, physiotherapist near me, back pain treatment, sports injury recovery, post surgery rehabilitation, elderly physiotherapy, Delhi NCR physiotherapy, physiotherapy vasundhara, physiotherapy ghaziabad, physiotherapy noida, physiotherapy indirapuram, physiotherapy raj nagar, physiotherapy vaishali, physiotherapist vasundhara, best physiotherapist ghaziabad, home physiotherapy service, physical therapy near me',
-  generator: 'v0.app',
+  title: 'DelhiPhysio@Home | Expert Home Physiotherapy in Delhi NCR & Ghaziabad',
+  description: 'Certified physiotherapists at your doorstep in Delhi, Noida, Gurgaon, and Ghaziabad. Specialist care for back pain, sports injuries, and post-surgery rehab.',
+  keywords: 'home physiotherapy Delhi, physiotherapist near me, back pain treatment, sports injury recovery, post surgery rehabilitation, elderly physiotherapy, Delhi NCR physiotherapy, physiotherapy vasundhara, physiotherapy ghaziabad, physiotherapy noida, physiotherapy indirapuram',
+  generator: 'DelhiPhysioAtHome',
   openGraph: {
-    title: 'delhiphysioathome Delhi NCR | Professional Home Physiotherapy Services',
+    title: 'DelhiPhysio@Home | Professional Home Physiotherapy Services',
     description: 'Get expert physiotherapy treatment at your doorstep. Certified physiotherapists for all your recovery needs.',
+    url: 'https://delhiphysioathome.com',
+    siteName: 'DelhiPhysio@Home',
     type: 'website',
   },
   icons: {
     icon: [
-      {url:'/favicon.ico'},
-      // {
-      //   url: '/icon-light-32x32.png',
-      //   media: '(prefers-color-scheme: light)',
-      // },
-      // {
-      //   url: '/icon-dark-32x32.png',
-      //   media: '(prefers-color-scheme: dark)',
-      // },
-      // {
-      //   url: '/icon.svg',
-      //   type: 'image/svg+xml',
-      // },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon.ico' },
     ],
-    apple: '/apple-touch-icon.png',
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
   },
+  manifest: '/site.webmanifest',
 }
 
 export const viewport: Viewport = {
