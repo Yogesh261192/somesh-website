@@ -1,29 +1,17 @@
 import { Metadata } from 'next'
 import Image from 'next/image'
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import Link from "next/link"
+import { CheckCircle2, Clock, MapPin, ArrowRight, Phone, HeartHandshake, ShieldCheck, Activity } from "lucide-react"
 
-export const metadata = {
-  title: "Elderly Mobility Physiotherapy in Vasundhara, Ghaziabad | Seniors Care",
-  description: "Gentle physiotherapy and mobility training for seniors in Vasundhara, Ghaziabad, Noida, Indirapuram, Raj Nagar, Vaishali. Improve balance, strength, and independence for elderly.",
-  keywords: [
-    "elderly physiotherapy vasundhara",
-    "senior mobility training ghaziabad",
-    "physiotherapy for elderly noida",
-    "balance and fall prevention indirapuram",
-    "senior citizen physiotherapy vasundhara",
-    "elderly care physiotherapist raj nagar",
-    "geriatric physiotherapy vaishali",
-    "fall prevention for seniors ghaziabad",
-    "elderly mobility improvement vasundhara",
-    "strength training for seniors noida",
-    "independent living seniors",
-    "geriatric rehabilitation ghaziabad",
-  ].join(", "),
+export const metadata: Metadata = {
+  title: "Elderly Physiotherapy at Home in Delhi NCR, Ghaziabad",
+  description: "Compassionate home physiotherapy for seniors. Expert care for arthritis, stroke recovery, balance issues, and fall prevention in Noida and Ghaziabad.",
+  keywords: "elderly physiotherapy at home, geriatric physiotherapist ghaziabad, fall prevention for seniors noida, stroke rehab at home, arthritis pain relief",
   openGraph: {
-    title: "Elderly Mobility Physiotherapy in Vasundhara - Senior Care Excellence",
-    description: "Specialized gentle physiotherapy for seniors to improve balance, strength, and independence in Vasundhara, Ghaziabad, and nearby areas. Prevent falls and enhance quality of life.",
+    title: "Elderly Mobility Physiotherapy at Home - Expert Care",
+    description: "Gentle, professional, and compassionate physiotherapy for the elderly, delivered safely to your home.",
     type: "website",
   },
 }
@@ -31,22 +19,43 @@ export const metadata = {
 export default function ElderlyMobilityPhysiotherapy() {
   return (
     <main className="min-h-screen bg-background">
+      
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary/10 to-primary/5 py-12 sm:py-16">
+      <section className="bg-gradient-to-r from-primary/10 to-primary/5 py-12 sm:py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-foreground mb-4">
-                Elderly Mobility Physiotherapy
+          <div className="grid md:grid-cols-2 gap-10 items-center">
+            <div className="space-y-6">
+              <div className="inline-flex items-center rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-sm font-medium text-primary">
+                <HeartHandshake className="mr-2 h-4 w-4" /> Compassionate & Patient Care
+              </div>
+              <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-foreground leading-tight">
+                Regain Independence & Mobility at Home
               </h1>
-              <p className="text-lg text-muted-foreground max-w-3xl">
-                Gentle exercises and mobility training to improve balance, strength, and independence for seniors in Vasundhara, Ghaziabad, Noida, Indirapuram, Raj Nagar, and Vaishali
+              <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
+                Traveling to a clinic can be exhausting for seniors. We bring gentle, expert geriatric physiotherapy directly to your doorstep across Delhi NCR, focusing on fall prevention, pain relief, and daily independence.
               </p>
+              <div className="flex flex-wrap gap-4 pt-2">
+                <a 
+                  href="https://wa.me/918130171272" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-md font-semibold hover:opacity-90 transition-opacity shadow-sm"
+                >
+                  WhatsApp Us <ArrowRight className="w-4 h-4" />
+                </a>
+                <a 
+                  href="tel:+918130171272" 
+                  className="inline-flex items-center gap-2 bg-background border border-border text-foreground px-6 py-3 rounded-md font-semibold hover:bg-muted transition-colors shadow-sm"
+                >
+                  <Phone className="w-4 h-4" /> +91 81301 71272
+                </a>
+              </div>
             </div>
-            <div className="relative h-80 w-full rounded-lg overflow-hidden shadow-lg">
+            <div className="relative h-[350px] w-full rounded-2xl overflow-hidden shadow-xl border border-border/50 bg-muted/20">
+              {/* YAHA LOCAL IMAGE PATH SET KIYA HAI */}
               <Image
-                src="/assets/services/old_age.png"
-                alt="Elderly woman in wheelchair smiling happily"
+                src="/assets/services/elderly_hero.png"
+                alt="Indian physiotherapist gently helping an elderly patient stand safely at home"
                 fill
                 className="object-cover"
                 priority
@@ -56,223 +65,153 @@ export default function ElderlyMobilityPhysiotherapy() {
         </div>
       </section>
 
-      {/* Main Content */}
-      <section className="py-12 sm:py-16">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg dark:prose-invert max-w-none">
-            <h2 className="text-3xl font-bold mt-8 mb-4">Understanding Elderly Mobility Challenges</h2>
-            <p>
-              As we age, changes in muscle strength, flexibility, balance, and coordination are natural. However, these changes often lead to reduced mobility, decreased independence, and increased risk of falls—all of which can dramatically impact quality of life. Our specialized elderly mobility physiotherapy programs in Vasundhara, Ghaziabad, Noida, Indirapuram, Raj Nagar, and Vaishali are designed specifically for senior citizens, addressing these age-related changes with gentle, effective interventions that maintain and improve mobility, strength, and independence.
-            </p>
-
-            <h2 className="text-3xl font-bold mt-8 mb-4">Why Mobility Matters for Seniors</h2>
-            <p>
-              Mobility is fundamental to independent living. When elderly individuals lose mobility, they often become dependent on others for daily activities, which can lead to social isolation, depression, and accelerated physical decline. Our elderly physiotherapy services in Vasundhara focus on maintaining and restoring mobility to help seniors remain independent and engaged in life. Regular physiotherapy can help seniors continue walking, climbing stairs, getting in and out of chairs, and participating in recreational activities they enjoy.
-            </p>
-
-            <h3 className="text-2xl font-bold mt-6 mb-3">Benefits of Elderly Mobility Physiotherapy:</h3>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>Improved muscle strength and endurance</li>
-              <li>Enhanced balance and reduced fall risk</li>
-              <li>Better flexibility and range of motion</li>
-              <li>Improved cardiovascular health</li>
-              <li>Reduced pain and stiffness</li>
-              <li>Greater confidence in movement</li>
-              <li>Maintained independence in daily activities</li>
-              <li>Improved quality of life and social engagement</li>
-              <li>Better sleep quality</li>
-              <li>Enhanced mental and emotional well-being</li>
-            </ul>
-
-            <h2 className="text-3xl font-bold mt-8 mb-4">Common Conditions in Elderly Requiring Physiotherapy</h2>
-
-            <h3 className="text-2xl font-bold mt-6 mb-3">Arthritis and Joint Pain</h3>
-            <p>
-              Arthritis is extremely common in elderly populations, affecting joints throughout the body. Our physiotherapy in Ghaziabad and surrounding areas provides specific exercises and techniques to reduce pain, maintain range of motion, and improve function in arthritic joints. We help seniors manage arthritis pain without over-reliance on medications.
-            </p>
-
-            <h3 className="text-2xl font-bold mt-6 mb-3">Osteoporosis</h3>
-            <p>
-              Osteoporosis weakens bones and increases fracture risk, particularly in elderly women. Our specialized elderly physiotherapy in Vasundhara includes weight-bearing exercises and balance training that strengthen bones, improve balance, and reduce fall risk—preventing dangerous fractures.
-            </p>
-
-            <h3 className="text-2xl font-bold mt-6 mb-3">Balance and Fall Risk</h3>
-            <p>
-              Falls are a leading cause of injury and loss of independence in seniors. Our elderly mobility training in Noida, Indirapuram, Raj Nagar, and Vaishali includes specialized balance training and proprioceptive exercises that significantly reduce fall risk while improving confidence in movement.
-            </p>
-
-            <h3 className="text-2xl font-bold mt-6 mb-3">Post-Stroke Rehabilitation</h3>
-            <p>
-              Stroke recovery requires specialized rehabilitation to restore movement, strength, and function. Our physiotherapists in Vasundhara provide comprehensive post-stroke physiotherapy including movement retraining, strength restoration, and functional recovery programs.
-            </p>
-
-            <h3 className="text-2xl font-bold mt-6 mb-3">Parkinson's Disease and Movement Disorders</h3>
-            <p>
-              Physiotherapy plays an important role in managing Parkinson's disease and other movement disorders in elderly patients. Our specialized programs address movement difficulties, improve balance, and enhance quality of life.
-            </p>
-
-            <h3 className="text-2xl font-bold mt-6 mb-3">Reduced Mobility After Hospitalization</h3>
-            <p>
-              Hospitalization or extended bed rest can significantly reduce elderly mobility. Our physiotherapists in Ghaziabad provide rehabilitation programs to restore strength, mobility, and independence after hospitalization.
-            </p>
-
-            <h2 className="text-3xl font-bold mt-8 mb-4">Our Approach to Elderly Physiotherapy</h2>
-            <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-lg mb-6">
-              <Image
-                src="/assets/services/our_approach.png"
-                alt="Elderly Physiotherapy Approach"
-                fill
-                className="object-cover"
-              />
+      {/* Understanding & Conditions */}
+      <section className="py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-12">
+            <div>
+              <h2 className="text-3xl font-bold mb-6 flex items-center gap-2">
+                <ShieldCheck className="text-primary w-6 h-6" /> Safety & Fall Prevention First
+              </h2>
+              <p className="text-foreground/80 leading-relaxed mb-6">
+                For the elderly, a simple fall can lead to severe complications like hip fractures or prolonged bed rest. Furthermore, age-related conditions like Arthritis or Parkinson's can slowly take away the confidence to walk independently.
+                <br/><br/>
+                Our <strong>home-based geriatric care</strong> eliminates the stress of waiting rooms and bumpy car rides. We focus on building strength, improving balance, and modifying the home environment to keep your loved ones safe and active.
+              </p>
             </div>
-            <p>
-              Elderly physiotherapy requires a specialized, gentle approach that respects the individual needs, abilities, and limitations of older adults. Our approach in Vasundhara, Ghaziabad, Noida, Indirapuram, Raj Nagar, and Vaishali is comprehensive and compassionate.
-            </p>
+            <div className="bg-muted/30 p-8 rounded-2xl border border-border">
+              <h3 className="text-xl font-bold mb-6">Conditions We Carefully Manage:</h3>
+              <ul className="space-y-4">
+                {[
+                  "Osteoarthritis & Rheumatoid Arthritis Pain",
+                  "Stroke Rehabilitation & Paralysis Care",
+                  "Balance Disorders & Frequent Falling",
+                  "Parkinson’s Disease Mobility Issues",
+                  "Post-Hospitalization & ICU Weakness",
+                  "General Age-Related Muscle Atrophy"
+                ].map((cause, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                    <span className="text-foreground/80">{cause}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <h3 className="text-2xl font-bold mt-6 mb-3">Comprehensive Assessment</h3>
-            <p>
-              We begin with a thorough assessment including:
-            </p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>Medical history and current health conditions</li>
-              <li>Medications and potential side effects</li>
-              <li>Functional abilities and limitations</li>
-              <li>Balance and fall risk assessment</li>
-              <li>Strength and flexibility evaluation</li>
-              <li>Pain levels and joint assessment</li>
-              <li>Living situation and support systems</li>
-              <li>Goals and desired activities</li>
-            </ul>
-
-            <h3 className="text-2xl font-bold mt-6 mb-3">Gentle Manual Therapy</h3>
-            <p>
-              Our manual therapy for elderly patients is gentle and carefully controlled:
-            </p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>Gentle joint mobilization to improve mobility</li>
-              <li>Soft tissue massage to reduce stiffness</li>
-              <li>Stretching techniques adapted for elderly patients</li>
-              <li>Hands-on assistance with movement patterns</li>
-            </ul>
-
-            <h3 className="text-2xl font-bold mt-6 mb-3">Customized Exercise Programs</h3>
-            <p>
-              All exercises are carefully selected and progressed based on the individual's abilities:
-            </p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>Gentle strengthening for major muscle groups</li>
-              <li>Balance and proprioceptive training</li>
-              <li>Flexibility and range of motion exercises</li>
-              <li>Functional movement training for daily activities</li>
-              <li>Walking and gait training</li>
-              <li>Stair climbing and transfer training</li>
-              <li>Progressive conditioning</li>
-            </ul>
-
-            <h3 className="text-2xl font-bold mt-6 mb-3">Balance and Fall Prevention Training</h3>
-            <p>
-              Fall prevention is crucial for elderly safety. Our specialty programs include:
-            </p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>Static and dynamic balance training</li>
-              <li>Tai Chi and similar balance techniques</li>
-              <li>Perturbation training to improve reactions</li>
-              <li>Environmental safety assessment and modifications</li>
-              <li>Footwear and walking aid recommendations</li>
-              <li>Confidence building for movement</li>
-            </ul>
-
-            <h2 className="text-3xl font-bold mt-8 mb-4">Specialized Programs for Elderly Patients</h2>
-
-            <h3 className="text-2xl font-bold mt-6 mb-3">Strength Training Program</h3>
-            <p>
-              Maintaining muscle strength is essential for independence in elderly adults. Our physiotherapists in Vasundhara provide safe, effective strength training specially designed for seniors, focusing on muscles critical for daily activities like walking, climbing stairs, and getting up from chairs.
-            </p>
-
-            <h3 className="text-2xl font-bold mt-6 mb-3">Mobility Enhancement Program</h3>
-            <p>
-              This program improves range of motion, flexibility, and overall mobility, making daily activities easier and more enjoyable. Clients in Ghaziabad and surrounding areas often find they can pursue preferred activities like gardening, walking, and socializing with renewed confidence.
-            </p>
-
-            <h3 className="text-2xl font-bold mt-6 mb-3">Pain Management Program</h3>
-            <p>
-              Chronic pain is common in elderly populations. Our pain management programs in Noida, Indirapuram, Raj Nagar, and Vaishali use exercises, manual therapy, and therapeutic modalities to reduce pain and improve function without over-reliance on pain medications.
-            </p>
-
-            <h3 className="text-2xl font-bold mt-6 mb-3">Cardiovascular Conditioning Program</h3>
-            <p>
-              Regular physical activity improves cardiovascular health and overall vitality in elderly individuals. Our programs provide safe cardiovascular conditioning appropriate for elderly health levels.
-            </p>
-
-            <h2 className="text-3xl font-bold mt-8 mb-4">Home-Based Physiotherapy for Convenience</h2>
-            <p>
-              Many elderly patients prefer receiving physiotherapy at home for convenience and comfort. Our home-based physiotherapy services in Vasundhara, Ghaziabad, Noida, Indirapuram, Raj Nagar, and Vaishali provide the same quality care in the familiar environment of the patient's home. This is particularly beneficial for patients with limited mobility or those who are uncomfortable traveling to a clinic.
-            </p>
-
-            <h2 className="text-3xl font-bold mt-8 mb-4">Assistive Devices and Equipment</h2>
-            <p>
-              Our elderly mobility physiotherapy includes recommendations and training for appropriate assistive devices such as canes, walkers, and rollators. We help seniors select and use these devices correctly to maximize safety and independence. Our physiotherapists also recommend home modifications to reduce fall risk and improve accessibility.
-            </p>
-
-            <h2 className="text-3xl font-bold mt-8 mb-4">Caregiver Education</h2>
-            <p>
-              Many elderly patients have caregivers who support their daily activities. Our physiotherapy in Vasundhara includes caregiver education about proper technique for assisting with mobility, exercises to reinforce at home, and safety considerations. This ensures consistent support for the elderly patient's rehabilitation goals.
-            </p>
-
-            <h2 className="text-3xl font-bold mt-8 mb-4">Maintaining Independence and Quality of Life</h2>
-            <p>
-              The ultimate goal of our elderly mobility physiotherapy in Ghaziabad and surrounding areas is to maintain independence and enhance quality of life. We measure success not just by improved strength or balance, but by elderly patients' ability to continue participating in activities they enjoy and maintaining the independence that is crucial for dignity and well-being.
-            </p>
-
-            <h3 className="text-2xl font-bold mt-6 mb-3">Active Aging and Social Engagement</h3>
-            <p>
-              We believe elderly individuals should remain active and engaged in life. Our physiotherapy programs enable:
-            </p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>Independent walking and outdoor activities</li>
-              <li>Participation in hobbies and recreational activities</li>
-              <li>Social engagement and community involvement</li>
-              <li>Continued independence with personal care and household tasks</li>
-              <li>Confidence in movement and reduced anxiety about falls</li>
-              <li>Improved mental health and overall well-being</li>
-            </ul>
-
-            <h2 className="text-3xl font-bold mt-8 mb-4">Why Choose Our Elderly Physiotherapy Services?</h2>
-            <p>
-              When selecting elderly physiotherapy in Vasundhara, Ghaziabad, Noida, Indirapuram, Raj Nagar, or Vaishali, experience with seniors is essential:
-            </p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>Specialized experience in geriatric physiotherapy</li>
-              <li>Gentle, respectful approach sensitive to elderly needs</li>
-              <li>Understanding of common elderly health conditions</li>
-              <li>Safe exercise prescription for elderly bodies</li>
-              <li>Fall prevention expertise</li>
-              <li>Patient and family education</li>
-              <li>Home-based physiotherapy services</li>
-              <li>Focus on maintaining independence and quality of life</li>
-              <li>Compassionate, personalized care</li>
-            </ul>
-
-            <h2 className="text-3xl font-bold mt-8 mb-4">Getting Started with Elderly Physiotherapy</h2>
-            <p>
-              If you or a family member in Vasundhara, Ghaziabad, Noida, Indirapuram, Raj Nagar, or Vaishali is experiencing reduced mobility, balance problems, falls, or has difficulty with daily activities, physiotherapy can help. Contact us today to discuss how our customized elderly mobility programs can improve strength, balance, and independence, allowing you or your loved one to continue enjoying life to the fullest.
+      {/* 4 Phases of Elderly Care */}
+      <section className="py-16 bg-gradient-to-b from-transparent to-muted/20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="text-3xl font-bold mb-4">Our Gentle Approach to Senior Care</h2>
+            <p className="text-foreground/70 text-lg">
+              We don't rush. Our physiotherapists are trained to be extremely patient, working at a pace that is comfortable and motivating for the elderly.
             </p>
           </div>
 
-          {/* CTA Card */}
-          <Card className="mt-12 bg-primary/5 border-primary/20">
-            <CardHeader>
-              <CardTitle>Ready to Improve Your Elderly Mobility?</CardTitle>
-              <CardDescription>Book your physiotherapy session in Vasundhara, Ghaziabad, Noida, Indirapuram, Raj Nagar, or Vaishali today</CardDescription>
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
+            <div className="relative w-full rounded-2xl overflow-hidden shadow-lg border border-border/50 order-2 md:order-1 bg-muted/20">
+              {/* YAHA LOCAL IMAGE PATH SET KIYA HAI */}
+              <Image
+                src="/assets/services/elderly_approach.png"
+                alt="Compassionate geriatric physical therapy session with senior citizen in Indian home"
+                width={800}
+                height={600}
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <div className="space-y-8 order-1 md:order-2">
+              <div>
+                <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
+                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary text-sm">
+                    1
+                  </span>
+                  Comprehensive Fall Assessment
+                </h3>
+                <p className="text-foreground/70 pl-10">We evaluate walking patterns (gait), balance, and home hazards (like loose rugs or slippery floors) to create a zero-fall environment.</p>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
+                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary text-sm">
+                    2
+                  </span>
+                  Gentle Pain & Stiffness Relief
+                </h3>
+                <p className="text-foreground/70 pl-10">Using soothing manual therapy, heat application, and gentle joint mobilization to ease arthritis pain and morning stiffness.</p>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
+                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary text-sm">
+                    3
+                  </span>
+                  Balance & Strength Building
+                </h3>
+                <p className="text-foreground/70 pl-10">Safe, chair-based exercises and assisted standing routines to rebuild leg strength and improve core stability without exhaustion.</p>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
+                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary text-sm">
+                    4
+                  </span>
+                  Functional Independence
+                </h3>
+                <p className="text-foreground/70 pl-10">Training for daily activities—like safely getting out of bed, using the washroom, or climbing a few stairs—to restore dignity and confidence.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Info Grid */}
+      <section className="py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-background border border-border p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+              <Clock className="w-8 h-8 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3">Paced Sessions</h3>
+              <p className="text-foreground/70 text-sm leading-relaxed">
+                Elderly sessions are designed to be fatigue-free. We take frequent breaks and focus on consistency (2-3 times a week) rather than high-intensity, ensuring slow but steady progress.
+              </p>
+            </div>
+            <div className="bg-background border border-border p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+              <Activity className="w-8 h-8 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3">Neurological Care</h3>
+              <p className="text-foreground/70 text-sm leading-relaxed">
+                For patients recovering from a stroke or managing Parkinson's, we use specialized neuro-rehabilitation techniques to help rewire brain-muscle connections and improve mobility.
+              </p>
+            </div>
+            <div className="bg-background border border-border p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+              <MapPin className="w-8 h-8 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3">Service Areas</h3>
+              <p className="text-foreground/70 text-sm leading-relaxed">
+                We provide reliable, on-time home visits across <strong>Ghaziabad and Noida</strong>, deeply serving areas like Rajnagar Extension, Indirapuram, Vasundhara, and Vaishali.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA Card */}
+      <section className="py-12 pb-24">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <Card className="bg-primary/5 border-primary/20 shadow-md">
+            <CardHeader className="text-center pb-2">
+              <CardTitle className="text-2xl md:text-3xl">Give Them the Gift of Mobility</CardTitle>
+              <CardDescription className="text-base mt-2">
+                Don't let age or pain confine your loved ones. Give them the gentle care they deserve, right here in Delhi NCR. Book a gentle, in-home assessment today.
+              </CardDescription>
             </CardHeader>
-            <CardContent>
-              <Button asChild size="lg">
-                <Link href="/contact">Schedule Your Appointment</Link>
+            <CardContent className="flex justify-center pt-6">
+              <Button asChild size="lg" className="w-full sm:w-auto text-md px-8">
+                <Link href="/contact">Book a Home Assessment</Link>
               </Button>
             </CardContent>
           </Card>
         </div>
       </section>
+
     </main>
   )
 }

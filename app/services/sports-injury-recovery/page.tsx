@@ -1,29 +1,17 @@
 import { Metadata } from 'next'
 import Image from 'next/image'
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import Link from "next/link"
+import { CheckCircle2, Clock, MapPin, ArrowRight, Phone, Activity, Trophy, Zap } from "lucide-react"
 
-export const metadata = {
-  title: "Sports Injury Recovery in Vasundhara, Ghaziabad | Physiotherapy",
-  description: "Expert sports injury treatment and recovery in Vasundhara, Ghaziabad, Noida, Indirapuram, Raj Nagar, Vaishali. Sprains, strains, and sports rehabilitation by certified professionals.",
-  keywords: [
-    "sports injury recovery vasundhara",
-    "sports injury physiotherapy ghaziabad",
-    "ankle sprain treatment noida",
-    "knee injury rehabilitation indirapuram",
-    "sports medicine vasundhara",
-    "athlete physiotherapist raj nagar",
-    "muscle strain treatment vaishali",
-    "sports injury doctor ghaziabad",
-    "athletic performance physiotherapy vasundhara",
-    "sports rehabilitation noida",
-    "injury prevention training",
-    "return to sport program",
-  ].join(", "),
+export const metadata: Metadata = {
+  title: "Sports Injury Recovery at Home in Delhi NCR & Ghaziabad",
+  description: "Expert sports physiotherapy for ankle sprains, ACL tears, muscle strains, and athletic injuries in Ghaziabad, Noida, and Indirapuram. Get back in the game safely.",
+  keywords: "sports injury physiotherapy ghaziabad, ankle sprain treatment noida, ACL rehab indirapuram, athletic sports physiotherapist home visit, sports injury doctor",
   openGraph: {
-    title: "Sports Injury Recovery in Vasundhara - Expert Athletic Rehabilitation",
-    description: "Professional sports injury treatment and recovery programs for athletes in Vasundhara, Ghaziabad, and nearby areas. Specializing in sprains, strains, and safe return to sport.",
+    title: "Sports Injury Recovery at Home - Expert Physiotherapy",
+    description: "Professional sports rehabilitation programs to get athletes and active individuals back to peak performance.",
     type: "website",
   },
 }
@@ -31,22 +19,42 @@ export const metadata = {
 export default function SportsInjuryRecovery() {
   return (
     <main className="min-h-screen bg-background">
+      
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary/10 to-primary/5 py-12 sm:py-16">
+      <section className="bg-gradient-to-r from-primary/10 to-primary/5 py-12 sm:py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-foreground mb-4">
-                Sports Injury Recovery
+          <div className="grid md:grid-cols-2 gap-10 items-center">
+            <div className="space-y-6">
+              <div className="inline-flex items-center rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-sm font-medium text-primary">
+                <Trophy className="mr-2 h-4 w-4" /> Fast & Safe Return to Sport
+              </div>
+              <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-foreground leading-tight">
+                Get Back in the Game Stronger Than Before
               </h1>
-              <p className="text-lg text-muted-foreground max-w-3xl">
-                Professional treatment for athletes and active individuals recovering from sprains, strains, and sports injuries in Vasundhara, Ghaziabad, Noida, Indirapuram, Raj Nagar, and Vaishali
+              <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
+                Expert sports physiotherapy for athletes and weekend warriors. We treat sprains, strains, and tears right at your home across Delhi NCR, saving you the travel pain.
               </p>
+              <div className="flex flex-wrap gap-4 pt-2">
+                <a 
+                  href="https://wa.me/918130171272" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-md font-semibold hover:opacity-90 transition-opacity shadow-sm"
+                >
+                  WhatsApp Us <ArrowRight className="w-4 h-4" />
+                </a>
+                <a 
+                  href="tel:+918130171272" 
+                  className="inline-flex items-center gap-2 bg-background border border-border text-foreground px-6 py-3 rounded-md font-semibold hover:bg-muted transition-colors shadow-sm"
+                >
+                  <Phone className="w-4 h-4" /> +91 81301 71272
+                </a>
+              </div>
             </div>
-            <div className="relative h-80 w-full rounded-lg overflow-hidden shadow-lg">
+            <div className="relative h-[350px] w-full rounded-2xl overflow-hidden shadow-xl border border-border/50 bg-muted/20">
               <Image
                 src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=800&h=600&fit=crop"
-                alt="Football player in action with athletic performance"
+                alt="Athlete recovering from sports injury with professional support"
                 fill
                 className="object-cover"
                 priority
@@ -56,226 +64,152 @@ export default function SportsInjuryRecovery() {
         </div>
       </section>
 
-      {/* Main Content */}
-      <section className="py-12 sm:py-16">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg dark:prose-invert max-w-none">
-            <h2 className="text-3xl font-bold mt-8 mb-4">Understanding Sports Injuries</h2>
-            <p>
-              Sports injuries are common among athletes and active individuals across all age groups and skill levels. Whether you're a professional athlete, weekend warrior, or fitness enthusiast in Vasundhara, Ghaziabad, Noida, Indirapuram, Raj Nagar, or Vaishali, sports injuries can significantly impact your performance and quality of life. Our specialized physiotherapy services provide comprehensive sports injury recovery programs designed to get you back in the game as quickly and safely as possible.
-            </p>
-
-            <h2 className="text-3xl font-bold mt-8 mb-4">Types of Sports Injuries We Treat</h2>
-
-            <h3 className="text-2xl font-bold mt-6 mb-3">Sprains and Strains</h3>
-            <p>
-              Sprains (ligament injuries) and strains (muscle or tendon injuries) are among the most common sports injuries. Our physiotherapists in Vasundhara provide immediate and ongoing treatment to reduce pain, swelling, and disability while promoting healthy healing. Early intervention in sports injury recovery can significantly reduce recovery time and prevent chronic instability.
-            </p>
-
-            <h3 className="text-2xl font-bold mt-6 mb-3">Overuse Injuries</h3>
-            <p>
-              Overuse injuries develop gradually from repetitive stress. These include tendinitis, bursitis, and stress fractures. Our sports injury recovery programs in Ghaziabad, Noida, and surrounding areas address the underlying causes of overuse injuries, including training errors, biomechanical issues, and muscle imbalances, providing lasting solutions.
-            </p>
-
-            <h3 className="text-2xl font-bold mt-6 mb-3">Acute Impact Injuries</h3>
-            <p>
-              Direct impacts and collisions can cause significant acute injuries. Our physiotherapists in Vasundhara manage acute impact injuries through structured rehabilitation that progresses safely while protecting the injured structures during recovery.
-            </p>
-
-            <h3 className="text-2xl font-bold mt-6 mb-3">Specific Sports Injuries</h3>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>Ankle sprains and instability</li>
-              <li>Knee injuries including ACL and MCL sprains</li>
-              <li>Shoulder injuries and rotator cuff strains</li>
-              <li>Hamstring and quadriceps strains</li>
-              <li>Plantar fasciitis and heel pain</li>
-              <li>Tennis and golfer's elbow</li>
-              <li>Stress fractures</li>
-              <li>Muscle contusions and bruising</li>
-            </ul>
-
-            <h2 className="text-3xl font-bold mt-8 mb-4">Immediate Care for Sports Injuries</h2>
-            <p>
-              The initial management of sports injuries is critical for optimal recovery. Our sports injury recovery protocols in Vasundhara follow the established RICE (Rest, Ice, Compression, Elevation) and POLICE (Protection, Optimal Loading, Ice, Compression, Elevation) principles to minimize damage and accelerate healing.
-            </p>
-
-            <h3 className="text-2xl font-bold mt-6 mb-3">First 48-72 Hours:</h3>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>Protection from further injury through activity modification</li>
-              <li>Ice application to reduce swelling and pain</li>
-              <li>Compression bandaging for swelling control</li>
-              <li>Elevation to minimize fluid accumulation</li>
-              <li>Controlled, gentle movement when appropriate</li>
-              <li>Professional assessment to determine severity</li>
-            </ul>
-
-            <h2 className="text-3xl font-bold mt-8 mb-4">Comprehensive Sports Injury Recovery Program</h2>
-            <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-lg mb-6">
-              <Image
-                src="/assets/services/sports_approach.webp"
-                alt="Sports Injury Recovery Program"
-                fill
-                className="object-cover"
-              />
+      {/* Understanding & Conditions */}
+      <section className="py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-12">
+            <div>
+              <h2 className="text-3xl font-bold mb-6 flex items-center gap-2">
+                <Zap className="text-primary w-6 h-6" /> Overcome Your Injury
+              </h2>
+              <p className="text-foreground/80 leading-relaxed mb-6">
+                Whether you're a professional athlete, a gym enthusiast, or someone who loves their weekend cricket matches, a sports injury can drastically halt your momentum. 
+                <br/><br/>
+                Ignoring minor sprains or rushing back without proper rehab often leads to chronic instability or worse tears. Our <strong>home sports rehabilitation</strong> focuses on biomechanical correction, so you don't just heal—you prevent re-injury.
+              </p>
             </div>
-            <p>
-              Our sports injury recovery approach in Ghaziabad and surrounding areas progresses through distinct phases, each designed to gradually restore function, strength, and confidence to return to sport.
-            </p>
+            <div className="bg-muted/30 p-8 rounded-2xl border border-border">
+              <h3 className="text-xl font-bold mb-6">Common Injuries We Rehabilitate:</h3>
+              <ul className="space-y-4">
+                {[
+                  "Ankle Sprains & Instability",
+                  "Knee Injuries (ACL, MCL, Meniscus Tears)",
+                  "Shoulder Impingement & Rotator Cuff Strains",
+                  "Muscle Tears (Hamstrings, Quads, Calf)",
+                  "Overuse Injuries (Tennis/Golfer's Elbow)",
+                  "Plantar Fasciitis & Achilles Tendinitis"
+                ].map((cause, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                    <span className="text-foreground/80">{cause}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <h3 className="text-2xl font-bold mt-6 mb-3">Phase 1: Acute Phase (0-3 Days)</h3>
-            <p>
-              Focus on protecting the injury and managing symptoms:
-            </p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>Pain and swelling management</li>
-              <li>Gentle range of motion within pain tolerance</li>
-              <li>Immobilization or bracing as appropriate</li>
-              <li>Education on injury care and recovery expectations</li>
-            </ul>
-
-            <h3 className="text-2xl font-bold mt-6 mb-3">Phase 2: Early Mobilization (3 Days - 2 Weeks)</h3>
-            <p>
-              Transition to controlled progressive movement:
-            </p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>Increased range of motion exercises</li>
-              <li>Isometric muscle strengthening</li>
-              <li>Proprioceptive and balance training initiation</li>
-              <li>Swelling management through modalities</li>
-              <li>Functional movement retraining</li>
-            </ul>
-
-            <h3 className="text-2xl font-bold mt-6 mb-3">Phase 3: Progressive Strengthening (2-6 Weeks)</h3>
-            <p>
-              Build strength and return to activity:
-            </p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>Isotonic and resistance exercises</li>
-              <li>Advanced proprioceptive training</li>
-              <li>Balance and coordination development</li>
-              <li>Sport-specific movement patterns</li>
-              <li>Gradual return to light activity</li>
-            </ul>
-
-            <h3 className="text-2xl font-bold mt-6 mb-3">Phase 4: Advanced Rehabilitation (6+ Weeks)</h3>
-            <p>
-              Sport-specific training and return to competition:
-            </p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>Sport-specific technique work</li>
-              <li>High-intensity strengthening exercises</li>
-              <li>Agility, speed, and power development</li>
-              <li>Sport-specific drills and practice</li>
-              <li>Graduated return to competition protocol</li>
-              <li>Injury prevention strategies</li>
-            </ul>
-
-            <h2 className="text-3xl font-bold mt-8 mb-4">Assessment and Diagnosis</h2>
-            <p>
-              Our physiotherapists in Vasundhara, Noida, Indirapuram, Raj Nagar, and Vaishali perform thorough assessments to accurately diagnose sports injuries. We evaluate pain patterns, range of motion, muscle strength, proprioception, and functional abilities. This comprehensive assessment guides our treatment plans and helps predict recovery timelines.
-            </p>
-
-            <h2 className="text-3xl font-bold mt-8 mb-4">Manual Therapy for Sports Injuries</h2>
-            <p>
-              Hands-on treatment accelerates sports injury recovery by improving mobility, reducing pain, and promoting healing:
-            </p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>Soft tissue massage and mobilization</li>
-              <li>Joint mobilization to restore normal mechanics</li>
-              <li>Myofascial release techniques</li>
-              <li>Scar tissue management</li>
-              <li>Manual stretching and proprioceptive training</li>
-            </ul>
-
-            <h2 className="text-3xl font-bold mt-8 mb-4">Therapeutic Modalities</h2>
-            <p>
-              Our sports injury recovery programs in Ghaziabad utilize modern therapeutic modalities to support healing:
-            </p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li><strong>Cryotherapy:</strong> Ice and cold therapy for acute inflammation</li>
-              <li><strong>Thermotherapy:</strong> Heat therapy for muscle relaxation and healing</li>
-              <li><strong>Electrotherapy:</strong> TENS and other electrical modalities for pain relief</li>
-              <li><strong>Ultrasound:</strong> Promoting tissue healing and cellular repair</li>
-              <li><strong>Compression therapy:</strong> Managing swelling and promoting circulation</li>
-            </ul>
-
-            <h2 className="text-3xl font-bold mt-8 mb-4">Proprioceptive and Balance Training</h2>
-            <p>
-              Sports injury recovery isn't just about strength and range of motion. Proprioceptive training—developing the body's awareness of position and movement—is crucial for athletic performance and injury prevention. Our physiotherapists in Vasundhara incorporate progressive proprioceptive exercises that challenge balance, coordination, and neuromuscular control in sport-specific contexts.
-            </p>
-
-            <h2 className="text-3xl font-bold mt-8 mb-4">Return to Sport Guidelines</h2>
-            <p>
-              One of our primary goals in sports injury recovery is enabling safe return to sport and physical activity. We follow evidence-based return-to-sport protocols that consider:
-            </p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>Adequate healing time for tissue structures</li>
-              <li>Achievement of necessary strength and flexibility</li>
-              <li>Restored proprioception and balance</li>
-              <li>Confidence and psychological readiness</li>
-              <li>Sport-specific skill and conditioning</li>
-              <li>Gradual progression to full participation</li>
-            </ul>
-
-            <h2 className="text-3xl font-bold mt-8 mb-4">Injury Prevention Training</h2>
-            <p>
-              Prevention is better than cure. Our physiotherapists in Noida, Indirapuram, Raj Nagar, Ghaziabad, Vasundhara, and Vaishali provide injury prevention programs for athletes. These include:
-            </p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>Warm-up and cool-down protocols</li>
-              <li>Flexibility and mobility routines</li>
-              <li>Strengthening exercises for injury prevention</li>
-              <li>Proper technique training</li>
-              <li>Biomechanical analysis and correction</li>
-              <li>Training load management</li>
-              <li>Appropriate footwear and equipment selection</li>
-            </ul>
-
-            <h2 className="text-3xl font-bold mt-8 mb-4">Customized Home Exercise Programs</h2>
-            <p>
-              Success in sports injury recovery depends on consistent adherence to exercises at home. Our physiotherapists provide detailed, easy-to-follow home exercise programs tailored to your injury and recovery phase. These programs are essential for maintaining progress and accelerating recovery between therapy sessions.
-            </p>
-
-            <h2 className="text-3xl font-bold mt-8 mb-4">Why Choose Our Sports Injury Recovery Services?</h2>
-            <p>
-              When selecting physiotherapy for sports injury recovery in Vasundhara, Ghaziabad, Noida, Indirapuram, Raj Nagar, or Vaishali, experience with athletes is crucial:
-            </p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>Specialized experience in sports injury management</li>
-              <li>Understanding of athletic performance demands</li>
-              <li>Evidence-based return-to-sport protocols</li>
-              <li>Sport-specific rehabilitation expertise</li>
-              <li>Injury prevention knowledge and training</li>
-              <li>Communication with coaches and trainers</li>
-              <li>Convenient home physiotherapy services</li>
-              <li>Commitment to getting you back to your sport</li>
-            </ul>
-
-            <h2 className="text-3xl font-bold mt-8 mb-4">Recovery Timeline</h2>
-            <p>
-              Sports injury recovery timelines vary based on injury severity, injury type, your age, and fitness level. Minor sprains may resolve in 1-3 weeks, while significant ligament injuries or fractures may require 2-3 months. More serious injuries may require 4-6 months or longer. During your initial assessment in Vasundhara or other service areas, we'll provide realistic recovery expectations.
-            </p>
-
-            <h2 className="text-3xl font-bold mt-8 mb-4">Get Back in the Game</h2>
-            <p>
-              Don't let sports injuries sideline you. If you're experiencing pain or limited function from a sports injury in Vasundhara, Ghaziabad, Noida, Indirapuram, Raj Nagar, or Vaishali, contact our experienced sports injury recovery specialists today. We're committed to providing the therapy you need to recover fully and return to your sport stronger and more confident than before.
+      {/* 4 Phases of Sports Rehab */}
+      <section className="py-16 bg-gradient-to-b from-transparent to-muted/20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="text-3xl font-bold mb-4">Our "Return to Sport" Protocol</h2>
+            <p className="text-foreground/70 text-lg">
+              We progress you through clinical phases to ensure your muscles, tendons, and ligaments are 100% ready for high-impact activities.
             </p>
           </div>
 
-          {/* CTA Card */}
-          <Card className="mt-12 bg-primary/5 border-primary/20">
-            <CardHeader>
-              <CardTitle>Ready for Your Sports Injury Recovery?</CardTitle>
-              <CardDescription>Book your physiotherapy session in Vasundhara, Ghaziabad, Noida, Indirapuram, Raj Nagar, or Vaishali today</CardDescription>
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
+            <div className="relative w-full rounded-2xl overflow-hidden shadow-lg border border-border/50 order-2 md:order-1 bg-muted/20">
+              <Image
+                src="/assets/services/sports_approach.webp"
+                alt="Advanced sports injury rehabilitation program"
+                width={800}
+                height={600}
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <div className="space-y-8 order-1 md:order-2">
+              <div>
+                <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
+                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary text-sm">
+                    1
+                  </span>
+                  Acute Care (0-72 Hours)
+                </h3>
+                <p className="text-foreground/70 pl-10">Implementing POLICE (Protection, Optimal Loading, Ice, Compression, Elevation) protocols to rapidly drop swelling and acute pain.</p>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
+                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary text-sm">
+                    2
+                  </span>
+                  Early Mobilization (1-2 Weeks)
+                </h3>
+                <p className="text-foreground/70 pl-10">Manual therapy and gentle active-assisted movements to restore full pain-free Range of Motion (ROM) without stressing the healing tissue.</p>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
+                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary text-sm">
+                    3
+                  </span>
+                  Progressive Loading (2-6 Weeks)
+                </h3>
+                <p className="text-foreground/70 pl-10">Rebuilding foundational strength through isotonic resistance training, proprioceptive balance exercises, and neuromuscular control.</p>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
+                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary text-sm">
+                    4
+                  </span>
+                  Sport-Specific Conditioning
+                </h3>
+                <p className="text-foreground/70 pl-10">High-intensity plyometrics, agility drills, and explosive power movements mimicking your specific sport to ensure you are competition-ready.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Info Grid */}
+      <section className="py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-background border border-border p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+              <Clock className="w-8 h-8 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3">Recovery Timeline</h3>
+              <p className="text-foreground/70 text-sm leading-relaxed">
+                Minor strains/sprains usually heal in <strong>1-3 weeks</strong>. Moderate ligament tears may take 4-8 weeks, while post-surgical sports rehab (like ACL) requires a structured 4-6 month roadmap.
+              </p>
+            </div>
+            <div className="bg-background border border-border p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+              <Activity className="w-8 h-8 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3">Advanced Healing</h3>
+              <p className="text-foreground/70 text-sm leading-relaxed">
+                We use modern modalities like Ultrasound therapy for deep tissue cellular repair, TENS for pain blocking, and customized taping (K-Tape) to support joints during movement.
+              </p>
+            </div>
+            <div className="bg-background border border-border p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+              <MapPin className="w-8 h-8 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3">Service Areas</h3>
+              <p className="text-foreground/70 text-sm leading-relaxed">
+                Skip the clinic queue. We bring sports rehabilitation to your home or local gym facility across <strong>Ghaziabad and Noida</strong>, including Vasundhara, Indirapuram, and Raj Nagar.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA Card */}
+      <section className="py-12 pb-24">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <Card className="bg-primary/5 border-primary/20 shadow-md">
+            <CardHeader className="text-center pb-2">
+              <CardTitle className="text-2xl md:text-3xl">Don't Let the Injury Bench You Forever</CardTitle>
+              <CardDescription className="text-base mt-2">
+                Proper rehab prevents chronic pain and re-injury. Book an expert assessment and start your comeback today.
+              </CardDescription>
             </CardHeader>
-            <CardContent>
-              <Button asChild size="lg">
-                <Link href="/contact">Schedule Your Appointment</Link>
+            <CardContent className="flex justify-center pt-6">
+              <Button asChild size="lg" className="w-full sm:w-auto text-md px-8">
+                <Link href="/contact">Book Your Home Assessment</Link>
               </Button>
             </CardContent>
           </Card>
         </div>
       </section>
+
     </main>
   )
 }
