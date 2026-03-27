@@ -62,7 +62,7 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* --- Claude Point #2 Fix: Structured Data (Schema) --- */}
+        {/* SEO Fix: Structured Data matched with Google Business Profile */}
         <Script
           id="structured-data"
           type="application/ld+json"
@@ -79,16 +79,16 @@ export default function RootLayout({
             "priceRange": "$$",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "Home Visit Service",
-              "addressLocality": "Delhi NCR",
-              "addressRegion": "DL",
-              "postalCode": "110001",
+              "streetAddress": "Savy Ville De, Raj Nagar Extension",
+              "addressLocality": "Ghaziabad",
+              "addressRegion": "UP",
+              "postalCode": "201012",
               "addressCountry": "IN"
             },
             "geo": {
               "@type": "GeoCoordinates",
-              "latitude": 28.6139,
-              "longitude": 77.2090
+              "latitude": 28.7058,
+              "longitude": 77.4437
             },
             "openingHoursSpecification": {
               "@type": "OpeningHoursSpecification",
@@ -96,7 +96,7 @@ export default function RootLayout({
                 "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
               ],
               "opens": "08:00",
-              "closes": "20:00"
+              "closes": "19:30"
             },
             "sameAs": [
               "https://share.google/hd99r79Hofg1p2Hsd"
