@@ -6,15 +6,8 @@ import './globals.css'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 
-const inter = Inter({ 
-  subsets: ["latin"],
-  variable: '--font-inter'
-});
-
-const dmSans = DM_Sans({ 
-  subsets: ["latin"],
-  variable: '--font-dm-sans'
-});
+const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
+const dmSans = DM_Sans({ subsets: ["latin"], variable: '--font-dm-sans' });
 
 export const metadata: Metadata = {
   title: 'DelhiPhysio@Home | Expert Home Physiotherapy in Delhi NCR & Ghaziabad',
@@ -60,16 +53,55 @@ export default function RootLayout({
           src="https://www.googletagmanager.com/gtag/js?id=G-JC5F20EXDT"
           strategy="afterInteractive"
         />
-        <Script 
-          id="google-analytics" 
-          strategy="afterInteractive"
-        >
+        <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-JC5F20EXDT');
           `}
+        </Script>
+
+        {/* --- Claude Point #2 Fix: Structured Data (Schema) --- */}
+        <Script
+          id="structured-data"
+          type="application/ld+json"
+          strategy="afterInteractive"
+        >
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "MedicalBusiness",
+            "name": "Delhi Physio At Home",
+            "image": "https://delhiphysioathome.com/favicon.ico",
+            "@id": "https://delhiphysioathome.com",
+            "url": "https://delhiphysioathome.com",
+            "telephone": "+918130171272",
+            "priceRange": "$$",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Home Visit Service",
+              "addressLocality": "Delhi NCR",
+              "addressRegion": "DL",
+              "postalCode": "110001",
+              "addressCountry": "IN"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 28.6139,
+              "longitude": 77.2090
+            },
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+              ],
+              "opens": "08:00",
+              "closes": "20:00"
+            },
+            "sameAs": [
+              "https://share.google/hd99r79Hofg1p2Hsd"
+            ]
+          })}
         </Script>
       </head>
       <body className={`${inter.variable} ${dmSans.variable} font-sans antialiased`}>
