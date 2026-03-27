@@ -1,29 +1,17 @@
 import { Metadata } from 'next'
 import Image from 'next/image'
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import Link from "next/link"
+import { CheckCircle2, Clock, MapPin, Activity, ArrowRight, Phone, ShieldCheck } from "lucide-react"
 
-export const metadata = {
-  title: "Back Pain Treatment & Relief in Vasundhara, Ghaziabad | Physiotherapy",
-  description: "Expert back pain treatment in Vasundhara, Ghaziabad, Noida, Indirapuram, Raj Nagar, Vaishali. Comprehensive physiotherapy for chronic back pain, sciatica, and spinal issues. Book your session today.",
-  keywords: [
-    "back pain treatment vasundhara",
-    "physiotherapy vasundhara",
-    "back pain relief ghaziabad",
-    "sciatica treatment noida",
-    "spinal pain therapy indirapuram",
-    "chronic back pain treatment vaishali",
-    "back pain physician raj nagar",
-    "best physiotherapist for back pain vasundhara",
-    "home physiotherapy back pain ghaziabad",
-    "lower back pain treatment",
-    "upper back pain relief",
-    "back pain physiotherapy noida",
-  ].join(", "),
+export const metadata: Metadata = {
+  title: "Back Pain Treatment at Home in Delhi NCR, Noida & Ghaziabad",
+  description: "Expert home physiotherapy for back pain, sciatica, and spinal issues in Vasundhara, Ghaziabad, Noida, and Indirapuram. Book your home session today.",
+  keywords: "home physiotherapy back pain, back pain treatment vasundhara, back pain relief ghaziabad, sciatica treatment noida, best physiotherapist for back pain",
   openGraph: {
-    title: "Back Pain Treatment in Vasundhara, Ghaziabad - Expert Physiotherapy",
-    description: "Professional back pain treatment and physiotherapy services in Vasundhara, Ghaziabad, Noida, and nearby areas. Specializing in chronic back pain and sciatica relief.",
+    title: "Back Pain Treatment at Home - Expert Physiotherapy",
+    description: "Professional back pain treatment and physiotherapy services delivered to your doorstep in Delhi NCR.",
     type: "website",
   },
 }
@@ -31,22 +19,39 @@ export const metadata = {
 export default function BackPainTreatment() {
   return (
     <main className="min-h-screen bg-background">
+      
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary/10 to-primary/5 py-12 sm:py-16">
+      <section className="bg-gradient-to-r from-primary/10 to-primary/5 py-12 sm:py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-foreground mb-4">
-                Back Pain Treatment & Relief
+          <div className="grid md:grid-cols-2 gap-10 items-center">
+            <div className="space-y-6">
+              <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-foreground leading-tight">
+                Expert Back Pain Treatment at Your Doorstep
               </h1>
-              <p className="text-lg text-muted-foreground max-w-3xl">
-                Expert physiotherapy treatment for back pain, sciatica, and spinal issues in Vasundhara, Ghaziabad, Noida, Indirapuram, Raj Nagar, and Vaishali
+              <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
+                Comprehensive home physiotherapy for chronic back pain, sciatica, and spinal issues across Vasundhara, Ghaziabad, Noida, and Indirapuram.
               </p>
+              <div className="flex flex-wrap gap-4 pt-2">
+                <a 
+                  href="https://wa.me/918130171272" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-md font-semibold hover:opacity-90 transition-opacity shadow-sm"
+                >
+                  WhatsApp Us <ArrowRight className="w-4 h-4" />
+                </a>
+                <a 
+                  href="tel:+918130171272" 
+                  className="inline-flex items-center gap-2 bg-background border border-border text-foreground px-6 py-3 rounded-md font-semibold hover:bg-muted transition-colors shadow-sm"
+                >
+                  <Phone className="w-4 h-4" /> +91 81301 71272
+                </a>
+              </div>
             </div>
-            <div className="relative h-80 w-full rounded-lg overflow-hidden shadow-lg">
+            <div className="relative h-[350px] w-full rounded-2xl overflow-hidden shadow-xl border border-border/50">
               <Image
                 src="/back-pain-hero.png"
-                alt="Patient with back pain touching lower back"
+                alt="Patient receiving back pain treatment at home"
                 fill
                 className="object-cover"
                 priority
@@ -56,148 +61,146 @@ export default function BackPainTreatment() {
         </div>
       </section>
 
-      {/* Main Content */}
-      <section className="py-12 sm:py-16">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg dark:prose-invert max-w-none">
-            <h2 className="text-3xl font-bold mt-8 mb-4">Understanding Back Pain</h2>
-            <p>
-              Back pain is one of the most common health complaints affecting millions of people globally. Whether you're in Vasundhara, Ghaziabad, Noida, Indirapuram, Raj Nagar, or Vaishali, back pain can significantly impact your quality of life, limiting your ability to work, exercise, and enjoy daily activities. Our specialized physiotherapy services in Vasundhara offer comprehensive treatment solutions designed to address the root cause of your back pain and provide long-lasting relief.
+      {/* Understanding & Causes Section */}
+      <section className="py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-12">
+            <div>
+              <h2 className="text-3xl font-bold mb-6 flex items-center gap-2">
+                <Activity className="text-primary w-6 h-6" /> Understanding Back Pain
+              </h2>
+              <p className="text-foreground/80 leading-relaxed mb-6">
+                Back pain can significantly impact your quality of life, limiting your ability to work, exercise, and enjoy daily activities. Modern lifestyles, particularly desk jobs and sedentary routines, have made back pain increasingly prevalent. 
+                <br/><br/>
+                Through our specialized <strong>home physiotherapy services</strong>, we aim to address the root cause of your pain without you needing to travel to a clinic while in discomfort.
+              </p>
+            </div>
+            <div className="bg-muted/30 p-8 rounded-2xl border border-border">
+              <h3 className="text-xl font-bold mb-6">Common Causes We Treat:</h3>
+              <ul className="space-y-4">
+                {[
+                  "Muscle or ligament strain from lifting or sudden movements",
+                  "Poor posture during work (especially office workers)",
+                  "Herniated or bulging discs pressing on nerves",
+                  "Sciatica causing radiating pain down the legs",
+                  "Arthritis and degenerative disc disease",
+                  "Spinal stenosis (narrowing of the spinal canal)"
+                ].map((cause, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                    <span className="text-foreground/80">{cause}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Treatment Approach Section */}
+      <section className="py-16 bg-gradient-to-b from-transparent to-muted/20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="text-3xl font-bold mb-4">Our Home Treatment Approach</h2>
+            <p className="text-foreground/70 text-lg">
+              We believe in a holistic approach. Rather than simply masking symptoms with pain medication, we focus on addressing the underlying causes right in the comfort of your home.
             </p>
+          </div>
 
-            <h2 className="text-3xl font-bold mt-8 mb-4">What Causes Back Pain?</h2>
-            <p>
-              Back pain can originate from various sources, including muscle strain, poor posture, herniated discs, spinal stenosis, and degenerative disc disease. Modern lifestyles, particularly desk jobs and sedentary routines, have made back pain increasingly prevalent in areas like Ghaziabad, Noida, and Indirapuram. Whether you experience acute pain from an injury or chronic pain lasting more than three months, our physiotherapists in Vasundhara are equipped to diagnose and treat your condition effectively.
-            </p>
-
-            <h3 className="text-2xl font-bold mt-6 mb-3">Common Causes Include:</h3>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>Muscle or ligament strain from lifting heavy objects or sudden movements</li>
-              <li>Poor posture during work, especially among office workers in Noida and Ghaziabad</li>
-              <li>Herniated or bulging discs pressing on nerves</li>
-              <li>Spinal stenosis (narrowing of the spinal canal)</li>
-              <li>Arthritis and degenerative disc disease</li>
-              <li>Sciatica causing radiating pain down the legs</li>
-              <li>Scoliosis and other spinal curvatures</li>
-              <li>Injuries from accidents or sports</li>
-            </ul>
-
-            <h2 className="text-3xl font-bold mt-8 mb-4">Our Back Pain Treatment Approach</h2>
-            <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-lg mb-6">
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
+            <div className="relative h-[400px] w-full rounded-2xl overflow-hidden shadow-lg border border-border/50 order-2 md:order-1">
               <Image
                 src="/back-pain-treatment.png"
-                alt="Professional Physiotherapy Treatment"
+                alt="Professional Physiotherapy Treatment at Home"
                 fill
                 className="object-cover object-bottom"
               />
             </div>
-            <p>
-              At our physiotherapy clinic in Vasundhara, we believe in a holistic approach to back pain treatment. Rather than simply masking symptoms with pain medication, we focus on addressing the underlying causes. Our certified physiotherapists conduct thorough assessments to understand your specific condition before designing a personalized treatment plan tailored to your needs.
-            </p>
-
-            <h3 className="text-2xl font-bold mt-6 mb-3">Comprehensive Assessment</h3>
-            <p>
-              Our physiotherapists in Vasundhara, Ghaziabad, Noida, Indirapuram, Raj Nagar, and Vaishali begin with a detailed evaluation including your medical history, lifestyle factors, and functional limitations. We may use diagnostic imaging when necessary and perform specific orthopedic tests to identify the exact source of your pain.
-            </p>
-
-            <h3 className="text-2xl font-bold mt-6 mb-3">Manual Therapy Techniques</h3>
-            <p>
-              Manual therapy is a cornerstone of our back pain treatment in Vasundhara. Our trained physiotherapists use hands-on techniques including:
-            </p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li><strong>Spinal mobilization:</strong> Gentle movements to improve spinal joint mobility and reduce stiffness</li>
-              <li><strong>Soft tissue massage:</strong> Therapeutic massage to relieve muscle tension and improve blood flow</li>
-              <li><strong>Myofascial release:</strong> Targeting the connective tissue surrounding muscles to reduce pain</li>
-              <li><strong>Trigger point therapy:</strong> Addressing specific points of muscle tension</li>
-              <li><strong>Joint manipulation:</strong> Controlled movements to restore normal spinal alignment</li>
-            </ul>
-
-            <h3 className="text-2xl font-bold mt-6 mb-3">Targeted Exercise Program</h3>
-            <p>
-              One of the most effective components of back pain treatment is a customized exercise program. Our physiotherapists in Vasundhara design specific exercises to:
-            </p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>Strengthen core muscles that support the spine</li>
-              <li>Improve flexibility and range of motion</li>
-              <li>Correct posture and body mechanics</li>
-              <li>Stabilize the spine and prevent future injuries</li>
-              <li>Gradually increase functional capacity</li>
-            </ul>
-
-            <h3 className="text-2xl font-bold mt-6 mb-3">Modalities and Technology</h3>
-            <p>
-              Our back pain treatment in Ghaziabad and surrounding areas, including Noida, Indirapuram, Raj Nagar, and Vaishali, utilizes modern physiotherapy modalities:
-            </p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li><strong>TENS therapy:</strong> Transcutaneous electrical nerve stimulation for pain relief</li>
-              <li><strong>Heat therapy:</strong> Improving circulation and relaxing muscles</li>
-              <li><strong>Ultrasound therapy:</strong> Promoting tissue healing</li>
-              <li><strong>Interferential current:</strong> Reducing inflammation and pain</li>
-              <li><strong>Traction therapy:</strong> Decompressing the spine and relieving nerve pressure</li>
-            </ul>
-
-            <h2 className="text-3xl font-bold mt-8 mb-4">Sciatica and Radiating Pain Treatment</h2>
-            <p>
-              Sciatica, a form of back pain that radiates down the leg, is particularly common in areas with sedentary workforces like Noida and Ghaziabad. This condition occurs when the sciatic nerve is compressed or irritated. Our specialized back pain treatment in Vasundhara includes specific techniques to relieve nerve compression and reduce radiating symptoms. Through targeted exercises, manual therapy, and postural correction, we help patients regain mobility and eliminate pain.
-            </p>
-
-            <h2 className="text-3xl font-bold mt-8 mb-4">Lifestyle and Prevention Tips</h2>
-            <p>
-              Beyond treatment sessions, managing back pain requires lifestyle modifications. Our physiotherapists in Vasundhara, Ghaziabad, Noida, Indirapuram, Raj Nagar, and Vaishali provide comprehensive guidance including:
-            </p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li><strong>Ergonomics:</strong> Proper workspace setup to prevent recurring pain</li>
-              <li><strong>Posture training:</strong> Maintaining correct alignment during daily activities</li>
-              <li><strong>Activity modification:</strong> Adapting movements to protect your back</li>
-              <li><strong>Strengthening routines:</strong> Home exercises to maintain improvements</li>
-              <li><strong>Stress management:</strong> Understanding the connection between stress and muscle tension</li>
-              <li><strong>Weight management:</strong> Reducing strain on the spine</li>
-              <li><strong>Sleep positioning:</strong> Proper sleep habits for spinal health</li>
-            </ul>
-
-            <h2 className="text-3xl font-bold mt-8 mb-4">Why Choose Our Physiotherapy Services?</h2>
-            <p>
-              When seeking back pain treatment in Vasundhara, Ghaziabad, Noida, Indirapuram, Raj Nagar, or Vaishali, you want experienced, certified professionals. Our team brings years of expertise in treating various back pain conditions. We are committed to:
-            </p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>Providing personalized treatment plans based on thorough assessments</li>
-              <li>Using evidence-based therapeutic techniques</li>
-              <li>Offering convenient home physiotherapy services</li>
-              <li>Ensuring transparent communication about treatment progress</li>
-              <li>Empowering patients with knowledge for self-management</li>
-              <li>Achieving long-term results without dependency on medication</li>
-            </ul>
-
-            <h2 className="text-3xl font-bold mt-8 mb-4">How Long Does Treatment Take?</h2>
-            <p>
-              The duration of back pain treatment varies depending on the severity of your condition, how long you've had pain, and your commitment to the treatment plan. Acute back pain often responds quickly to treatment, while chronic conditions may require longer-term management. Most patients begin experiencing significant relief within 4-6 weeks of consistent physiotherapy in Vasundhara, Ghaziabad, or other areas. However, we develop treatment timelines specific to your condition during the initial assessment.
-            </p>
-
-            <h2 className="text-3xl font-bold mt-8 mb-4">Testimonials from Our Patients</h2>
-            <p>
-              Hundreds of patients across Vasundhara, Ghaziabad, Noida, Indirapuram, Raj Nagar, and Vaishali have found relief through our back pain treatment programs. Many have successfully returned to their normal activities and sports after working with our physiotherapists. Their success stories motivate us to continue delivering exceptional care.
-            </p>
-
-            <h2 className="text-3xl font-bold mt-8 mb-4">Get Started with Your Back Pain Treatment Today</h2>
-            <p>
-              Don't let back pain limit your life. Whether you're in Vasundhara, Ghaziabad, Noida, Indirapuram, Raj Nagar, or Vaishali, our experienced physiotherapists are ready to help you achieve lasting relief. Contact us today to schedule your comprehensive assessment and begin your journey to a pain-free life.
-            </p>
+            <div className="space-y-8 order-1 md:order-2">
+              <div>
+                <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
+                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary text-sm">1</span>
+                  Comprehensive Assessment
+                </h3>
+                <p className="text-foreground/70 pl-10">We begin with a detailed evaluation of your medical history, posture, and mobility to identify the exact source of your pain.</p>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
+                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary text-sm">2</span>
+                  Manual Therapy
+                </h3>
+                <p className="text-foreground/70 pl-10">Hands-on techniques including spinal mobilization, soft tissue massage, and myofascial release to relieve muscle tension.</p>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
+                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary text-sm">3</span>
+                  Targeted Exercises
+                </h3>
+                <p className="text-foreground/70 pl-10">Customized exercise programs to strengthen core muscles, improve flexibility, and stabilize your spine to prevent future injuries.</p>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
+                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary text-sm">4</span>
+                  Modern Modalities
+                </h3>
+                <p className="text-foreground/70 pl-10">We carry portable, advanced equipment like TENS/IFT machines and Ultrasound therapy for deep tissue healing and pain relief.</p>
+              </div>
+            </div>
           </div>
+        </div>
+      </section>
 
-          {/* CTA Card */}
-          <Card className="mt-12 bg-primary/5 border-primary/20">
-            <CardHeader>
-              <CardTitle>Ready to Relieve Your Back Pain?</CardTitle>
-              <CardDescription>Book your physiotherapy session in Vasundhara, Ghaziabad, Noida, Indirapuram, Raj Nagar, or Vaishali today</CardDescription>
+      {/* Info Grid (Timeline, Prevention, Areas) */}
+      <section className="py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-background border border-border p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+              <Clock className="w-8 h-8 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3">Expected Timeline</h3>
+              <p className="text-foreground/70 text-sm leading-relaxed">
+                Acute back pain often responds quickly to treatment. Most patients begin experiencing significant relief within <strong>2-3 sessions</strong>. Chronic conditions may require a tailored 4-6 week management plan for complete recovery.
+              </p>
+            </div>
+            <div className="bg-background border border-border p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+              <ShieldCheck className="w-8 h-8 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3">Lifestyle & Prevention</h3>
+              <ul className="space-y-2 text-sm text-foreground/70">
+                <li>• Ergonomic workspace setup</li>
+                <li>• Posture training for daily activities</li>
+                <li>• Weight management to reduce spinal strain</li>
+                <li>• Proper sleep positioning</li>
+              </ul>
+            </div>
+            <div className="bg-background border border-border p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+              <MapPin className="w-8 h-8 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3">Service Areas</h3>
+              <p className="text-foreground/70 text-sm leading-relaxed">
+                We provide prompt home visit services across <strong>Ghaziabad and Delhi NCR</strong>, with specialized focus areas including Vasundhara, Indirapuram, Raj Nagar Extension, Vaishali, and Noida.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA Card */}
+      <section className="py-12 pb-24">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <Card className="bg-primary/5 border-primary/20 shadow-md">
+            <CardHeader className="text-center pb-2">
+              <CardTitle className="text-2xl md:text-3xl">Ready to Relieve Your Back Pain?</CardTitle>
+              <CardDescription className="text-base mt-2">
+                Don't travel in pain. Book an expert home physiotherapy session today.
+              </CardDescription>
             </CardHeader>
-            <CardContent>
-              <Button asChild size="lg">
-                <Link href="/contact">Schedule Your Appointment</Link>
+            <CardContent className="flex justify-center pt-6">
+              <Button asChild size="lg" className="w-full sm:w-auto text-md px-8">
+                <Link href="/contact">Schedule Your Home Visit</Link>
               </Button>
             </CardContent>
           </Card>
         </div>
       </section>
+
     </main>
   )
 }
