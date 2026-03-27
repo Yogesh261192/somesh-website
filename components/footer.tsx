@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Phone, Mail, MapPin } from "lucide-react"
+import { Phone, Mail, MapPin, MapPinHouse } from "lucide-react"
 
 const quickLinks = [
   { name: "Home", href: "/" },
@@ -32,9 +32,22 @@ export function Footer() {
               </div>
               <span className="text-xl font-bold">delhiphysioathome</span>
             </div>
+            
             <p className="text-sm text-background/70 leading-relaxed">
               Professional home physiotherapy services in Delhi NCR. Expert care at your doorstep.
             </p>
+
+            {/* ---> YAHAN HAI NAYA ADDRESS BLOCK <--- */}
+            <div className="flex items-start gap-2 text-sm text-background/80 pt-2 pb-2">
+              <MapPinHouse className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+              <span>
+                <strong>Base Location:</strong><br/>
+                Savy Ville De, Raj Nagar Extension,<br/>
+                Ghaziabad, Uttar Pradesh 201003
+              </span>
+            </div>
+            {/* -------------------------------------- */}
+
             <div className="flex flex-col gap-3 pt-2">
               <a href="https://share.google/hd99r79Hofg1p2Hsd" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-background/80 hover:text-background transition-colors group">
                 <MapPin className="h-4 w-4 text-primary" />
