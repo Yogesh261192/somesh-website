@@ -2,6 +2,13 @@ import Link from "next/link"
 
 const blogs = [
   {
+    title: "Frozen Shoulder? Don't Suffer in Silence — Complete Home Physiotherapy Guide for Delhi NCR",
+    excerpt: "Stage-wise frozen shoulder treatment at home in Delhi NCR with exercises, dry needling, shockwave therapy and same-day physiotherapist visit.",
+    date: "March 30, 2026",
+    slug: "frozen-shoulder-treatment-at-home-delhi",
+    category: "Shoulder Pain & Mobility"
+  },
+  {
     title: "Knee Surgery Recovery at Home in Delhi NCR: A Complete Guide",
     excerpt: "Everything you need to know about post-operative physiotherapy at home after knee replacement or ACL surgery in Delhi, Ghaziabad, Noida & Gurgaon.",
     date: "March 23, 2026",
@@ -14,7 +21,7 @@ const blogs = [
     date: "March 21, 2026",
     slug: "desk-job-back-neck-pain",
     category: "Back & Neck Pain"
-  },
+  }
 ]
 
 export default function BlogsPage() {
