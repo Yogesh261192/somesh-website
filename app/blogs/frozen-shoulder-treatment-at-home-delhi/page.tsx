@@ -105,7 +105,7 @@ const content = {
       {
         heading: "Why Choose Delhi Physio At Home?",
         list: [
-          "✅ Certified team with female physiotherapist at home Delhi option",
+          "✅ Certified team with physiotherapist at home Delhi option",
           "✅ Same day home visit physiotherapist in Delhi NCR, Ghaziabad, Noida, Gurgaon",
           "✅ Expert in adhesive capsulitis physiotherapy and cervical spondylosis related shoulder pain",
           "✅ In-person manual therapy and guided shoulder exercises at home",
@@ -320,7 +320,7 @@ export default function FrozenShoulderBlog() {
 
         <div className="mt-8 text-sm text-muted-foreground">
           <p>
-            बेहतर परिणामों के लिए <Link href="/services/neck-pain-therapy" className="text-primary hover:underline">शरीर के कनेक्शन</Link> और <Link href="/blogs/desk-job-back-neck-pain" className="text-primary hover:underline">बैक/नेक पोस्चर टिप्स</Link> देखें।
+            Check Out <Link href="/services/neck-pain-therapy" className="text-primary hover:underline">Neck-Pain Therapy</Link> and <Link href="/blogs/desk-job-back-neck-pain" className="text-primary hover:underline">Back/Neck Posture tips</Link> as well
           </p>
         </div>
 
