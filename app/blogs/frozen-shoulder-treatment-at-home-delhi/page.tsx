@@ -227,11 +227,10 @@ const schema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Frozen Shoulder Treatment at Home in Delhi NCR | DelhiPhysio@Home",
-  "description": "Expert home physiotherapy for frozen shoulder in Delhi, Ghaziabad, Noida & Gurgaon. Stage-wise treatment, exercises & same-day booking.",
+  "description": "Expert home physiotherapy for frozen shoulder in Delhi, Ghaziabad, Noida & Gurgaon.",
   "author": { "@type": "Person", "name": "Dr. Somesh" },
   "publisher": { "@type": "Organization", "name": "DelhiPhysio@Home" },
-  "datePublished": new Date().toISOString(),
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://delhiphysioathome.com/blogs/frozen-shoulder-treatment-at-home-delhi" }
+  "datePublished": new Date().toISOString()
 }
 
 export default function FrozenShoulderBlog() {
@@ -251,8 +250,26 @@ export default function FrozenShoulderBlog() {
             <span>|</span>
             <span>{c.date}</span>
           </div>
-          <h1 className="text-3xl sm:text-4xl font-bold text-foreground leading-tight mb-4">{c.title}</h1>
+
+          <h1 className="text-3xl sm:text-4xl font-bold text-foreground leading-tight mb-4">
+            {c.title}
+          </h1>
+
           <p className="text-lg text-muted-foreground mb-3">{c.intro}</p>
+
+          <div className="mt-6 mb-10">
+            <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+              <iframe
+                src="https://www.youtube.com/embed/P5CSXeG7H9Q"
+                title="Frozen Shoulder Home Physiotherapy Guide"
+                className="absolute top-0 left-0 w-full h-full rounded-xl shadow-md"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+
           <div className="text-sm text-muted-foreground">
             <span>{c.author}</span>
             <span className="mx-2">•</span>
@@ -262,40 +279,20 @@ export default function FrozenShoulderBlog() {
           </div>
         </div>
 
-        <div className="flex justify-end mb-6">
-          <div className="flex items-center gap-1 bg-gray-100 rounded-full p-1">
-            <button
-              onClick={() => setLang("en")}
-              className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all ${lang === "en" ? "bg-white shadow text-primary" : "text-gray-500 hover:text-gray-700"}`}
-            >
-              English
-            </button>
-            <button
-              onClick={() => setLang("hi")}
-              className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all ${lang === "hi" ? "bg-white shadow text-primary" : "text-gray-500 hover:text-gray-700"}`}
-            >
-              हिन्दी
-            </button>
-          </div>
-        </div>
-
         <article className="space-y-8">
           {c.sections.map((section, idx) => (
             <section key={idx}>
               <h2 className="text-2xl font-bold text-foreground mb-3">{section.heading}</h2>
-              {section.content && <p className="text-muted-foreground leading-relaxed mb-3">{section.content}</p>}
+              {section.content && <p className="text-muted-foreground mb-3">{section.content}</p>}
               {section.list && (
-                <ul className={`space-y-2 ${section.warning ? "text-red-600" : "text-muted-foreground"}`}>
+                <ul className={`${section.warning ? "text-red-600" : "text-muted-foreground"}`}>
                   {section.list.map((item, j) => (
-                    <li key={j} className="flex items-start gap-2">
-                      <span className="mt-1">{section.warning ? "⚠" : "✓"}</span>
-                      <span>{item}</span>
-                    </li>
+                    <li key={j}>✓ {item}</li>
                   ))}
                 </ul>
               )}
               {section.numbered && (
-                <ol className="list-decimal ml-5 space-y-2 text-muted-foreground">
+                <ol className="list-decimal ml-5 text-muted-foreground">
                   {section.numbered.map((item, j) => (
                     <li key={j}>{item}</li>
                   ))}
@@ -305,27 +302,18 @@ export default function FrozenShoulderBlog() {
           ))}
         </article>
 
-        <div className="mt-12 bg-primary/5 border border-primary/20 rounded-2xl p-8 text-center">
-          <h2 className="text-2xl font-bold text-foreground mb-2">Book Your Session</h2>
-          <p className="text-muted-foreground mb-4">Fast same-day home visit available across Delhi NCR. Use this WhatsApp link for prioritized support.</p>
+        <div className="mt-12 text-center">
           <a
-            href="https://wa.me/918130171272?text=Hi,%20I%20need%20help%20with%20frozen%20shoulder"
+            href="https://wa.me/918130171272"
             target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors"
+            className="bg-primary text-white px-6 py-3 rounded-lg"
           >
-            WhatsApp का उपयोग करें
+            Book on WhatsApp
           </a>
         </div>
 
-        <div className="mt-8 text-sm text-muted-foreground">
-          <p>
-            Check Out <Link href="/services/neck-pain-therapy" className="text-primary hover:underline">Neck-Pain Therapy</Link> and <Link href="/blogs/desk-job-back-neck-pain" className="text-primary hover:underline">Back/Neck Posture tips</Link> as well
-          </p>
-        </div>
-
         <div className="mt-8 text-center">
-          <Link href="/blogs" className="text-sm text-muted-foreground hover:text-foreground transition-colors">← View All Blogs</Link>
+          <Link href="/blogs">← View All Blogs</Link>
         </div>
       </div>
     </main>
