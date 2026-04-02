@@ -21,6 +21,13 @@ const blogs = [
     date: "March 21, 2026",
     slug: "desk-job-back-neck-pain",
     category: "Back & Neck Pain"
+  },
+  {
+    title: "Slip Disc Treatment at Home | Sciatica Pain Relief Exercises (Delhi NCR Physio Guide)",
+    excerpt: "Home-based slip disc and sciatica physiotherapy in Delhi NCR with pain-relief exercises, posture fixes, and same-day home visit physiotherapist booking.",
+    date: "April 2, 2026",
+    slug: "slip-disc-treatment-at-home-delhi",
+    category: "Sciatica & Slip Disc"
   }
 ]
 
@@ -38,14 +45,17 @@ export default function BlogsPage() {
         </div>
 
         <div className="grid gap-8">
-          {blogs.map((blog) => (
-            <div key={blog.slug} className="bg-white rounded-2xl shadow-sm border border-border p-6 hover:shadow-md transition-shadow">
-              <div className="flex items-center gap-3 mb-3">
-                <span className="text-xs font-medium bg-primary/10 text-primary px-3 py-1 rounded-full">
-                  {blog.category}
-                </span>
-                <span className="text-xs text-muted-foreground">{blog.date}</span>
-              </div>
+          {blogs
+            .slice()
+            .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+            .map((blog) => (
+              <div key={blog.slug} className="bg-white rounded-2xl shadow-sm border border-border p-6 hover:shadow-md transition-shadow">
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="text-xs font-medium bg-primary/10 text-primary px-3 py-1 rounded-full">
+                    {blog.category}
+                  </span>
+                  <span className="text-xs text-muted-foreground">{blog.date}</span>
+                </div>
               <h2 className="text-xl font-semibold text-foreground mb-2">
                 {blog.title}
               </h2>

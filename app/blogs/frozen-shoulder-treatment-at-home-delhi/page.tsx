@@ -251,24 +251,28 @@ export default function FrozenShoulderBlog() {
             <span>{c.date}</span>
           </div>
 
+          <div className="mb-4 flex gap-2">
+            <button
+              type="button"
+              onClick={() => setLang("en")}
+              className={`px-3 py-1 rounded ${lang === "en" ? "bg-primary text-white" : "bg-muted/20 text-muted-foreground"}`}
+            >
+              English
+            </button>
+            <button
+              type="button"
+              onClick={() => setLang("hi")}
+              className={`px-3 py-1 rounded ${lang === "hi" ? "bg-primary text-white" : "bg-muted/20 text-muted-foreground"}`}
+            >
+              हिंदी
+            </button>
+          </div>
+
           <h1 className="text-3xl sm:text-4xl font-bold text-foreground leading-tight mb-4">
             {c.title}
           </h1>
 
           <p className="text-lg text-muted-foreground mb-3">{c.intro}</p>
-
-          <div className="mt-6 mb-10">
-            <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-              <iframe
-                src="https://www.youtube.com/embed/P5CSXeG7H9Q"
-                title="Frozen Shoulder Home Physiotherapy Guide"
-                className="absolute top-0 left-0 w-full h-full rounded-xl shadow-md"
-                loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
 
           <div className="text-sm text-muted-foreground">
             <span>{c.author}</span>
