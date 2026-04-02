@@ -5,7 +5,6 @@ import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
-import { HanumanBanner } from '@/components/hanuman-banner'
 
 const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
 const dmSans = DM_Sans({ subsets: ["latin"], variable: '--font-dm-sans' });
@@ -106,9 +105,8 @@ export default function RootLayout({
         </Script>
       </head>
       <body className={`${inter.variable} ${dmSans.variable} font-sans antialiased`}>
-        <HanumanBanner />
         <Header />
-        <main className="pt-16">{children}</main>
+        <main className="pt-8 sm:pt-10">{children}</main>
         <Footer />
         <Analytics />
       </body>
