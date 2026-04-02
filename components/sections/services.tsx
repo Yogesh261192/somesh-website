@@ -79,10 +79,10 @@ export function ServicesSection() {
             Our Services
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Comprehensive physiotherapy treatments delivered at your doorstep by certified professionals.
+            Expert Physiotherapist at Home in Delhi NCR | Ergonomic Posture & Consultation.
           </p>
           <p className="mt-2 text-sm text-muted-foreground">
-           You can find physio at home in delhi providing expert ergonomic posture advice training for Noida, Ghaziabad & Gurgaon.
+           Get personalized physiotherapy and ergonomic training at home across Delhi, Noida, Ghaziabad, and Gurgaon..
           </p>
         </div>
 

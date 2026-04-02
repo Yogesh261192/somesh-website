@@ -32,7 +32,7 @@ export function HeroSection() {
             </p>
 
             <p className="text-sm font-semibold text-foreground mt-2 max-w-xl">
-              ⭐ Trusted by 100+ patients across Delhi NCR | Most rated 5★ | Same Day Visit Available
+              ⭐ Top-Rated Physiotherapists at Home in Delhi, Noida & Ghaziabad | 5★ Clinical Excellence | Same Day Visit Available
             </p>
 
             <ul className="mt-4 grid grid-cols-2 gap-3 max-w-xs">
