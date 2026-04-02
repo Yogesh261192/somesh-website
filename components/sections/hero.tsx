@@ -24,21 +24,29 @@ export function HeroSection() {
               className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl text-balance"
               style={{ fontFamily: 'var(--font-display)' }}
             >
-              Professional Home Physiotherapy in Delhi NCR
+              Back Pain? Shoulder Pain? Get Relief at Home in Delhi NCR
             </h1>
             
             <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
-              Skip the clinic visits. Our certified physiotherapists come to your home, providing personalized treatment for faster recovery and lasting relief.
+              Book certified physiotherapist at home — same day visit available across Delhi NCR.
             </p>
 
-            <ul className="space-y-3">
-              {highlights.map((item) => (
-                <li key={item} className="flex items-center gap-3">
-                  <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                  <span className="text-foreground">{item}</span>
+            <p className="text-sm font-semibold text-foreground mt-2 max-w-xl">
+              ⭐ Trusted by hundreds of patients across Delhi NCR | Most rated 5★ | Same Day Visit Available
+            </p>
+
+            <ul className="mt-4 grid grid-cols-2 gap-3 max-w-xs">
+              {['Back Pain', 'Neck Pain', 'Sciatica', 'Frozen Shoulder'].map((item) => (
+                <li key={item} className="flex items-center gap-2 rounded-lg border border-border bg-card px-3 py-2 text-sm text-foreground">
+                  <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
+                  <span>{item}</span>
                 </li>
               ))}
             </ul>
+
+            <div className="text-sm font-semibold text-primary mb-2">
+              Book Your First Assessment Session at ₹500
+            </div>
 
             <div className="flex flex-col gap-4 sm:flex-row">
               <Button size="lg" className="gap-2" asChild>
@@ -58,6 +66,10 @@ export function HeroSection() {
                 </a>
               </Button>
             </div>
+
+            <p className="mt-3 text-sm text-muted-foreground">
+              Serving Delhi, Noida, Ghaziabad & Gurgaon
+            </p>
           </div>
 
           <div className="relative lg:pl-8">
