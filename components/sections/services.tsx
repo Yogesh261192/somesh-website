@@ -19,7 +19,7 @@ const services = [
   },
   {
     title: "Neck Pain Therapy",
-    description: "Relief from neck stiffness, cervical spondylosis, and tension headaches through specialized techniques.",
+    description: "Relief from neck stiffness, cervical spondylosis, and tension headaches through specialized techniques, plus ergonomic consultation and home expert guidance.",
     url: "/services/neck-pain-therapy",
     color: "from-purple-500/20 to-purple-600/10",
     borderColor: "border-purple-200 dark:border-purple-800",
@@ -80,6 +80,9 @@ export function ServicesSection() {
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
             Comprehensive physiotherapy treatments delivered at your doorstep by certified professionals.
+          </p>
+          <p className="mt-2 text-sm text-muted-foreground">
+           You can find physio at home in delhi providing expert ergonomic posture advice training for Noida, Ghaziabad & Gurgaon.
           </p>
         </div>
 

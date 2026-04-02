@@ -3,7 +3,7 @@ import Link from "next/link"
 const blogs = [
   {
     title: "Frozen Shoulder? Don't Suffer in Silence — Complete Home Physiotherapy Guide for Delhi NCR",
-    excerpt: "Stage-wise frozen shoulder treatment at home in Delhi NCR with exercises, dry needling, shockwave therapy and same-day physiotherapist visit.",
+    excerpt: "Stage-wise frozen shoulder treatment at home in Delhi NCR with physio at home training, ergonomic posture tips, and same-day physiotherapist at home in Delhi.",
     date: "March 30, 2026",
     slug: "frozen-shoulder-treatment-at-home-delhi",
     category: "Shoulder Pain & Mobility"
