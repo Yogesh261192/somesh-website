@@ -260,6 +260,19 @@ export default function SlipDiscBlog() {
 
           <p className="text-lg text-muted-foreground mb-3">{c.intro}</p>
 
+          <div className="mb-6">
+            <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+              <iframe
+                src="https://www.youtube.com/embed/7RD_OVxseu8"
+                title="Sciatica Pain Relief Exercises"
+                className="absolute top-0 left-0 w-full h-full rounded-xl shadow-md"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+
           <div className="text-sm text-muted-foreground">
             <span>{c.author}</span>
             <span className="mx-2">•</span>
