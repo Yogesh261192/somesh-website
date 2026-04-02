@@ -44,9 +44,12 @@ export function HeroSection() {
               ))}
             </ul>
 
-            <div className="text-sm font-semibold text-primary mb-2">
-              Book Your First Assessment Session at ₹500
+            <div className="text-lg font-bold text-foreground mb-1">
+              Book Your First Assessment Session — Starting from ₹600
             </div>
+            <p className="text-sm text-muted-foreground mb-4">
+              Package discounts available for multiple sessions
+            </p>
 
             <div className="flex flex-col gap-4 sm:flex-row">
               <Button size="lg" className="gap-2" asChild>
