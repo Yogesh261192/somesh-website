@@ -16,6 +16,13 @@ const blogs = [
     category: "Post-Surgery Recovery"
   },
   {
+    title: "Parkinson's Disease",
+    excerpt: "How home physiotherapy for Parkinson's Disease in Delhi NCR supports balance, movement, and daily living with expert home visits.",
+    date: "April 5, 2026",
+    slug: "parkinsons-disease",
+    category: "Neurological Rehabilitation"
+  },
+  {
     title: "Desk Job? Don't Ignore Back & Neck Pain — Complete Guide for Young Professionals",
     excerpt: "A complete guide for 25-35 year old professionals — causes, prevention tips and the role of physiotherapy.25-35 saal ke professionals ke liye complete guide — causes, prevention tips aur physiotherapy ke fayde.",
     date: "March 21, 2026",
@@ -62,9 +69,9 @@ export default function BlogsPage() {
               <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                 {blog.excerpt}
               </p>
-              <a href={`/blogs/${blog.slug}`} className="text-sm font-medium text-foreground hover:underline block">
+              <Link href={`/blogs/${blog.slug}`} className="text-sm font-medium text-foreground hover:underline block">
                 Read More →
-              </a>
+              </Link>
             </div>
           ))}
         </div>
