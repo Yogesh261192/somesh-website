@@ -39,25 +39,6 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- Location-Based Pages for Vasundhara -->
-  <url>
-    <loc>https://delhiphysioathome.com/services/back-pain-treatment-vasundhara</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://delhiphysioathome.com/services/neck-pain-therapy-vasundhara</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://delhiphysioathome.com/services/physiotherapy-vasundhara</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <!-- Location-Based Pages for Ghaziabad -->
   <url>
     <loc>https://delhiphysioathome.com/services/physiotherapy-ghaziabad</loc>
@@ -98,13 +79,6 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Location-Based Pages for Vaishali -->
-  <url>
-    <loc>https://delhiphysioathome.com/services/physiotherapy-vaishali</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <!-- About Page -->
   <url>
     <loc>https://delhiphysioathome.com/about</loc>
@@ -122,12 +96,6 @@
   <!-- Service-Specific Pages with Keywords -->
   
   <!-- Back Pain Treatment with Location Keywords -->
-  <url>
-    <loc>https://delhiphysioathome.com/services/back-pain-physiotherapist-vasundhara</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <url>
     <loc>https://delhiphysioathome.com/services/sciatica-treatment-noida</loc>
     <changefreq>monthly</changefreq>
@@ -147,19 +115,7 @@
     <priority>0.8</priority>
   </url>
 
-  <url>
-    <loc>https://delhiphysioathome.com/services/tension-headaches-vasundhara</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <!-- Sports Injury Recovery with Locations -->
-  <url>
-    <loc>https://delhiphysioathome.com/services/sports-injury-physiotherapist-vasundhara</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <url>
     <loc>https://delhiphysioathome.com/services/knee-injury-rehabilitation-noida</loc>
     <changefreq>monthly</changefreq>
@@ -174,12 +130,6 @@
 
   <!-- Post Surgery Rehabilitation with Locations -->
   <url>
-    <loc>https://delhiphysioathome.com/services/joint-replacement-rehabilitation-vasundhara</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://delhiphysioathome.com/services/post-surgery-recovery-ghaziabad</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -192,12 +142,6 @@
   </url>
 
   <!-- Elderly Mobility with Locations -->
-  <url>
-    <loc>https://delhiphysioathome.com/services/elderly-physiotherapy-vasundhara</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <url>
     <loc>https://delhiphysioathome.com/services/senior-mobility-training-ghaziabad</loc>
     <changefreq>monthly</changefreq>
@@ -219,12 +163,6 @@
 
   <!-- Location-Based Landing Pages -->
   <url>
-    <loc>https://delhiphysioathome.com/locations/vasundhara</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
     <loc>https://delhiphysioathome.com/locations/ghaziabad</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -244,12 +182,6 @@
 
   <url>
     <loc>https://delhiphysioathome.com/locations/raj-nagar</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://delhiphysioathome.com/locations/vaishali</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

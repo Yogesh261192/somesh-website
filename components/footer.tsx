@@ -18,7 +18,14 @@ const services = [
   { label: "Elderly Mobility Physiotherapy", href: "/services/elderly-mobility-physiotherapy" },
 ]
 
-const serviceAreas = ["Delhi", "Shahdara", "Ghaziabad", "Noida", "Gurgaon", "Indirapuram", "Raj Nagar", "Loni"]
+const serviceAreas = [
+  { name: "Delhi", slug: "delhi" },
+  { name: "Ghaziabad", slug: "ghaziabad" },
+  { name: "Noida", slug: "noida" },
+  { name: "Gurgaon", slug: "gurgaon" },
+  { name: "Indirapuram", slug: "indirapuram" },
+  { name: "Raj Nagar", slug: "raj-nagar" }
+]
 
 export function Footer() {
   return (
@@ -92,9 +99,11 @@ export function Footer() {
             <h3 className="text-sm font-semibold uppercase tracking-wider">Service Areas</h3>
             <ul className="mt-4 space-y-2">
               {serviceAreas.map((area) => (
-                <li key={area} className="flex items-center gap-2 text-sm text-background/70">
-                  <MapPin className="h-3 w-3 text-primary" />
-                  <span>{area}</span>
+                <li key={area.name}>
+                  <Link href={`/locations/${area.slug}`} className="flex items-center gap-2 text-sm text-background/70 hover:text-background transition-colors">
+                    <MapPin className="h-3 w-3 text-primary" />
+                    <span>{area.name}</span>
+                  </Link>
                 </li>
               ))}
             </ul>
