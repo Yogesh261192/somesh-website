@@ -6,8 +6,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { CheckCircle2, Clock, MapPin, ArrowRight, Phone, HeartHandshake, ShieldCheck, Activity } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Elderly Physiotherapy at Home in Delhi NCR, Ghaziabad",
-  description: "Compassionate home physiotherapy for seniors. Expert care for arthritis, stroke recovery, balance issues, and fall prevention in Noida and Ghaziabad.",
+  title: "Elderly Fall Risk? Home Physio Ghaziabad | Safe Care",
+  description: "Worried about elderly falls or arthritis? Gentle, professional senior physiotherapy delivered to your home in Ghaziabad & Noida. Book an assessment!",
   keywords: "elderly physiotherapy at home, geriatric physiotherapist ghaziabad, fall prevention for seniors noida, stroke rehab at home, arthritis pain relief",
   openGraph: {
     title: "Elderly Mobility Physiotherapy at Home - Expert Care",

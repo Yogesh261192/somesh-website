@@ -1,4 +1,10 @@
 import Link from "next/link"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Physio Tips & Guides | DelhiPhysio@Home | Expert Advice",
+  description: "Read the latest tips on back pain, sciatica, and post-surgery rehab from top home physiotherapists in Delhi NCR. Stay informed and pain-free!",
+}
 
 const blogs = [
   {

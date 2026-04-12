@@ -6,9 +6,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { CheckCircle2, Clock, MapPin, Activity, ArrowRight, Phone, ShieldCheck } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Back Pain Treatment at Home in Delhi NCR, Noida & Ghaziabad",
-  description: "Expert home physiotherapy for back pain, sciatica, and spinal issues in Vasundhara, Ghaziabad, Noida, and Indirapuram. Book your home session today.",
-  keywords: "home physiotherapy back pain, back pain treatment vasundhara, back pain relief ghaziabad, sciatica treatment noida, best physiotherapist for back pain",
+  title: "Sciatica & Back Pain? Home Physio Ghaziabad | Same Day",
+  description: "Severe back pain or sciatica? Skip the travel and get expert physiotherapy at home in Vasundhara, Noida & Ghaziabad. Book your same-day session! ₹600 onwards.",
+  keywords: "home physiotherapy back pain, back pain treatment vasundhara, back pain relief ghaziabad, sciatica treatment noida, best physiotherapist for back pain, same day physiotherapist",
   openGraph: {
     title: "Back Pain Treatment at Home - Expert Physiotherapy",
     description: "Professional back pain treatment and physiotherapy services delivered to your doorstep in Delhi NCR.",
@@ -51,7 +51,7 @@ export default function BackPainTreatment() {
             <div className="relative h-[350px] w-full rounded-2xl overflow-hidden shadow-xl border border-border/50">
               <Image
                 src="/back-pain-hero.png"
-                alt="Patient receiving back pain treatment at home"
+                alt="Certified physiotherapist from Delhi Physio At Home providing expert back pain treatment and sciatica relief at a patient's home in Indirapuram, Ghaziabad"
                 fill
                 className="object-cover"
                 priority
@@ -111,7 +111,7 @@ export default function BackPainTreatment() {
             <div className="relative h-[400px] w-full rounded-2xl overflow-hidden shadow-lg border border-border/50 order-2 md:order-1">
               <Image
                 src="/back-pain-treatment.png"
-                alt="Professional Physiotherapy Treatment at Home"
+                alt="Professional physiotherapist utilizing advanced manual therapy techniques for chronic lower back pain treatment at home in Noida"
                 fill
                 className="object-cover object-bottom"
               />

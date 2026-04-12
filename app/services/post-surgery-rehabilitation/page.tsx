@@ -6,8 +6,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { CheckCircle2, Clock, MapPin, ArrowRight, Phone, ShieldCheck, Activity, HeartPulse } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Post Surgery Physiotherapy at Home in Delhi NCR & Ghaziabad",
-  description: "Expert post-surgery rehabilitation at home for joint replacements (Knee/Hip), ACL tears, and orthopedic surgeries in Ghaziabad, Noida, and Indirapuram.",
+  title: "Knee Surgery Rehab | Home Physio Noida | No Travel Needed",
+  description: "Post-surgery pain and stiffness? Recover safely with expert home rehabilitation for joint replacements and ACL tears in Noida & Delhi NCR. Call today!",
   keywords: "post surgery physiotherapy at home, knee replacement recovery ghaziabad, ACL rehab noida, orthopedic physiotherapist home visit, hip replacement therapy",
   openGraph: {
     title: "Post Surgery Rehabilitation at Home - Expert Physiotherapy",
