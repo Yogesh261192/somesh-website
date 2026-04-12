@@ -5,13 +5,17 @@ import { TestimonialsSection } from "@/components/sections/testimonials"
 import { WhyChooseUsSection } from "@/components/sections/why-choose-us"
 import { ServiceAreasSection } from "@/components/sections/service-areas"
 import { CTASection } from "@/components/sections/cta"
+import { PricingSection } from "@/components/sections/pricing"
+import LocalBusinessSchema from "@/components/LocalBusinessSchema"
 
 export default function HomePage() {
   return (
     <>
+      <LocalBusinessSchema />
       <HeroSection />
       <ServicesSection />
       <WhyChooseUsSection />
+      <PricingSection />
       <DoctorsSection />
       <TestimonialsSection />
       <ServiceAreasSection />

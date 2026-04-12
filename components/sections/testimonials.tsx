@@ -107,11 +107,16 @@ export function TestimonialsSection() {
                       <blockquote className="text-lg text-foreground leading-relaxed mb-6">
                         &ldquo;{testimonial.text}&rdquo;
                       </blockquote>
-                      <div>
-                        <p className="font-semibold text-foreground" style={{ fontFamily: 'var(--font-display)' }}>
-                          {testimonial.name}
-                        </p>
-                        <p className="text-sm text-muted-foreground">{testimonial.location}</p>
+                      <div className="flex flex-col items-center gap-3">
+                        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-lg font-bold text-primary">
+                          {testimonial.name.split(' ').map(n => n[0]).join('').substring(0, 2)}
+                        </div>
+                        <div>
+                          <p className="font-semibold text-foreground" style={{ fontFamily: 'var(--font-display)' }}>
+                            {testimonial.name}
+                          </p>
+                          <p className="text-sm text-muted-foreground">{testimonial.location}</p>
+                        </div>
                       </div>
                     </CardContent>
                   </Card>
