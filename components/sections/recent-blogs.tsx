@@ -1,32 +1,31 @@
 import Link from "next/link"
-import Image from "next/image"
 import { ArrowRight, Calendar, Clock } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const recentBlogs = [
   {
-    title: "Desk Job? Don't Ignore Back & Neck Pain — Complete Guide",
-    excerpt: "If you spend 8-10 hours a day in front of a laptop, you're at high risk for back and neck pain. Poor posture and a sedentary lifestyle are silently damaging your spine.",
-    date: "Mar 21, 2026",
-    readTime: "5 min read",
-    slug: "desk-job-back-neck-pain",
-    imageUrl: "https://images.unsplash.com/photo-1559311173-e01ef6f19c65" 
+    title: "Knee Surgery Recovery at Home in Delhi NCR",
+    excerpt: "Everything you need to know about post-operative physiotherapy at home after knee replacement or ACL surgery.",
+    date: "March 23, 2026",
+    readTime: "8 min read",
+    slug: "knee-surgery-recovery-delhi-ncr",
+    imageUrl: "/assets/kneeblog.png" 
   },
   {
-    title: "Knee Surgery Recovery at Home in Delhi NCR: A Complete Guide",
-    excerpt: "Everything you need to know about post-operative physiotherapy at home after knee replacement or ACL surgery in Delhi, Ghaziabad, Noida & Gurgaon.",
-    date: "Mar 15, 2026",
-    readTime: "8 min read",
-    slug: "knee-surgery-recovery", 
-    imageUrl: "https://images.unsplash.com/photo-1631217314941-e894886fbb00"
+    title: "Desk Job? Don't Ignore Back & Neck Pain",
+    excerpt: "Complete guide for young professionals — causes, prevention tips and physiotherapy benefits.",
+    date: "March 21, 2026",
+    readTime: "6 min read",
+    slug: "desk-job-back-neck-pain", 
+    imageUrl: "/assets/deskjob_blog.png"
   },
   {
     title: "Slip Disc Treatment at Home | Sciatica Pain Relief Exercises",
-    excerpt: "Herniated/slip disc and sciatica can be treated at home with guided physiotherapy. Includes exercises, lifestyle fixes, and same-day home booking.",
+    excerpt: "Home-based slip disc and sciatica physiotherapy with pain relief exercises.",
     date: "Apr 02, 2026",
-    readTime: "9 min read",
+    readTime: "7 min read",
     slug: "slip-disc-treatment-at-home-delhi",
-    imageUrl: "https://images.unsplash.com/photo-1576091160550-2173dba999ef"
+    imageUrl: "/assets/sciaticablog.png"
   }
 ]
 
@@ -48,9 +47,9 @@ export function RecentBlogsSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {recentBlogs.map((blog, index) => (
-            <div key={index} className="flex flex-col bg-background rounded-2xl overflow-hidden border border-border shadow-sm hover:shadow-md transition-shadow">
-              <Link href={`/blogs/${blog.slug}`} className="relative h-48 w-full overflow-hidden block">
-                <Image src={blog.imageUrl} alt={blog.title} fill className="object-cover hover:scale-105 transition-transform duration-300" />
+            <div key={index} className="flex flex-col h-full bg-background rounded-2xl overflow-hidden border border-border shadow-sm hover:shadow-md transition-shadow">
+              <Link href={`/blogs/${blog.slug}`} className="relative aspect-video w-full shrink-0 overflow-hidden block">
+                <img src={blog.imageUrl} alt={blog.title} className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
               </Link>
               <div className="p-6 flex flex-col flex-grow">
                 <div className="flex items-center gap-4 text-xs text-muted-foreground mb-3">
