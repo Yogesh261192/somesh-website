@@ -5,9 +5,10 @@ export default function LocalBusinessSchema() {
     "@context": "https://schema.org",
     "@type": "MedicalClinic",
     "name": "Delhi Physio at Home",
-    "image": "https://yourdomain.com/assets/services/about-precise-home.jpg",
-    "@id": "https://yourdomain.com",
-    "url": "https://yourdomain.com",
+    "image": "https://delhiphysioathome.com/assets/logo.png",
+    "logo": "https://delhiphysioathome.com/assets/logo.png",
+    "@id": "https://delhiphysioathome.com",
+    "url": "https://delhiphysioathome.com",
     "telephone": "+918130171272",
     "priceRange": "₹₹",
     "address": {

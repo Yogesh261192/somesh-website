@@ -6,12 +6,11 @@ import { WhyChooseUsSection } from "@/components/sections/why-choose-us"
 import { ServiceAreasSection } from "@/components/sections/service-areas"
 import { CTASection } from "@/components/sections/cta"
 import { PricingSection } from "@/components/sections/pricing"
-import LocalBusinessSchema from "@/components/LocalBusinessSchema"
+import { RecentBlogsSection } from "@/components/sections/recent-blogs"
 
 export default function HomePage() {
   return (
     <>
-      <LocalBusinessSchema />
       <HeroSection />
       <ServicesSection />
       <WhyChooseUsSection />
@@ -19,6 +18,7 @@ export default function HomePage() {
       <DoctorsSection />
       <TestimonialsSection />
       <ServiceAreasSection />
+      <RecentBlogsSection />
       <CTASection />
     </>
   )

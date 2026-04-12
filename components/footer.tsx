@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 import { Phone, Mail, MapPin, MapPinHouse } from "lucide-react"
 
@@ -34,10 +35,10 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary">
-                <img src="/favicon.ico" alt="Logo" className="w-8 h-8 rounded-full" />
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white overflow-hidden shadow-sm border border-border">
+                <Image src="/assets/logo.png" alt="Delhi Physio At Home" width={40} height={40} className="h-full w-full object-cover" />
               </div>
-              <span className="text-xl font-bold">delhiphysioathome</span>
+              <span className="text-xl font-bold" style={{ fontFamily: 'var(--font-display)' }}>DelhiPhysio@Home</span>
             </div>
             
             <p className="text-sm text-background/70 leading-relaxed">
@@ -111,7 +112,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 border-t border-background/20 pt-8 text-center text-sm text-background/60">
-          &copy; {new Date().getFullYear()} delhiphysioathome Delhi NCR. All rights reserved.
+          &copy; {new Date().getFullYear()} DelhiPhysio@Home Delhi NCR. All rights reserved.
         </div>
       </div>
     </footer>

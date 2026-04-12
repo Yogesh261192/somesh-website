@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import Link from "next/link"
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
@@ -44,8 +45,8 @@ export function Header() {
           {/* ... Baaki ka logo aur nav code same rahega ... */}
           <div className="flex lg:flex-1">
             <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white">
-                <img src="/favicon.ico" alt="delhiphysioathome" className="rounded-full" />
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white overflow-hidden shadow-sm border border-border">
+                <Image src="/assets/logo.png" alt="Delhi Physio At Home" width={40} height={40} className="h-full w-full object-cover" priority />
               </div>
               <span className="text-xl font-bold text-foreground" style={{ fontFamily: 'var(--font-display)' }}>
                 DelhiPhysio@Home
@@ -126,7 +127,7 @@ export function Header() {
               borderBottom: '1px solid #e5e7eb'
             }}>
               <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '8px', textDecoration: 'none' }} onClick={() => setMobileMenuOpen(false)}>
-                <img src="/favicon.ico" alt="DelhiPhysio@Home" style={{ width: '36px', height: '36px', borderRadius: '50%' }} />
+                <Image src="/assets/logo.png" alt="Delhi Physio At Home" width={36} height={36} style={{ borderRadius: '50%', objectFit: 'cover' }} priority />
                 <span style={{ fontSize: '18px', fontWeight: 'bold', color: '#111827' }}>DelhiPhysio@Home</span>
               </Link>
               <button onClick={() => setMobileMenuOpen(false)} style={{ padding: '8px', color: '#374151', background: 'none', border: 'none', cursor: 'pointer' }}>

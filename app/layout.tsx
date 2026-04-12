@@ -10,15 +10,15 @@ const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
 const dmSans = DM_Sans({ subsets: ["latin"], variable: '--font-dm-sans' });
 
 export const metadata: Metadata = {
-  title: 'DelhiPhysio@Home | Expert Home Physiotherapy in Delhi NCR & Ghaziabad',
+  title: 'Delhi Physio at Home | Expert Home Physiotherapy in Delhi NCR & Ghaziabad',
   description: 'Certified physiotherapists at your doorstep in Delhi, Noida, Gurgaon, and Ghaziabad. Specialist care for back pain, sports injuries, and post-surgery rehab.',
   keywords: 'home physiotherapy Delhi, physiotherapist near me, back pain treatment, sports injury recovery, post surgery rehabilitation, elderly physiotherapy, Delhi NCR physiotherapy, physiotherapy vasundhara, physiotherapy ghaziabad, physiotherapy noida, physiotherapy indirapuram',
   generator: 'DelhiPhysioAtHome',
   openGraph: {
-    title: 'DelhiPhysio@Home | Professional Home Physiotherapy Services',
+    title: 'Delhi Physio at Home | Professional Home Physiotherapy Services',
     description: 'Get expert physiotherapy treatment at your doorstep. Certified physiotherapists for all your recovery needs.',
     url: 'https://delhiphysioathome.com',
-    siteName: 'DelhiPhysio@Home',
+    siteName: 'Delhi Physio at Home',
     type: 'website',
   },
   icons: {
@@ -72,7 +72,7 @@ export default function RootLayout({
             "@context": "https://schema.org",
             "@type": "MedicalBusiness",
             "name": "Delhi Physio At Home",
-            "image": "https://delhiphysioathome.com/favicon.ico",
+            "image": "https://delhiphysioathome.com/assets/logo.png",
             "@id": "https://delhiphysioathome.com",
             "url": "https://delhiphysioathome.com",
             "telephone": "+918130171272",
