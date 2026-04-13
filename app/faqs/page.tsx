@@ -83,7 +83,8 @@ const faqSchema = {
 export default function FAQsPage() {
   return (
     <div className="min-h-screen bg-background">
-      <Script id="faq-schema" type="application/ld+json" strategy="afterInteractive">
+      <Script id="faq-schema" type="application/ld+json" strategy="beforeInteractive">
+
         {JSON.stringify(faqSchema)}
       </Script>
       {/* Hero Section */}
