@@ -43,21 +43,29 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+
+        {/* Google Tag (Analytics + Ads) */}
         <Script 
           async 
-          src="https://www.googletagmanager.com/gtag/js?id=G-JC5F20EXDT"
+          src="https://www.googletagmanager.com/gtag/js?id=AW-10787773299"
           strategy="afterInteractive"
         />
+        
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
+
+            // Google Analytics
             gtag('config', 'G-JC5F20EXDT');
+
+            // Google Ads
+            gtag('config', 'AW-10787773299');
           `}
         </Script>
 
-        {/* SEO Fix: Structured Data matched with Google Business Profile */}
+        {/* Structured Data */}
         <Script
           id="structured-data"
           type="application/ld+json"
@@ -98,7 +106,9 @@ export default function RootLayout({
             ]
           })}
         </Script>
+
       </head>
+
       <body className={`${inter.variable} ${dmSans.variable} font-sans antialiased`}>
         <Header />
         <main className="pt-8 sm:pt-10">{children}</main>
