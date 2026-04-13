@@ -78,7 +78,7 @@ export function HeroSection() {
           <div className="relative lg:pl-8">
             <div className="relative aspect-square overflow-hidden rounded-2xl bg-muted shadow-2xl">
               <Image
-                src="/hero-image.png"
+                src="/hero-image.webp"
                 alt="Delhi Physio At Home - Home Visit Physiotherapy Session"
                 fill
                 className="object-cover"
