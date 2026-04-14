@@ -5,7 +5,8 @@ import { Badge } from "@/components/ui/badge"
 const doctors = [
   {
     name: "Dr. Somesh Mamgain",
-    qualification: "BPT, MIAP",
+    qualification: "BPT",
+    membership: "Member of Indian Association Of Physiotherapists",
     experience: "8+ Years",
     specializations: ["Stroke Rehab", "Post TKR/THR Rehab", "Sports Rehab"],
     bio: "Dr. Somesh specializes in Post-Op Orthopedic rehabilitation, elderly care, and sports injuries. He has helped over 1500 patients recover from chronic pain and post-surgical conditions.",
@@ -16,7 +17,7 @@ const doctors = [
     qualification: "BPT",
     experience: "8+ Years",
     specializations: ["Neurological Rehab", "Sports Injury Recovery", "Elderly Care"],
-    bio: "Dr.Sarita is an expert in Cardio and neurological rehabilitation, specializing in stroke recovery and mobility improvement for elderly patients.",
+    bio: "Dr.Sarita is an expert in Cardio and neurological rehabilitation, specializing in stroke recovery and mobility improvement for elderly patients, also catering to women health and well being.",
     image: "/assets/services/sarita1.webp",
   }
 ]
@@ -42,6 +43,7 @@ export function DoctorsSection() {
             <Card key={doctor.name} className="overflow-hidden border-border/50">
               <CardContent className="p-0">
                 <div className="flex flex-col">
+
                   {/* Photo */}
                   <div className="relative w-full h-80 flex-shrink-0 bg-muted">
                     {doctor.image ? (
@@ -67,8 +69,23 @@ export function DoctorsSection() {
                       <h3 className="text-xl font-semibold text-foreground" style={{ fontFamily: 'var(--font-display)' }}>
                         {doctor.name}
                       </h3>
-                      <p className="text-sm text-primary font-medium">{doctor.qualification}</p>
-                      <p className="text-sm text-muted-foreground">{doctor.experience} Experience</p>
+
+                      {/* Qualification */}
+                      <p className="text-sm text-primary font-medium">
+                        {doctor.qualification}
+                      </p>
+
+                      {/* Membership (only if exists) */}
+                      {doctor.membership && (
+                        <p className="text-sm text-foreground font-medium -mt-1">
+                          {doctor.membership}
+                        </p>
+                      )}
+
+                      {/* Experience */}
+                      <p className="text-sm text-muted-foreground">
+                        {doctor.experience} Experience
+                      </p>
                     </div>
                     
                     <div className="mb-4 flex flex-wrap gap-2">
@@ -93,6 +110,7 @@ export function DoctorsSection() {
                       </a>
                     </Button>
                   </div>
+
                 </div>
               </CardContent>
             </Card>

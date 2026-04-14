@@ -118,7 +118,7 @@ export default function RajNagarLocationPage() {
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl font-bold mb-4">Highly Rated Physiotherapy in Raj Nagar Extension</h2>
           <p className="text-muted-foreground text-sm leading-relaxed mb-4 text-justify">
-            With rapid residential growth, finding a dedicated <strong>physiotherapist in Raj Nagar Extension</strong> who offers personalized, unhurried care is challenging. At DelhiPhysio@Home, we eliminate the wait times of crowded clinics by providing expert <strong>home physiotherapy in RDC and Raj Nagar</strong>. We bring the clinic to you, completely equipped with electrotherapy modalities and manual treatment expertise.
+            With rapid residential growth, finding a dedicated <strong>physiotherapist in Raj Nagar Extension</strong> who offers personalized, unhurried care is challenging. At Delhi Physio at Home, we eliminate the wait times of crowded clinics by providing expert <strong>home physiotherapy in RDC and Raj Nagar</strong>. We bring the clinic to you, completely equipped with electrotherapy modalities and manual treatment expertise.
           </p>
           <p className="text-muted-foreground text-sm leading-relaxed text-justify">
             Our certified therapists have successfully treated hundreds of patients in the area for conditions like <strong>sciatica, slip disc, and sports injuries</strong>. Furthermore, for elderly patients discharged after a knee or hip replacement, our in-home orthopedic rehabilitation ensures safe, step-by-step progress towards independent walking, minimizing the risk of post-surgical complications.

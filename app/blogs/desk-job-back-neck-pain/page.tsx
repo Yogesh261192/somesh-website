@@ -36,7 +36,7 @@ const content = {
       },
       {
         heading: "Why Physiotherapy Is Essential",
-        content: "Most people take painkillers or ignore the pain — but this only provides temporary relief. If pain has lasted more than 2 weeks, it is a sign you need professional help. A certified physiotherapist diagnoses your exact problem and creates a personalized exercise plan. Manual therapy, dry needling, and targeted exercises treat the root cause — not just the symptoms. And the best part? You do not need to visit a clinic. DelhiPhysio@Home certified physiotherapists come to your home across Delhi, Noida, Ghaziabad, Indirapuram, and Gurgaon."
+        content: "Most people take painkillers or ignore the pain — but this only provides temporary relief. If pain has lasted more than 2 weeks, it is a sign you need professional help. A certified physiotherapist diagnoses your exact problem and creates a personalized exercise plan. Manual therapy, dry needling, and targeted exercises treat the root cause — not just the symptoms. And the best part? You do not need to visit a clinic. Delhi Physio at Home certified physiotherapists come to your home across Delhi, Noida, Ghaziabad, Indirapuram, and Gurgaon."
       },
       {
         heading: "When to See a Doctor Immediately",
@@ -88,7 +88,7 @@ const content = {
       },
       {
         heading: "फिजियोथेरेपी क्यों ज़रूरी है?",
-        content: "अधिकतर लोग दर्द निवारक दवाएं लेते हैं या दर्द को नज़रअंदाज़ करते हैं — लेकिन यह केवल अस्थायी राहत देता है। अगर दर्द 2 सप्ताह से अधिक है, तो यह संकेत है कि आपको पेशेवर मदद की ज़रूरत है। एक प्रमाणित फिजियोथेरेपिस्ट आपकी सटीक समस्या का निदान करके व्यक्तिगत व्यायाम योजना बनाता है। मैनुअल थेरेपी, ड्राई नीडलिंग और लक्षित व्यायाम से मूल कारण का उपचार होता है — केवल लक्षणों का नहीं। और सबसे अच्छी बात? अब क्लिनिक जाने की ज़रूरत नहीं। DelhiPhysio@Home के प्रमाणित फिजियोथेरेपिस्ट आपके घर आते हैं — दिल्ली, नोएडा, गाजियाबाद, इंदिरापुरम और गुरुग्राम में।"
+        content: "अधिकतर लोग दर्द निवारक दवाएं लेते हैं या दर्द को नज़रअंदाज़ करते हैं — लेकिन यह केवल अस्थायी राहत देता है। अगर दर्द 2 सप्ताह से अधिक है, तो यह संकेत है कि आपको पेशेवर मदद की ज़रूरत है। एक प्रमाणित फिजियोथेरेपिस्ट आपकी सटीक समस्या का निदान करके व्यक्तिगत व्यायाम योजना बनाता है। मैनुअल थेरेपी, ड्राई नीडलिंग और लक्षित व्यायाम से मूल कारण का उपचार होता है — केवल लक्षणों का नहीं। और सबसे अच्छी बात? अब क्लिनिक जाने की ज़रूरत नहीं। Delhi Physio at Home के प्रमाणित फिजियोथेरेपिस्ट आपके घर आते हैं — दिल्ली, नोएडा, गाजियाबाद, इंदिरापुरम और गुरुग्राम में।"
       },
       {
         heading: "तुरंत डॉक्टर से कब मिलें?",

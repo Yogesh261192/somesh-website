@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "Frozen Shoulder Treatment at Home in Delhi NCR | DelhiPhysio@Home",
+  title: "Frozen Shoulder Treatment at Home in Delhi NCR | Delhi Physio at Home",
   description: "Expert home physiotherapy for frozen shoulder in Delhi, Ghaziabad, Noida & Gurgaon. Stage-wise treatment, exercises & same-day booking. Call/WhatsApp now.",
   keywords: [
     "frozen shoulder treatment at home Delhi",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     "home visit physiotherapist same day booking"
   ],
   openGraph: {
-    title: "Frozen Shoulder Treatment at Home in Delhi NCR | DelhiPhysio@Home",
+    title: "Frozen Shoulder Treatment at Home in Delhi NCR | Delhi Physio at Home",
     description: "Expert home physiotherapy for frozen shoulder in Delhi, Ghaziabad, Noida & Gurgaon. Stage-wise treatment, exercises & same-day booking. Call/WhatsApp now.",
     type: 'article',
     url: 'https://delhiphysioathome.com/blogs/frozen-shoulder-treatment-at-home-delhi',

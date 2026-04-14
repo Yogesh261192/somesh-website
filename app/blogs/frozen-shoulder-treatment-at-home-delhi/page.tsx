@@ -226,10 +226,10 @@ const content = {
 const schema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Frozen Shoulder Treatment at Home in Delhi NCR | DelhiPhysio@Home",
+  "headline": "Frozen Shoulder Treatment at Home in Delhi NCR | Delhi Physio at Home",
   "description": "Expert home physiotherapy for frozen shoulder in Delhi, Ghaziabad, Noida & Gurgaon.",
   "author": { "@type": "Person", "name": "Dr. Somesh" },
-  "publisher": { "@type": "Organization", "name": "DelhiPhysio@Home" },
+  "publisher": { "@type": "Organization", "name": "Delhi Physio Home" },
   "datePublished": new Date().toISOString()
 }
 

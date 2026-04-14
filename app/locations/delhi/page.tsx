@@ -118,7 +118,7 @@ export default function DelhiLocationPage() {
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl font-bold mb-4">Why Home Physiotherapy is Crucial in Delhi</h2>
           <p className="text-muted-foreground text-sm leading-relaxed mb-4 text-justify">
-            Finding a reliable <strong>physiotherapist in Delhi</strong> can be overwhelming. The city's vast geography and heavy traffic make daily clinical visits stressful, often aggravating the very pain you're trying to cure. DelhiPhysio@Home solves this by offering a premium <strong>physiotherapy at home service in Delhi</strong>. Our expert team covers everything from <em>frozen shoulder treatment in West Delhi</em> to <em>elderly mobility care in South Delhi</em>. 
+            Finding a reliable <strong>physiotherapist in Delhi</strong> can be overwhelming. The city's vast geography and heavy traffic make daily clinical visits stressful, often aggravating the very pain you're trying to cure. Delhi Physio at Home solves this by offering a premium <strong>physiotherapy at home service in Delhi</strong>. Our expert team covers everything from <em>frozen shoulder treatment in West Delhi</em> to <em>elderly mobility care in South Delhi</em>. 
           </p>
           <p className="text-muted-foreground text-sm leading-relaxed text-justify">
             We specialize in treating chronic conditions like cervical spondylosis, lumbar radiculopathy (sciatica), and joint arthritis. If you or a loved one has recently undergone an orthopedic surgery at major Delhi hospitals, our <strong>post-operative home rehabilitation</strong> ensures a safe, infection-free, and rapid recovery right in your living room.

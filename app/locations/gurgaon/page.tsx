@@ -118,7 +118,7 @@ export default function GurgaonLocationPage() {
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl font-bold mb-4">The Smart Choice for Physiotherapy in Gurugram</h2>
           <p className="text-muted-foreground text-sm leading-relaxed mb-4 text-justify">
-            If you are searching for a <strong>physiotherapist near me in Gurgaon</strong>, you likely want to avoid the horrendous traffic at IFFCO Chowk or Rajiv Chowk. DelhiPhysio@Home provides an elite <strong>physiotherapy at home service in Gurugram</strong>, ensuring that residents of DLF, Sushant Lok, and Sohna Road get hospital-quality care without stepping out. 
+            If you are searching for a <strong>physiotherapist near me in Gurgaon</strong>, you likely want to avoid the horrendous traffic at IFFCO Chowk or Rajiv Chowk. Delhi Physio at Home provides an elite <strong>physiotherapy at home service in Gurugram</strong>, ensuring that residents of DLF, Sushant Lok, and Sohna Road get hospital-quality care without stepping out. 
           </p>
           <p className="text-muted-foreground text-sm leading-relaxed text-justify">
             Our master's degree-holding therapists are experts in treating <strong>cervical pain</strong>, severe sciatica, and sports injuries like ligament tears. For families with elderly parents residing in Gurgaon, we offer dedicated geriatric physiotherapy focusing on fall prevention, arthritis management, and post-hip/knee replacement rehabilitation. Get back to your active lifestyle safely with our trusted experts.

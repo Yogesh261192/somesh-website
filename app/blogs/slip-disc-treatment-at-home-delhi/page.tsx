@@ -217,7 +217,7 @@ const schema = {
   headline: "Slip Disc Treatment at Home | Sciatica Pain Relief Exercises (Delhi NCR Physio Guide)",
   description: "Home physiotherapy guide for slip disc and sciatica in Delhi NCR with exercises and same-day physiotherapist at home service.",
   author: { "@type": "Person", name: "Dr. Somesh" },
-  publisher: { "@type": "Organization", name: "DelhiPhysio@Home" },
+  publisher: { "@type": "Organization", name: "Delhi Physio at Home" },
   datePublished: new Date().toISOString()
 }
 

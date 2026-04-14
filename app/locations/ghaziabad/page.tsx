@@ -118,7 +118,7 @@ export default function GhaziabadLocationPage() {
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl font-bold mb-4">Your Local Physiotherapy Experts in Ghaziabad</h2>
           <p className="text-muted-foreground text-sm leading-relaxed mb-4 text-justify">
-            When looking for the <strong>best physiotherapist in Ghaziabad</strong>, convenience and expertise matter most. Transporting a patient with severe back pain or a recent knee surgery through city traffic can delay healing. DelhiPhysio@Home provides complete <strong>physiotherapy at home in Ghaziabad</strong>, covering every major hub from Vaishali and Vasundhara to Kavi Nagar and Crossings Republik.
+            When looking for the <strong>best physiotherapist in Ghaziabad</strong>, convenience and expertise matter most. Transporting a patient with severe back pain or a recent knee surgery through city traffic can delay healing. Delhi Physio at Home provides complete <strong>physiotherapy at home in Ghaziabad</strong>, covering every major hub from Vaishali and Vasundhara to Kavi Nagar and Crossings Republik.
           </p>
           <p className="text-muted-foreground text-sm leading-relaxed text-justify">
             Our clinical team arrives fully equipped with advanced modalities like TENS, ultrasound, and manual therapy tools. We specialize in treating <strong>cervical spondylosis</strong>, frozen shoulder, ligament injuries, and neurological conditions like stroke. Experience hospital-grade rehabilitation in the safety and comfort of your own bedroom.

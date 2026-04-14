@@ -118,7 +118,7 @@ export default function IndirapuramLocationPage() {
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl font-bold mb-4">Your Neighborhood Physiotherapist in Indirapuram</h2>
           <p className="text-muted-foreground text-sm leading-relaxed mb-4 text-justify">
-            If you are dealing with chronic pain and searching for a <strong>physiotherapist in Indirapuram</strong>, DelhiPhysio@Home is your most convenient solution. Navigating through local traffic for daily clinic visits can worsen conditions like slipped discs or severe knee arthritis. We eliminate this hassle by providing premium <strong>physiotherapy at home in Ahinsa Khand, Niti Khand, and Shakti Khand</strong>.
+            If you are dealing with chronic pain and searching for a <strong>physiotherapist in Indirapuram</strong>, Delhi Physio at Home is your most convenient solution. Navigating through local traffic for daily clinic visits can worsen conditions like slipped discs or severe knee arthritis. We eliminate this hassle by providing premium <strong>physiotherapy at home in Ahinsa Khand, Niti Khand, and Shakti Khand</strong>.
           </p>
           <p className="text-muted-foreground text-sm leading-relaxed text-justify">
             Our certified therapists specialize in a wide range of treatments, from deep tissue release for frozen shoulders to targeted exercises for stroke rehabilitation. We bring high-end modalities like IFT, TENS, and Ultrasound directly to your flat, ensuring you get world-class physical therapy without stepping out of your society gate.

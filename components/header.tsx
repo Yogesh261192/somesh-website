@@ -49,7 +49,7 @@ export function Header() {
                 <Image src="/assets/logo.webp" alt="Delhi Physio At Home" width={40} height={40} className="h-full w-full object-cover" priority />
               </div>
               <span className="text-xl font-bold text-foreground" style={{ fontFamily: 'var(--font-display)' }}>
-                DelhiPhysio@Home
+                Delhi Physio at Home
               </span>
             </Link>
           </div>
@@ -128,7 +128,7 @@ export function Header() {
             }}>
               <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '8px', textDecoration: 'none' }} onClick={() => setMobileMenuOpen(false)}>
                 <Image src="/assets/logo.webp" alt="Delhi Physio At Home" width={36} height={36} style={{ borderRadius: '50%', objectFit: 'cover' }} priority />
-                <span style={{ fontSize: '18px', fontWeight: 'bold', color: '#111827' }}>DelhiPhysio@Home</span>
+                <span style={{ fontSize: '18px', fontWeight: 'bold', color: '#111827' }}>Delhi Physio at Home</span>
               </Link>
               <button onClick={() => setMobileMenuOpen(false)} style={{ padding: '8px', color: '#374151', background: 'none', border: 'none', cursor: 'pointer' }}>
                 <X className="h-6 w-6" />
