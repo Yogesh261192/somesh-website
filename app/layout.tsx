@@ -22,9 +22,9 @@ export const metadata: Metadata = {
     type: 'website',
   },
   icons: {
-    icon: '/assets/logo.png',
-    shortcut: '/assets/logo.png',
-    apple: '/assets/logo.png',
+    icon: '/assets/logo.webp',
+    shortcut: '/assets/logo.webp',
+    apple: '/assets/logo.webp',
   },
   manifest: '/site.webmanifest',
 }
@@ -75,7 +75,7 @@ export default function RootLayout({
             "@context": "https://schema.org",
             "@type": "MedicalBusiness",
             "name": "Delhi Physio At Home",
-            "image": "https://delhiphysioathome.com/assets/logo.png",
+            "image": "https://delhiphysioathome.com/assets/logo.webp",
             "@id": "https://delhiphysioathome.com",
             "url": "https://delhiphysioathome.com",
             "telephone": "+918130171272",

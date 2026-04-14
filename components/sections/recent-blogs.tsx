@@ -9,7 +9,7 @@ const recentBlogs = [
     date: "March 23, 2026",
     readTime: "8 min read",
     slug: "knee-surgery-recovery-delhi-ncr",
-    imageUrl: "/assets/kneeblog.png" 
+    imageUrl: "/assets/kneeblog.webp" 
   },
   {
     title: "Desk Job? Don't Ignore Back & Neck Pain",
@@ -17,7 +17,7 @@ const recentBlogs = [
     date: "March 21, 2026",
     readTime: "6 min read",
     slug: "desk-job-back-neck-pain", 
-    imageUrl: "/assets/deskjob_blog.png"
+    imageUrl: "/assets/deskjob_blog.webp"
   },
   {
     title: "Slip Disc Treatment at Home | Sciatica Pain Relief Exercises",
@@ -25,7 +25,7 @@ const recentBlogs = [
     date: "Apr 02, 2026",
     readTime: "7 min read",
     slug: "slip-disc-treatment-at-home-delhi",
-    imageUrl: "/assets/sciaticablog.png"
+    imageUrl: "/assets/sciaticablog.webp"
   }
 ]
 
