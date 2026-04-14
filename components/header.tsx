@@ -46,7 +46,7 @@ export function Header() {
           <div className="flex lg:flex-1">
             <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2">
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white overflow-hidden shadow-sm border border-border">
-                <Image src="/assets/logo.png" alt="Delhi Physio At Home" width={40} height={40} className="h-full w-full object-cover" priority />
+                <Image src="/assets/logo.webp" alt="Delhi Physio At Home" width={40} height={40} className="h-full w-full object-cover" priority />
               </div>
               <span className="text-xl font-bold text-foreground" style={{ fontFamily: 'var(--font-display)' }}>
                 DelhiPhysio@Home
