@@ -9,7 +9,7 @@ const doctors = [
     experience: "8+ Years",
     specializations: ["Stroke Rehab", "Post TKR/THR Rehab", "Sports Rehab"],
     bio: "Dr. Somesh specializes in Post-Op Orthopedic rehabilitation, elderly care, and sports injuries. He has helped over 1500 patients recover from chronic pain and post-surgical conditions.",
-    image: "/assets/services/Somesh1.jpeg",
+    image: "/assets/services/Somesh1.webp",
   },
   {
     name: "Dr. Sarita Yadav",
@@ -17,7 +17,7 @@ const doctors = [
     experience: "8+ Years",
     specializations: ["Neurological Rehab", "Sports Injury Recovery", "Elderly Care"],
     bio: "Dr.Sarita is an expert in Cardio and neurological rehabilitation, specializing in stroke recovery and mobility improvement for elderly patients.",
-    image: "/assets/services/sarita1.png",
+    image: "/assets/services/sarita1.webp",
   }
 ]
 
