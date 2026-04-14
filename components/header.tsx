@@ -127,7 +127,7 @@ export function Header() {
               borderBottom: '1px solid #e5e7eb'
             }}>
               <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '8px', textDecoration: 'none' }} onClick={() => setMobileMenuOpen(false)}>
-                <Image src="/assets/logo.png" alt="Delhi Physio At Home" width={36} height={36} style={{ borderRadius: '50%', objectFit: 'cover' }} priority />
+                <Image src="/assets/logo.webp" alt="Delhi Physio At Home" width={36} height={36} style={{ borderRadius: '50%', objectFit: 'cover' }} priority />
                 <span style={{ fontSize: '18px', fontWeight: 'bold', color: '#111827' }}>DelhiPhysio@Home</span>
               </Link>
               <button onClick={() => setMobileMenuOpen(false)} style={{ padding: '8px', color: '#374151', background: 'none', border: 'none', cursor: 'pointer' }}>

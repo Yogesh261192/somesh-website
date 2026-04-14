@@ -36,7 +36,7 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white overflow-hidden shadow-sm border border-border">
-                <Image src="/assets/logo.png" alt="Delhi Physio At Home" width={40} height={40} className="h-full w-full object-cover" />
+                <Image src="/assets/logo.webp" alt="Delhi Physio At Home" width={40} height={40} className="h-full w-full object-cover" />
               </div>
               <span className="text-xl font-bold" style={{ fontFamily: 'var(--font-display)' }}>DelhiPhysio@Home</span>
             </div>
