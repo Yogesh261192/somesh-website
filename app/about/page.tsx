@@ -66,7 +66,7 @@ export default function AboutPage() {
             <div className="relative h-[350px] md:h-[450px] w-full mt-10 md:mt-0">
               <div className="absolute inset-0 rounded-t-3xl md:rounded-3xl border border-border/50 shadow-2xl overflow-hidden shadow-primary/10">
                 <Image
-                  src="/assets/services/about-precise-home.jpg"
+                  src="/assets/services/about-precise-home.webp"
                   alt="Certified Physiotherapist from Delhi Physio At Home performs soft tissue mobilization on an older patient in a Ghaziabad home, showcasing high-quality clinical rehabilitation visits in Delhi NCR" // SEO-friendly Alt Text
                   fill
                   className="object-cover object-center"

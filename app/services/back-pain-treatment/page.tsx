@@ -50,7 +50,7 @@ export default function BackPainTreatment() {
             </div>
             <div className="relative h-[350px] w-full rounded-2xl overflow-hidden shadow-xl border border-border/50">
               <Image
-                src="/back-pain-hero.png"
+                src="/back-pain-hero.webp"
                 alt="Certified physiotherapist from Delhi Physio At Home providing expert back pain treatment and sciatica relief at a patient's home in Indirapuram, Ghaziabad"
                 fill
                 className="object-cover"
@@ -110,7 +110,7 @@ export default function BackPainTreatment() {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
             <div className="relative h-[400px] w-full rounded-2xl overflow-hidden shadow-lg border border-border/50 order-2 md:order-1">
               <Image
-                src="/back-pain-treatment.png"
+                src="/back-pain-treatment.webp"
                 alt="Professional physiotherapist utilizing advanced manual therapy techniques for chronic lower back pain treatment at home in Noida"
                 fill
                 className="object-cover object-bottom"

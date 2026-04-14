@@ -54,7 +54,7 @@ export default function ElderlyMobilityPhysiotherapy() {
             <div className="relative h-[350px] w-full rounded-2xl overflow-hidden shadow-xl border border-border/50 bg-muted/20">
               {/* YAHA LOCAL IMAGE PATH SET KIYA HAI */}
               <Image
-                src="/assets/services/elderly_hero.png"
+                src="/assets/services/elderly_hero.webp"
                 alt="Indian physiotherapist gently helping an elderly patient stand safely at home"
                 fill
                 className="object-cover"
@@ -115,7 +115,7 @@ export default function ElderlyMobilityPhysiotherapy() {
             <div className="relative w-full rounded-2xl overflow-hidden shadow-lg border border-border/50 order-2 md:order-1 bg-muted/20">
               {/* YAHA LOCAL IMAGE PATH SET KIYA HAI */}
               <Image
-                src="/assets/services/elderly_approach.png"
+                src="/assets/services/elderly_approach.webp"
                 alt="Compassionate geriatric physical therapy session with senior citizen in Indian home"
                 width={800}
                 height={600}

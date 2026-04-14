@@ -85,7 +85,7 @@ The following directory has been created:
    src="https://images.unsplash.com/photo-..."
    
    // To:
-   src="/assets/services/back-pain-treatment.jpg"
+   src="/assets/services/back-pain-treatment.webp"
    ```
 
 ### Option 3: Use Professional Medical Images
