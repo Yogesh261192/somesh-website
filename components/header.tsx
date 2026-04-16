@@ -2,9 +2,8 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { useState, useEffect } from "react"
-import { Button } from "@/components/ui/button"
-import { Menu, X, Phone } from "lucide-react"
+import { useState } from "react"
+import { Menu, X, Video } from "lucide-react"
 
 const navigation = [
   { name: "Services", href: "/#services" },
@@ -13,179 +12,115 @@ const navigation = [
   { name: "FAQs", href: "/faqs" },
   { name: "Contact", href: "/contact" },
   { name: "Blogs", href: "/blogs" },
+  { name: "Virtual Consult", href: "/virtual-consultation" },
 ]
 
 export function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const [showBanner, setShowBanner] = useState(false)
-
-  useEffect(() => {
-    const now = new Date()
-    const isRamNavami = 
-      now.getFullYear() === 2026 && 
-      now.getMonth() === 2 && 
-      now.getDate() === 26
-
-    if (isRamNavami) {
-      setShowBanner(true)
-    }
-  }, [])
+  const [open, setOpen] = useState(false)
 
   return (
     <>
-      {/* Dynamic Ram Navami Banner */}
-      {showBanner && (
-        <div className="w-full bg-[#FF9933] py-2 px-4 text-center text-white font-semibold text-sm sm:text-base shadow-md">
-          🙏 Shubh Ram Navami! May Lord Rama heal every pain and bless you with great health. ✨
-        </div>
-      )}
+      {/* 🔥 HEADER WRAPPER (NO GAP) */}
+      <div className="sticky top-0 z-50">
 
-      <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-          {/* ... Baaki ka logo aur nav code same rahega ... */}
-          <div className="flex lg:flex-1">
-            <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white overflow-hidden shadow-sm border border-border">
-                <Image src="/assets/logo.webp" alt="Delhi Physio At Home" width={40} height={40} className="h-full w-full object-cover" priority />
-              </div>
-              <span className="text-xl font-bold text-foreground" style={{ fontFamily: 'var(--font-display)' }}>
-                Delhi Physio at Home
+        {/* TOP STRIP */}
+        <div className="w-full bg-[#1a4731] text-white text-center text-xs py-1.5">
+          Online Consultation ₹399 · Home Visit ₹600
+        </div>
+
+        {/* HEADER */}
+        <header className="bg-white border-b border-gray-200">
+          <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+
+            {/* LOGO */}
+            <Link href="/" className="flex items-center gap-3">
+              <Image
+                src="/assets/logo.webp"
+                alt=""
+                width={38}
+                height={38}
+                className="rounded-full"
+              />
+              <span className="font-semibold text-lg tracking-tight">
+                Delhi Physio <span className="text-[#2d6a4f]">at Home</span>
               </span>
             </Link>
-          </div>
-          
-          <div className="flex lg:hidden">
-            <button
-              type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-foreground"
-              onClick={() => setMobileMenuOpen(true)}
-            >
-              <span className="sr-only">Open main menu</span>
-              <Menu className="h-6 w-6" aria-hidden="true" />
-            </button>
-          </div>
-          
-          <div className="hidden lg:flex lg:gap-x-8">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
-              >
-                {item.name}
-              </Link>
-            ))}
-          </div>
-          
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-4">
-            <Button variant="outline" size="sm" asChild>
-              <a href="tel:+918130171272" className="flex items-center gap-2">
-                <Phone className="h-4 w-4" />
-                <span>Call Now</span>
-              </a>
-            </Button>
-            <Button size="sm" asChild>
-              <a
-                href="https://wa.me/918130171272?text=Hi,%20I%20would%20like%20to%20book%20a%20physiotherapy%20session"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Book on WhatsApp
-              </a>
-            </Button>
-          </div>
-        </nav>
-      </header>
 
-      {/* ... Mobile Menu Code ... */}
-      {mobileMenuOpen && (
-        <>
-          <div
-            onClick={() => setMobileMenuOpen(false)}
-            style={{
-              position: 'fixed',
-              top: 0, left: 0, right: 0, bottom: 0,
-              zIndex: 9998,
-              backgroundColor: 'rgba(0,0,0,0.3)'
-            }}
-          />
-          <div style={{
-            position: 'fixed',
-            top: 0, left: 0, right: 0,
-            zIndex: 9999,
-            backgroundColor: 'white',
-            borderRadius: '0 0 16px 16px',
-            boxShadow: '0 10px 25px rgba(0,0,0,0.15)',
-            display: 'flex',
-            flexDirection: 'column'
-          }}>
-            <div style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'space-between',
-              padding: '16px 24px',
-              borderBottom: '1px solid #e5e7eb'
-            }}>
-              <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '8px', textDecoration: 'none' }} onClick={() => setMobileMenuOpen(false)}>
-                <Image src="/assets/logo.webp" alt="Delhi Physio At Home" width={36} height={36} style={{ borderRadius: '50%', objectFit: 'cover' }} priority />
-                <span style={{ fontSize: '18px', fontWeight: 'bold', color: '#111827' }}>Delhi Physio at Home</span>
-              </Link>
-              <button onClick={() => setMobileMenuOpen(false)} style={{ padding: '8px', color: '#374151', background: 'none', border: 'none', cursor: 'pointer' }}>
-                <X className="h-6 w-6" />
-              </button>
-            </div>
-
-            <div style={{ display: 'flex', flexDirection: 'column', padding: '8px 16px' }}>
+            {/* DESKTOP NAV */}
+            <div className="hidden lg:flex items-center gap-8">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  style={{
-                    display: 'block',
-                    padding: '12px 16px',
-                    fontSize: '16px',
-                    fontWeight: '500',
-                    color: '#111827',
-                    borderRadius: '8px',
-                    textDecoration: 'none'
-                  }}
-                  onClick={() => setMobileMenuOpen(false)}
+                  className="text-[15px] font-medium text-gray-700 hover:text-black flex items-center gap-1 transition"
                 >
+                  {item.name === "Virtual Consult" && (
+                    <Video className="w-4 h-4 text-gray-500" />
+                  )}
                   {item.name}
                 </Link>
               ))}
-            </div>
 
-            <div style={{
-              padding: '12px 24px 20px',
-              borderTop: '1px solid #e5e7eb',
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '10px'
-            }}>
-              <a href="tel:+918130171272" style={{
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                gap: '8px', padding: '11px',
-                border: '1px solid #d1d5db',
-                borderRadius: '8px', color: '#111827',
-                fontWeight: '500', textDecoration: 'none'
-              }}>
-                <Phone className="h-4 w-4" />
-                Call Now
-              </a>
+              {/* CTA */}
               <a
-                href="https://wa.me/918130171272?text=Hi,%20I%20would%20like%20to%20book%20a%20physiotherapy%20session"
+                href="https://wa.me/918130171272"
                 target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  padding: '11px', backgroundColor: '#15803d',
-                  color: 'white', borderRadius: '8px',
-                  fontWeight: '500', textDecoration: 'none'
-                }}
+                className="bg-[#2d6a4f] hover:opacity-90 text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition"
               >
                 Book on WhatsApp
               </a>
+            </div>
+
+            {/* MOBILE MENU BUTTON */}
+            <button onClick={() => setOpen(true)} className="lg:hidden">
+              <Menu />
+            </button>
+
+          </div>
+        </header>
+      </div>
+
+      {/* MOBILE MENU */}
+      {open && (
+        <>
+          <div
+            className="fixed inset-0 bg-black/40 z-40"
+            onClick={() => setOpen(false)}
+          />
+
+          <div className="fixed top-0 left-0 right-0 bg-white z-50 rounded-b-2xl shadow-lg">
+
+            <div className="flex justify-between items-center px-4 py-4 border-b">
+              <span className="font-bold">Menu</span>
+              <button onClick={() => setOpen(false)}>
+                <X />
+              </button>
+            </div>
+
+            <div className="flex flex-col p-4 gap-4">
+
+              {navigation.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  onClick={() => setOpen(false)}
+                  className="text-gray-700 flex items-center gap-2 text-base"
+                >
+                  {item.name === "Virtual Consult" && (
+                    <Video className="w-4 h-4 text-gray-500" />
+                  )}
+                  {item.name}
+                </Link>
+              ))}
+
+              {/* CTA */}
+              <a
+                href="https://wa.me/918130171272"
+                className="mt-2 bg-[#2d6a4f] text-white py-3 rounded-xl text-center font-semibold"
+              >
+                Book on WhatsApp
+              </a>
+
             </div>
           </div>
         </>
