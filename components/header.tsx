@@ -22,12 +22,10 @@ export function Header() {
     <>
       {/* 🔥 HEADER WRAPPER (NO GAP) */}
       <div className="sticky top-0 z-50">
-
         {/* TOP STRIP */}
-        <div className="w-full bg-[#1a4731] text-white text-center text-xs py-1.5">
-          Online Consultation ₹399 · Home Visit ₹600
-        </div>
-
+        <div style={{ backgroundColor: '#1a4731' }} className="w-full text-white text-center text-[10px] sm:text-xs py-2 relative z-[9999]">
+  Personalized Physiotherapy Care • At Home & Online Sessions Available
+</div>
         {/* HEADER */}
         <header className="bg-white border-b border-gray-200">
           <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
