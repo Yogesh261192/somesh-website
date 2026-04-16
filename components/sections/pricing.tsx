@@ -6,13 +6,12 @@ const packages = [
     name: "Home Visit Physiotherapy",
     badge: "Most Popular",
     price: "Starting ₹600",
-    description: "Best for hands-on treatment at your home.",
+    description: "(Save more with packages).",
     features: [
+      "Detailed assessment + hands-on treatment",
       "Detailed physical assessment",
       "Pain relief therapy (manual + modalities)",
       "Customized exercise plan",
-      "45–60 minute session",
-      "Package discounts available"
     ],
     cta: "Book Home Visit",
     link: "https://wa.me/918130171272"
@@ -23,10 +22,9 @@ const packages = [
     price: "₹399 / session",
     description: "Ideal for quick guidance and follow-ups from home.",
     features: [
-      "30–45 min video consultation",
+      "Quick pain relief guidance in one session",
       "Expert physio assessment",
       "Personalized exercise guidance",
-      "Post-session WhatsApp support",
       "Available across India"
     ],
     cta: "Book Video Consultation",
