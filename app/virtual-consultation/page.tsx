@@ -1,17 +1,17 @@
 "use client"
 
 import { useState } from "react"
-import { CheckCircle, Video, ShieldCheck, CreditCard, Activity, Zap, Star } from "lucide-react"
+import { CheckCircle, Video, ShieldCheck, CreditCard, Activity, Zap, Star, Lock } from "lucide-react"
 
 export default function VirtualConsultationPage() {
-  const [step, setStep] = useState(1) // 1: Form, 2: Payment, 3: Success
+  const [step, setStep] = useState(1)
   const [loading, setLoading] = useState(false)
 
   const [form, setForm] = useState({
     name: "", age: "", phone: "", city: "", condition: "", description: "", timeSlot: ""
   })
 
-  const handleChange = (e: any) => setForm({ ...form, [e.target.name]: e.target.value })
+  const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value })
 
   const handleSubmit = async () => {
     if (!form.name || !form.phone || !form.condition || !form.timeSlot) {
@@ -19,7 +19,6 @@ export default function VirtualConsultationPage() {
       return
     }
     setLoading(true)
-    
     try {
       const res = await fetch("/api/virtual-lead", {
         method: "POST",
@@ -34,10 +33,22 @@ export default function VirtualConsultationPage() {
     setLoading(false)
   }
 
+  // कॉमन स्टाइल ताकि कोई भी एलिमेंट स्क्रीन से बाहर न जाए
+  const inputStyle = { 
+    width: "100%", 
+    padding: "16px", 
+    borderRadius: "16px", 
+    border: "2px solid #f1f5f9", 
+    outline: "none", 
+    fontSize: "15px", 
+    backgroundColor: "#fbfcfd",
+    boxSizing: "border-box" 
+  }
+
   return (
-    <div style={{ backgroundColor: "#f8fafc", minHeight: "100vh", fontFamily: "sans-serif", color: "#1e293b" }}>
+    <div style={{ backgroundColor: "#f8fafc", minHeight: "100vh", fontFamily: "sans-serif", color: "#1e293b", overflowX: "hidden" }}>
       
-      {/* PREMIUM HERO SECTION */}
+      {/* PREMIUM HERO SECTION (Pura Content Jo Pehle Tha) */}
       <div style={{ backgroundColor: "#1a4731", color: "white", padding: "70px 20px 140px 20px", textAlign: "center" }}>
         <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
           <span style={{ border: "1px solid #fbbf24", color: "#fbbf24", padding: "6px 16px", borderRadius: "20px", fontSize: "11px", fontWeight: "bold", letterSpacing: "1.5px", textTransform: "uppercase" }}>
@@ -48,8 +59,8 @@ export default function VirtualConsultationPage() {
             <span style={{ color: "#fbbf24" }}>From Home Comfort</span>
           </h1>
 
-          {/* BROAD BENEFITS CARDS (Non-Delhi Centric) */}
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "25px", marginTop: "60px" }}>
+          {/* BENEFIT CARDS */}
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "25px", marginTop: "60px" }}>
             <div style={{ background: "rgba(255,255,255,0.07)", border: "1px solid rgba(255,255,255,0.12)", padding: "35px", borderRadius: "24px", textAlign: "left", backdropFilter: "blur(12px)" }}>
               <Zap style={{ color: "#fbbf24", marginBottom: "18px" }} size={30} />
               <h3 style={{ color: "#fbbf24", fontWeight: "bold", fontSize: "20px", marginBottom: "12px" }}>Instant Access</h3>
@@ -71,16 +82,16 @@ export default function VirtualConsultationPage() {
         </div>
       </div>
 
-      {/* FLOATING FORM SECTION */}
-      <div style={{ maxWidth: "600px", margin: "-100px auto 0", padding: "0 20px", position: "relative", zIndex: "50" }}>
+      {/* FLOATING FORM SECTION (Aligned and contained) */}
+      <div style={{ maxWidth: "600px", margin: "-100px auto 0", padding: "0 20px", position: "relative", zIndex: "50", boxSizing: "border-box" }}>
         
         {step === 1 && (
-          <div style={{ backgroundColor: "white", borderRadius: "35px", boxShadow: "0 40px 70px -15px rgba(0,0,0,0.25)", padding: "45px", border: "1px solid #f1f5f9" }}>
+          <div style={{ backgroundColor: "white", borderRadius: "35px", boxShadow: "0 40px 70px -15px rgba(0,0,0,0.25)", padding: "40px", border: "1px solid #f1f5f9", boxSizing: "border-box" }}>
             
-            {/* PRICING HEADER WITH STRIKETHROUGH */}
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "35px", borderBottom: "2px solid #f8fafc", paddingBottom: "25px" }}>
+            {/* PRICING HEADER */}
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "35px", borderBottom: "2px solid #f8fafc", paddingBottom: "25px", flexWrap: "wrap", gap: "10px" }}>
               <div>
-                <h2 style={{ fontSize: "26px", fontWeight: "900", color: "#0f172a", letterSpacing: "-0.5px" }}>Book Slot</h2>
+                <h2 style={{ fontSize: "26px", fontWeight: "900", color: "#0f172a", letterSpacing: "-0.5px", margin: 0 }}>Book Slot</h2>
                 <p style={{ fontSize: "13px", color: "#64748b", display: "flex", alignItems: "center", gap: "6px", marginTop: "4px" }}>
                   <Activity size={15} color="#1a4731" /> Certified Specialists Only
                 </p>
@@ -94,19 +105,19 @@ export default function VirtualConsultationPage() {
               </div>
             </div>
 
-            {/* FORM FIELDS */}
+            {/* FORM FIELDS (Grid fix for horizontal alignment) */}
             <div style={{ display: "flex", flexDirection: "column", gap: "18px" }}>
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "15px" }}>
-                <input name="name" placeholder="Full Name *" value={form.name} onChange={handleChange} style={{ padding: "16px", borderRadius: "16px", border: "2px solid #f1f5f9", outline: "none", fontSize: "15px", backgroundColor: "#fbfcfd" }} />
-                <input name="phone" placeholder="Phone Number *" value={form.phone} onChange={handleChange} style={{ padding: "16px", borderRadius: "16px", border: "2px solid #f1f5f9", outline: "none", fontSize: "15px", backgroundColor: "#fbfcfd" }} />
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "15px" }}>
+                <input name="name" placeholder="Full Name *" value={form.name} onChange={handleChange} style={inputStyle} />
+                <input name="phone" placeholder="Phone Number *" value={form.phone} onChange={handleChange} style={inputStyle} />
               </div>
               
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "15px" }}>
-                <input name="age" placeholder="Age" value={form.age} onChange={handleChange} style={{ padding: "16px", borderRadius: "16px", border: "2px solid #f1f5f9", outline: "none", backgroundColor: "#fbfcfd" }} />
-                <input name="city" placeholder="City" value={form.city} onChange={handleChange} style={{ padding: "16px", borderRadius: "16px", border: "2px solid #f1f5f9", outline: "none", backgroundColor: "#fbfcfd" }} />
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "15px" }}>
+                <input name="age" placeholder="Age" value={form.age} onChange={handleChange} style={inputStyle} />
+                <input name="city" placeholder="City" value={form.city} onChange={handleChange} style={inputStyle} />
               </div>
 
-              <select name="condition" value={form.condition} onChange={handleChange} style={{ width: "100%", padding: "16px", borderRadius: "16px", border: "2px solid #f1f5f9", backgroundColor: "#fbfcfd", fontSize: "15px", cursor: "pointer" }}>
+              <select name="condition" value={form.condition} onChange={handleChange} style={inputStyle}>
                 <option value="">Select Your Condition *</option>
                 <option value="Back Pain">Back Pain / Slip Disc</option>
                 <option value="Neck Pain">Neck / Cervical Pain</option>
@@ -115,91 +126,37 @@ export default function VirtualConsultationPage() {
                 <option value="Other">Other Issues</option>
               </select>
 
-              <select name="timeSlot" value={form.timeSlot} onChange={handleChange} style={{ width: "100%", padding: "16px", borderRadius: "16px", border: "2px solid #f1f5f9", backgroundColor: "#fbfcfd", fontSize: "15px", cursor: "pointer" }}>
+              <select name="timeSlot" value={form.timeSlot} onChange={handleChange} style={inputStyle}>
                 <option value="">Preferred Consultation Time *</option>
                 <option value="Morning (10 AM - 1 PM)">Morning (10 AM - 1 PM)</option>
                 <option value="Afternoon (2 PM - 5 PM)">Afternoon (2 PM - 5 PM)</option>
                 <option value="Evening (6 PM - 9 PM)">Evening (6 PM - 9 PM)</option>
               </select>
 
-              <button
-                onClick={handleSubmit}
+              <button 
+                onClick={handleSubmit} 
                 disabled={loading}
-                style={{ width: "100%", backgroundColor: "#1a4731", color: "white", padding: "22px", borderRadius: "20px", border: "none", fontWeight: "800", fontSize: "19px", cursor: "pointer", marginTop: "15px", boxShadow: "0 15px 30px -10px rgba(26, 71, 49, 0.4)", transition: "transform 0.2s ease" }}
+                style={{ backgroundColor: "#1a4731", color: "white", padding: "18px", borderRadius: "20px", fontSize: "18px", fontWeight: "bold", border: "none", cursor: "pointer", transition: "all 0.3s" }}
               >
-                {loading ? "Processing Lead..." : "Submit"}
+                {loading ? "Submitting..." : "Submit"}
               </button>
 
-              <p style={{ textAlign: "center", fontSize: "12px", color: "#94a3b8", marginTop: "15px", fontWeight: "500" }}>
-                <ShieldCheck size={14} style={{ verticalAlign: "middle", marginRight: "6px", color: "#1a4731" }} />
-                Your medical data is 100% secure & confidential
+              <p style={{ fontSize: "12px", color: "#64748b", textAlign: "center", display: "flex", alignItems: "center", justifyContent: "center", gap: "6px", marginTop: "10px" }}>
+                <Lock size={14} /> Your medical data is 100% secure & confidential
               </p>
             </div>
           </div>
         )}
-
-        {/* STEP 2: PAYMENT CARD */}
+        
+        {/* Success State */}
         {step === 2 && (
-  <div style={{ backgroundColor: "white", borderRadius: "35px", boxShadow: "0 40px 70px -15px rgba(0,0,0,0.25)", padding: "60px 40px", textAlign: "center", border: "1px solid #f1f5f9" }}>
-    
-    <div style={{ background: "#ecfdf5", width: "100px", height: "100px", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 30px" }}>
-      <CheckCircle size={60} color="#10b981" />
-    </div>
-
-    <h2 style={{ fontSize: "30px", fontWeight: "900" }}>
-      Request Received 🙏
-    </h2>
-
-    <p style={{ marginTop: "15px", color: "#475569", lineHeight: "1.7", fontSize: "16px" }}>
-      We’ve successfully received your consultation request.
-      <br /><br />
-      Our team will review your condition and get back to you with the most suitable available time slots based on your preference.
-      <br /><br />
-      You will receive a confirmation along with the payment link shortly.
-    </p>
-
-    <a
-      href="https://wa.me/918130171272"
-      style={{
-        marginTop: "25px",
-        display: "inline-block",
-        backgroundColor: "#1a4731",
-        color: "white",
-        padding: "14px 28px",
-        borderRadius: "12px",
-        textDecoration: "none",
-        fontWeight: "700"
-      }}
-    >
-      Chat on WhatsApp
-    </a>
-
-  </div>
-)}
-
-        {/* STEP 3: THANK YOU / SUCCESS */}
-        {step === 3 && (
-          <div style={{ backgroundColor: "white", borderRadius: "35px", boxShadow: "0 40px 70px -15px rgba(0,0,0,0.25)", padding: "60px 40px", textAlign: "center", border: "1px solid #f1f5f9" }}>
-            <div style={{ background: "#ecfdf5", width: "100px", height: "100px", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 30px shadow-xl" }}>
-              <CheckCircle size={60} color="#10b981" />
-            </div>
-            <h2 style={{ fontSize: "32px", fontWeight: "900", color: "#0f172a" }}>Thank You!</h2>
-            <p style={{ color: "#059669", fontWeight: "800", marginTop: "8px", fontSize: "18px" }}>Payment Received Successfully</p>
-            
-            <div style={{ background: "#f0fdf4", border: "1px solid #dcfce7", padding: "30px", borderRadius: "25px", marginTop: "40px", textAlign: "left" }}>
-              <p style={{ fontSize: "16px", color: "#166534", lineHeight: "1.7" }}>
-                <b style={{ fontSize: "19px", display: "block", marginBottom: "10px", color: "#14532d" }}>We'll get back to you!</b> 
-                Our coordinator will contact you on <b>{form.phone}</b> shortly to provide the private video consultation link for your <b>{form.timeSlot}</b> slot.
-              </p>
-            </div>
-            
-            <button onClick={() => window.location.href = "/"} style={{ marginTop: "40px", background: "none", border: "none", color: "#94a3b8", textDecoration: "underline", cursor: "pointer", fontWeight: "700", fontSize: "15px" }}>
-              Back to Website
-            </button>
+          <div style={{ backgroundColor: "white", borderRadius: "35px", padding: "60px 40px", textAlign: "center", boxShadow: "0 40px 70px -15px rgba(0,0,0,0.25)" }}>
+            <CheckCircle size={60} color="#1a4731" style={{ marginBottom: "20px" }} />
+            <h2 style={{ fontSize: "28px", fontWeight: "900" }}>Booking Received!</h2>
+            <p>Our team will contact you shortly to confirm your slot.</p>
           </div>
         )}
       </div>
-
       <div style={{ height: "100px" }}></div>
     </div>
   )
