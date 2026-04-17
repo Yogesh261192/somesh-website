@@ -16,23 +16,29 @@ export default function VirtualConsultationPage() {
 
   const handleSubmit = async () => {
     if (!form.name || !form.phone || !form.condition || !form.timeSlot) {
-      alert("Please fill all required fields (*)")
-      return
+      alert("Please fill all required fields (*)");
+      return;
     }
-    setLoading(true)
+    setLoading(true);
     try {
+      // 1. Pehle Mail bhejo (Lead generation)
       const res = await fetch("/api/virtual-lead", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form)
-      })
-      if (res.ok) setStep(2)
-      else alert("Error sending request")
+      });
+
+      if (res.ok) {
+        // 2. Mail jaate hi seedha Razorpay par bhej do
+        window.location.href = razorpayLink;
+      } else {
+        alert("Error processing request");
+      }
     } catch (err) {
-      alert("Connection error")
+      alert("Connection error");
     }
-    setLoading(false)
-  }
+    setLoading(false);
+  };
 
   const inputStyle = {
     width: "100%", padding: "16px", borderRadius: "16px",
@@ -118,7 +124,7 @@ export default function VirtualConsultationPage() {
                 <option value="Other">Other Issues</option>
               </select>
 
-              {/* DYNAMIC DESCRIPTION BOX (Shows for every condition once selected) */}
+              {/* DYNAMIC DESCRIPTION BOX */}
               {form.condition && (
                 <textarea
                   name="description"
@@ -154,6 +160,7 @@ export default function VirtualConsultationPage() {
           </div>
         )}
 
+        {/* STEP 2 POPUP (Backup for Redirect) */}
         {step === 2 && (
           <div style={{ backgroundColor: "white", borderRadius: "35px", padding: "60px 40px", textAlign: "center", boxShadow: "0 40px 70px -15px rgba(0,0,0,0.25)" }}>
             <CheckCircle size={60} color="#1a4731" style={{ marginBottom: "20px", margin: "0 auto" }} />
