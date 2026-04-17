@@ -15,30 +15,56 @@ export default function VirtualConsultationPage() {
   const handleSelect = (field, value) => setForm({ ...form, [field]: value })
 
   const handleSubmit = async () => {
-    if (!form.name || !form.phone || !form.condition || !form.timeSlot) {
-      alert("Please fill all required fields (*)");
-      return;
-    }
-    setLoading(true);
-    try {
-      // 1. Pehle Mail bhejo (Lead generation)
-      const res = await fetch("/api/virtual-lead", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form)
-      });
+  if (!form.name || !form.phone || !form.condition || !form.timeSlot) {
+    alert("Please fill all required fields (*)")
+    return
+  }
+  setLoading(true)
 
-      if (res.ok) {
-        // 2. Mail jaate hi seedha Razorpay par bhej do
-        window.location.href = razorpayLink;
-      } else {
-        alert("Error processing request");
+  // Lead save
+  fetch("/api/virtual-lead", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(form)
+  }).catch(console.error)
+
+  // Order banao
+  const orderRes = await fetch("/api/create-order", { method: "POST" })
+  const order = await orderRes.json()
+
+  // Razorpay SDK load karo
+  const script = document.createElement("script")
+  script.src = "https://checkout.razorpay.com/v1/checkout.js"
+  document.body.appendChild(script)
+
+  script.onload = () => {
+    const options = {
+      key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
+      amount: order.amount,
+      currency: "INR",
+      order_id: order.id,
+      name: "Delhi Physio At Home",
+      description: "Virtual Consultation",
+      prefill: {
+        name: form.name,
+        contact: form.phone,
+      },
+      handler: function() {
+        // Payment successful — redirect
+        window.location.href = "/success"
+      },
+      modal: {
+        ondismiss: function() {
+          setLoading(false)
+        }
       }
-    } catch (err) {
-      alert("Connection error");
     }
-    setLoading(false);
-  };
+    const rzp = new (window as any).Razorpay(options)
+    rzp.open()
+  }
+
+  setLoading(false)
+}
 
   const inputStyle = {
     width: "100%", padding: "16px", borderRadius: "16px",
