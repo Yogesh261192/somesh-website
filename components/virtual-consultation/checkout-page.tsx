@@ -394,7 +394,7 @@ export function VirtualConsultationCheckout({
 
                 <div className="mt-8 grid gap-3 sm:grid-cols-2">
                   {[
-                    "45-minute guided video assessment",
+                    "Expert guided video assessment",
                     "Posture, mobility and pain review",
                     "Personalised exercise recommendations",
                     "Secure digital payment via Razorpay",
@@ -540,6 +540,7 @@ export function VirtualConsultationCheckout({
                     <input
                       className="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-base text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-emerald-400 focus:bg-white"
                       id="amount"
+                      readOnly
                       inputMode="numeric"
                       min="1"
                       placeholder="399"
