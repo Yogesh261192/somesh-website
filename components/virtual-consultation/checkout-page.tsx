@@ -356,7 +356,7 @@ export function VirtualConsultationCheckout({
                       paymentMode === "live" ? "bg-emerald-100 text-emerald-900" : "bg-amber-100 text-amber-900"
                     }`}
                   >
-                    Razorpay {paymentMode === "live" ? "Live Mode" : "Test Mode"}
+                    
                   </div>
                 </div>
 
@@ -379,10 +379,10 @@ export function VirtualConsultationCheckout({
                       <span>Platform charges</span>
                       <span>Rs 0</span>
                     </div>
-                    <div className="mt-3 flex items-center justify-between text-sm text-slate-300">
+                    {/* <div className="mt-3 flex items-center justify-between text-sm text-slate-300">
                       <span>Taxes</span>
                       <span>Included / as applicable</span>
-                    </div>
+                    </div> */}
                     <div className="mt-4 border-t border-white/10 pt-4 text-base font-semibold">
                       <div className="flex items-center justify-between">
                         <span>Amount payable</span>
@@ -529,6 +529,7 @@ export function VirtualConsultationCheckout({
                       id="service-name"
                       value={form.serviceName}
                       onChange={(event) => updateField("serviceName", event.target.value)}
+                      readOnly
                     />
                   </div>
 
