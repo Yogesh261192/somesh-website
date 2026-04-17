@@ -9,7 +9,7 @@ export default function VirtualConsultationPage() {
     name: "", age: "", phone: "", city: "", condition: "", description: "", timeSlot: ""
   })
 
-  const razorpayLink = "https://rzp.io/rzp/vcjGkx4D"
+  const razorpayLink = "https://rzp.io/rzp/vcjGkx4D?callback_url=https://www.delhiphysioathome.com/success"
 
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value })
   const handleSelect = (field, value) => setForm({ ...form, [field]: value })
