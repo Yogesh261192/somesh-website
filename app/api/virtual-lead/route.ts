@@ -34,7 +34,7 @@ const { name, phone, email, condition, preferredSlot, currentConcern } = body;
             <p style="background: #f0fdf4; padding: 10px; border-radius: 8px; border: 1px solid #dcfce7;">
               <strong>Preferred Slot:</strong> ${preferredSlot}
             </p>
-            <p><strong>Concern/Message:</strong> ${description || "No additional notes"}</p>
+<p><strong>Concern/Message:</strong> ${currentConcern || "No additional notes"}</p>
           </div>
           <div style="background-color: #f8fafc; padding: 15px; text-align: center; font-size: 12px; color: #64748b; border-top: 1px solid #e2e8f0;">
             This is a virtual consultation lead from the website booking page.

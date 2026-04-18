@@ -217,8 +217,8 @@ export function VirtualConsultationCheckoutContent({
   phone: form.phone,
   email: form.email,
   condition: form.condition,
-  preferredSlot: form.preferredSlot, // बैकएंड अब इसी नाम को पहचानेगा
-  currentConcern: form.currentConcern // बैकएंड अब इसी नाम को पहचानेगा
+  preferredSlot: form.preferredSlot, // form. से वैल्यू उठाएं
+  currentConcern: form.currentConcern // form. से वैल्यू उठाएं
 }),
   });
 } catch (err) {
