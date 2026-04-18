@@ -32,7 +32,7 @@ const { name, phone, email, condition, preferredSlot, currentConcern } = body;
             <p><strong>Email:</strong> ${email}</p>
             <p><strong>Selected Condition:</strong> ${condition}</p>
             <p style="background: #f0fdf4; padding: 10px; border-radius: 8px; border: 1px solid #dcfce7;">
-              <strong>Preferred Slot:</strong> ${timeSlot}
+              <strong>Preferred Slot:</strong> ${preferredSlot}
             </p>
             <p><strong>Concern/Message:</strong> ${description || "No additional notes"}</p>
           </div>

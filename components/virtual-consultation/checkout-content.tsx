@@ -213,13 +213,13 @@ export function VirtualConsultationCheckoutContent({
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      name: form.name,
-      phone: form.phone,
-      email: form.email,
-      condition: form.condition,
-      preferredSlot: form.preferredSlot, // नाम मैच होना चाहिए
-      currentConcern: form.currentConcern // नाम मैच होना चाहिए
-    }),
+  name: form.name,
+  phone: form.phone,
+  email: form.email,
+  condition: form.condition,
+  preferredSlot: form.preferredSlot, // बैकएंड अब इसी नाम को पहचानेगा
+  currentConcern: form.currentConcern // बैकएंड अब इसी नाम को पहचानेगा
+}),
   });
 } catch (err) {
   console.error("Zoho mail failed:", err);
