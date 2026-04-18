@@ -164,10 +164,12 @@ export function VirtualConsultationCheckoutContent({
     if (!phonePattern.test(form.phone.replace(/\s+/g, ""))) {
       return "Please enter a valid Indian mobile number.";
     }
+    
 
     if (!Number.isFinite(parsedAmount) || parsedAmount < 1) {
       return "Please enter a valid payment amount.";
     }
+
 
     return "";
   }
@@ -327,12 +329,11 @@ export function VirtualConsultationCheckoutContent({
             </div>
 
             <h1 className="mt-6 text-4xl font-black tracking-tight text-slate-950 sm:text-5xl">
-              Complete your virtual physio consultation booking
+              Access Professional Physiotherapy from Anywhere
             </h1>
 
             <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg">
-              Book an expert physiotherapy video consultation with secure Razorpay Checkout. Share the customer details,
-              confirm the amount, and pay using UPI, card, netbanking, or wallet.
+              Get personalized care from certified physiotherapists via secure video call. Easy booking and multiple safe payment options including UPI, Cards, and Netbanking.
             </p>
           </div>
 
@@ -356,7 +357,6 @@ export function VirtualConsultationCheckoutContent({
                       paymentMode === "live" ? "bg-emerald-100 text-emerald-900" : "bg-amber-100 text-amber-900"
                     }`}
                   >
-                    {paymentMode === "live" ? "Live Mode" : "Test Mode"}
                   </div>
                 </div>
 
@@ -365,8 +365,7 @@ export function VirtualConsultationCheckoutContent({
                     <p className="text-sm font-medium uppercase tracking-[0.2em] text-emerald-200">Today&apos;s booking summary</p>
                     <div className="mt-3 text-4xl font-black tracking-tight">{payableAmount ? amountFormatter.format(payableAmount) : "Rs 0"}</div>
                     <p className="mt-2 max-w-md text-sm leading-6 text-slate-300">
-                      Includes private video consultation, guided assessment, recovery advice, and a tailored exercise plan
-                      for the patient.
+                      Includes Complete digital health assessment, 1-on-1 expert consultation, personalized recovery roadmap, and a dedicated home exercise program.
                     </p>
                   </div>
 
@@ -394,7 +393,7 @@ export function VirtualConsultationCheckoutContent({
 
                 <div className="mt-8 grid gap-3 sm:grid-cols-2">
                   {[
-                    "45-minute guided video assessment",
+                    "Expert guided video assessment",
                     "Posture, mobility and pain review",
                     "Personalised exercise recommendations",
                     "Secure digital payment via Razorpay",
@@ -432,10 +431,9 @@ export function VirtualConsultationCheckoutContent({
                 <div className="rounded-[28px] border border-emerald-100 bg-white p-6 shadow-sm">
                   <p className="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-700">Why patients trust us</p>
                   <blockquote className="mt-4 text-base leading-7 text-slate-700">
-                    "The virtual guidance was clear, practical, and easy to follow. It felt professional from the first call to
-                    the recovery plan."
+                    "The virtual diagnosis was spot-on. I was struggling with back pain for weeks, and their recovery plan showed results within days. Highly professional and convenient!""
                   </blockquote>
-                  <p className="mt-4 text-sm font-semibold text-slate-900">Delhi Physio At Home patients across Delhi NCR</p>
+                  <p className="mt-4 text-sm font-semibold text-slate-900">-Delhi Physio At Home patients across Delhi NCR</p>
                   <div className="mt-6 flex items-center gap-3 text-sm text-slate-600">
                     <Clock3 className="h-4 w-4 text-emerald-700" />
                     Same-day or priority slot support available on request
@@ -467,8 +465,8 @@ export function VirtualConsultationCheckoutContent({
             <div className="rounded-[32px] border border-emerald-100 bg-white p-6 shadow-[0_32px_90px_-48px_rgba(15,23,42,0.45)] sm:p-8">
               <div className="flex items-start justify-between gap-4">
                 <div>
-                  <p className="text-sm font-semibold uppercase tracking-[0.22em] text-emerald-700">Customer details</p>
-                  <h2 className="mt-2 text-2xl font-bold text-slate-950">Start secure checkout</h2>
+                  <p className="text-sm font-semibold uppercase tracking-[0.22em] text-emerald-700">Patient Details</p>
+                  <h2 className="mt-2 text-2xl font-bold text-slate-950">Help us know you better</h2>
                 </div>
                 <div className="rounded-full bg-emerald-50 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-emerald-800">
                   SSL secured
@@ -512,7 +510,7 @@ export function VirtualConsultationCheckoutContent({
                       className="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-base text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-emerald-400 focus:bg-white"
                       id="phone"
                       inputMode="tel"
-                      placeholder="+91 81301 71272"
+                      placeholder="+91 Your Mobile Number"
                       value={form.phone}
                       onChange={(event) => updateField("phone", event.target.value)}
                     />
@@ -520,35 +518,41 @@ export function VirtualConsultationCheckoutContent({
                 </div>
 
                 <div className="grid gap-5 sm:grid-cols-[1.2fr_0.8fr]">
-                  <div>
-                    <label className="mb-2 block text-sm font-medium text-slate-700" htmlFor="service-name">
-                      Service / Package
-                    </label>
-                    <input
-                      className="w-full rounded-2xl border border-slate-200 bg-slate-100 px-4 py-3 text-base text-slate-700 outline-none"
-                      id="service-name"
-                      value={form.serviceName}
-                      onChange={(event) => updateField("serviceName", event.target.value)}
-                      readOnly
-                    />
-                  </div>
+  {/* Dropdown for Condition */}
+  <div>
+    <label className="mb-2 block text-sm font-medium text-slate-700" htmlFor="condition">
+      Select Condition
+    </label>
+    <select
+      className="w-full rounded-2xl border border-slate-200 bg-slate-100 px-4 py-3 text-base text-slate-700 outline-none cursor-pointer"
+      id="condition"
+      value={form.condition}
+      onChange={(event) => updateField("condition", event.target.value)}
+    >
+      <option value="">-- Choose a Condition --</option>
+      <option value="knee">Knee Pain</option>
+      <option value="back">Back Pain</option>
+      <option value="shoulder">Shoulder Pain</option>
+      <option value="neck">Neck Pain</option>
+      <option value="post-surgery">Post-Surgery Recovery</option>
+      <option value="other">Other</option>
+    </select>
+  </div>
 
-                  <div>
-                    <label className="mb-2 block text-sm font-medium text-slate-700" htmlFor="amount">
-                      Amount (INR)
-                    </label>
-                    <input
-                      className="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-base text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-emerald-400 focus:bg-white"
-                      id="amount"
-                      inputMode="numeric"
-                      min="1"
-                      placeholder="399"
-                      readOnly
-                      value={form.amount}
-                      onChange={(event) => updateField("amount", event.target.value.replace(/[^\d]/g, ""))}
-                    />
-                  </div>
-                </div>
+  {/* Fixed Amount Field */}
+  <div>
+    <label className="mb-2 block text-sm font-medium text-slate-700" htmlFor="amount">
+      Amount (INR)
+    </label>
+    <input
+      className="w-full rounded-2xl border border-slate-200 bg-slate-100 px-4 py-3 text-base text-slate-500 outline-none cursor-not-allowed"
+      id="amount"
+      value="399" 
+      readOnly
+    />
+  </div>
+</div>
+
 
                 <div>
                   <label className="mb-2 block text-sm font-medium text-slate-700" htmlFor="preferred-slot">
@@ -569,12 +573,12 @@ export function VirtualConsultationCheckoutContent({
 
                 <div>
                   <label className="mb-2 block text-sm font-medium text-slate-700" htmlFor="current-concern">
-                    Current Concern
+                    Briefly Explain Your Concern
                   </label>
                   <textarea
                     className="min-h-28 w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-base text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-emerald-400 focus:bg-white"
                     id="current-concern"
-                    placeholder="Briefly mention pain area, condition, or recovery goal."
+                    placeholder="e.g., Lower back pain for 2 weeks, recovery after knee surgery, etc."
                     value={form.currentConcern}
                     onChange={(event) => updateField("currentConcern", event.target.value)}
                   />
@@ -610,7 +614,7 @@ export function VirtualConsultationCheckoutContent({
                 type="button"
               >
                 {loading ? <Loader2 className="h-5 w-5 animate-spin" /> : <Lock className="h-5 w-5" />}
-                {loading ? "Opening secure checkout..." : "Proceed to Secure Payment"}
+                {loading ? "Opening secure checkout..." : "Confirm Booking & Pay Securely"}
               </button>
 
               <div className="mt-5 rounded-2xl bg-slate-50 px-4 py-4 text-sm leading-6 text-slate-600">
@@ -619,8 +623,7 @@ export function VirtualConsultationCheckoutContent({
                   Razorpay Standard Checkout
                 </div>
                 <p className="mt-2">
-                  Your secret key stays on the server. Only the Razorpay Key ID is used in the browser, and every successful
-                  payment is verified before the success page opens.
+                  Your payment is 100% secure with industry-standard encryption.
                 </p>
               </div>
             </div>
