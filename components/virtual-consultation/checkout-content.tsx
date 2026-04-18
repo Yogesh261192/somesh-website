@@ -209,18 +209,18 @@ export function VirtualConsultationCheckoutContent({
     }
 
     try {
-  await fetch("/api/virtual-lead", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-  name: form.name,
-  phone: form.phone,
-  email: form.email,
-  condition: form.condition,
-  preferredSlot: form.preferredSlot, // form. से वैल्यू उठाएं
-  currentConcern: form.currentConcern // form. से वैल्यू उठाएं
-}),
-  });
+  await fetch("/api/virtual-lead", {  // पाथ सही और कोट बंद होना चाहिए
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({
+    name: form.name,
+    phone: form.phone,
+    email: form.email,
+    condition: form.condition,
+    preferredSlot: form.preferredSlot,
+    currentConcern: form.currentConcern
+  }), // यहाँ ब्रैकेट और कर्ली ब्रेस सही बंद होने चाहिए
+});
 } catch (err) {
   console.error("Zoho mail failed:", err);
 }
