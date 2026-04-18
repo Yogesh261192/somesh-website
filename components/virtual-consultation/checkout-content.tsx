@@ -130,6 +130,7 @@ export function VirtualConsultationCheckoutContent({
     name: "",
     email: "",
     phone: "",
+    condition:"",
     preferredSlot: "Next available",
     currentConcern: "",
     amount: String(defaultAmount),
@@ -206,6 +207,23 @@ export function VirtualConsultationCheckoutContent({
       setMessage({ kind: "error", text: "Razorpay Checkout did not load. Please refresh the page and try again." });
       return;
     }
+
+    try {
+  await fetch("/api/virtual-lead", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      name: form.name,
+      phone: form.phone,
+      email: form.email,
+      condition: form.condition,
+      preferredSlot: form.preferredSlot, // नाम मैच होना चाहिए
+      currentConcern: form.currentConcern // नाम मैच होना चाहिए
+    }),
+  });
+} catch (err) {
+  console.error("Zoho mail failed:", err);
+}
 
     setLoading(true);
     setMessage({ kind: "info", text: "Preparing your secure payment window..." });

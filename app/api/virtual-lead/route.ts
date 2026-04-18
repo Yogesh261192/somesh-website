@@ -5,7 +5,7 @@ export async function POST(req: Request) {
   try {
     const body = await req.json();
     // सिर्फ वही डेटा जो आपके नए फॉर्म में है
-    const { name, phone, email, condition, timeSlot, description } = body;
+const { name, phone, email, condition, preferredSlot, currentConcern } = body;
 
     const transporter = nodemailer.createTransport({
       host: "smtp.zoho.in",
