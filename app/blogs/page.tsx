@@ -11,6 +11,14 @@ export const metadata: Metadata = {
 
 const blogs = [
   {
+  title: "Online Physiotherapy in Delhi — Real Treatment From Home, No Travel Needed",
+  description: "Consult a certified physiotherapist via video call from home. Same-day slots, personalised plan, ₹399 per session.",
+  date: "April 23, 2026",
+  readTime: "7 min read",
+  category: "Online Physiotherapy",
+  href: "/blogs/online-physiotherapy-delhi"
+},
+  {
     title: "Heel Pain (Plantar Fasciitis) Treatment at Home in Delhi NCR",
     description: "Suffering from morning heel pain? Learn causes, exercises, and how home physiotherapy helps.",
     date: "April 10, 2026",
