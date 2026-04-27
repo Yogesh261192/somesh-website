@@ -11,6 +11,14 @@ export const metadata: Metadata = {
 
 const blogs = [
   {
+  title: "Physiotherapist Near Me at Home in Delhi NCR — What to Expect & How to Book",
+  description: "Searching for a physiotherapist near me at home in Delhi NCR? Know what to expect, how to verify credentials, pricing and same-day booking.",
+  date: "April 27, 2026",
+  readTime: "7 min read",
+  category: "Home Physiotherapy Guide",
+  href: "/blogs/physiotherapist-near-me-at-home-delhi-ncr",
+},
+  {
   title: "Online Physiotherapy in Delhi — Real Treatment From Home, No Travel Needed",
   description: "Consult a certified physiotherapist via video call from home. Same-day slots, personalised plan, ₹399 per session.",
   date: "April 23, 2026",
