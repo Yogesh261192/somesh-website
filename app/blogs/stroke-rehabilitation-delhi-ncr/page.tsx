@@ -7,7 +7,7 @@ import Link from "next/link"
 const content = {
   en: {
     category: "Stroke Rehabilitation",
-    date: "May 9, 2026",
+    date: "May 11, 2026",
     title:
       "Stroke Recovery at Home — Complete Physiotherapy Guide for Paralysis Rehabilitation in Delhi NCR",
     intro:
