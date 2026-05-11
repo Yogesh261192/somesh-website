@@ -11,6 +11,15 @@ export const metadata: Metadata = {
 
 const blogs = [
   {
+  title: "Stroke Recovery at Home — Complete Physiotherapy Guide",
+  description:
+    "Complete guide to stroke rehabilitation, paralysis recovery exercises and home physiotherapy in Delhi NCR.",
+  href: "/blogs/stroke-rehabilitation-delhi-ncr",
+  category: "Stroke Rehabilitation",
+  date: "May 11, 2026",
+  readTime: "8 min read",
+},
+  {
   title: "Physiotherapist Near Me at Home in Delhi NCR — What to Expect & How to Book",
   description: "Searching for a physiotherapist near me at home in Delhi NCR? Know what to expect, how to verify credentials, pricing and same-day booking.",
   date: "April 27, 2026",
