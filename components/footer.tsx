@@ -9,6 +9,7 @@ const quickLinks = [
   { name: "About Us", href: "/about" },
   { name: "Contact", href: "/contact" },
   { name: "Blogs", href: "/blogs" },
+  { name: "Partner With Us", href: "/partner-with-us" },
 ]
 
 const services = [

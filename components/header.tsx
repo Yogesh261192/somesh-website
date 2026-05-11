@@ -13,6 +13,7 @@ const navigation = [
   { name: "Contact", href: "/contact" },
   { name: "Blogs", href: "/blogs" },
   { name: "Virtual Consult", href: "/virtual-consultation" },
+  { name: "Partner With Us", href: "/partner-with-us" },
 ]
 
 export function Header() {
