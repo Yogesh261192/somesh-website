@@ -11,6 +11,14 @@ export const metadata: Metadata = {
 
 const blogs = [
   {
+  title: "Post-Workout Pain vs Injury — Recovery Guide for Gym-Goers in Delhi",
+  description: "Is your post-workout pain normal soreness or a gym injury? Expert physiotherapy advice for gym-goers in Delhi NCR. Home visits in Noida, Gurgaon & Ghaziabad.",
+  href: "/blogs/post-workout-pain-gym-delhi",
+  category: "Sports & Fitness Recovery",
+  date: "May 21, 2026",
+  readTime: "7 min read",
+},
+  {
   title: "Stroke Recovery at Home — Complete Physiotherapy Guide",
   description:
     "Complete guide to stroke rehabilitation, paralysis recovery exercises and home physiotherapy in Delhi NCR.",
