@@ -10,9 +10,9 @@ const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
 const dmSans = DM_Sans({ subsets: ["latin"], variable: '--font-dm-sans' });
 
 export const metadata: Metadata = {
-  title: 'Delhi Physio at Home | Expert Home Physiotherapy in Delhi NCR & Ghaziabad',
-  description: 'Certified physiotherapists at your doorstep in Delhi, Noida, Gurgaon, and Ghaziabad. Specialist care for back pain, sports injuries, and post-surgery rehab.',
-  keywords: 'home physiotherapy Delhi, physiotherapist near me, back pain treatment, sports injury recovery, post surgery rehabilitation, elderly physiotherapy, Delhi NCR physiotherapy, physiotherapy vasundhara, physiotherapy ghaziabad, physiotherapy noida, physiotherapy indirapuram',
+  title: 'Physiotherapy at Home in Delhi NCR | Same-Day Home Visits | Delhi Physio',
+  description: 'Book a physiotherapist at home in Delhi, Noida, Gurgaon & Ghaziabad. Same-day visits available. 8+ yrs experience. Back pain, neuro rehab, post-surgery recovery. Book on WhatsApp.',
+  keywords: 'physiotherapy at home Delhi, home physiotherapy Delhi NCR, physiotherapist at home Noida, physiotherapist at home Gurgaon, physiotherapy at home Ghaziabad, back pain treatment at home, post surgery physiotherapy home visit, neuro rehabilitation at home Delhi',
   generator: 'DelhiPhysioAtHome',
   openGraph: {
     title: 'Delhi Physio at Home | Professional Home Physiotherapy Services',
