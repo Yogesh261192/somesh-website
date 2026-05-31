@@ -153,7 +153,7 @@ export default function BlogPost() {
               {"content" in section && (
                 <p className="text-muted-foreground leading-relaxed">{section.content}</p>
               )}
-              {"list" in section && (
+              {"list" in section && section.list && (
                 <ul className="space-y-2 text-muted-foreground">
                   {section.list.map((item, j) => (
                     <li key={j} className="flex items-start gap-2">
@@ -165,7 +165,7 @@ export default function BlogPost() {
                   ))}
                 </ul>
               )}
-              {"tips" in section && (
+              {"tips" in section && section.tips && (
                 <div className="space-y-4">
                   {section.tips.map((tip, j) => (
                     <div key={j} className="bg-primary/5 rounded-xl p-5">
