@@ -11,6 +11,14 @@ export const metadata: Metadata = {
 
 const blogs = [
   {
+  title: "Multiple Sclerosis Physiotherapy at Home — Complete Rehabilitation Guide for MS Patients in Delhi NCR",
+  description: "Complete guide to MS rehabilitation, fatigue management, spasticity treatment and home physiotherapy for multiple sclerosis patients across Delhi NCR.",
+  href: "/blogs/multiple-sclerosis-physiotherapy",
+  category: "Neurological Rehabilitation",
+  date: "May 31, 2026",
+  readTime: "10 min read",
+},
+  {
   title: "Post-Workout Pain vs Injury — Recovery Guide for Gym-Goers in Delhi",
   description: "Is your post-workout pain normal soreness or a gym injury? Expert physiotherapy advice for gym-goers in Delhi NCR. Home visits in Noida, Gurgaon & Ghaziabad.",
   href: "/blogs/post-workout-pain-gym-delhi",
