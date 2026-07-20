@@ -11,6 +11,14 @@ export const metadata: Metadata = {
 
 const blogs = [
   {
+  title: "What Happens During a Home Physiotherapy Session? — A Complete Guide for First-Time Patients in Delhi NCR",
+  description: "Wondering what to expect from your first home physiotherapy session? Complete guide covering assessment, equipment, exercises, session duration and what to prepare.",
+  href: "/blogs/home-physiotherapy-session-guide",
+  category: "Home Physiotherapy Guide",
+  date: "July 20, 2026",
+  readTime: "8 min read",
+},
+  {
   title: "Multiple Sclerosis Physiotherapy at Home — Complete Rehabilitation Guide for MS Patients in Delhi NCR",
   description: "Complete guide to MS rehabilitation, fatigue management, spasticity treatment and home physiotherapy for multiple sclerosis patients across Delhi NCR.",
   href: "/blogs/multiple-sclerosis-physiotherapy",
