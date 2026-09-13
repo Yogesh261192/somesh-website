@@ -5,8 +5,8 @@ const packages = [
   {
     name: "Home Visit Physiotherapy",
     badge: "Most Popular",
-    price: "Starting ₹600",
-    description: "(Save more with packages).",
+    price: "From ₹699/session",
+    description: "Get personalized care plans for fast recovery",
     features: [
       "Detailed assessment + hands-on treatment",
       "Detailed physical assessment",
