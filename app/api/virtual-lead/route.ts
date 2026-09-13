@@ -13,7 +13,7 @@ const { name, phone, email, condition, preferredSlot, currentConcern } = body;
       secure: true,
       auth: {
         user: "info@delhiphysioathome.com",
-        pass: "process.env.ZOHO_PASS", 
+        pass: process.env.ZOHO_PASS, 
       },
     });
 
