@@ -5,7 +5,7 @@ const packages = [
   {
     name: "Home Visit Physiotherapy",
     badge: "Most Popular",
-    price: "From ₹699/session",
+    price: "Custom Care Plans",
     description: "Get personalized care plans for fast recovery",
     features: [
       "Detailed assessment + hands-on treatment",
@@ -19,7 +19,7 @@ const packages = [
   {
     name: "Video Consultation",
     badge: "Quick & Affordable",
-    price: "₹399 / session",
+    price: "Instant Online Care",
     description: "Ideal for quick guidance and follow-ups from home.",
     features: [
       "Quick pain relief guidance in one session",
@@ -40,7 +40,7 @@ export function PricingSection() {
         {/* Heading */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Simple & Transparent Pricing
+            Choose Your Care Plan
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
             Choose between home visit physiotherapy or online consultation — based on your comfort.
