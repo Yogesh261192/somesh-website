@@ -1,81 +1,98 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
+@custom-variant dark (&:is(.dark *));
+
 :root {
-  --background: oklch(0.985 0.002 120);
-  --foreground: oklch(0.25 0.02 160);
+  /* Warm White (#FAFCFE) */
+  --background: oklch(0.99 0.005 230);
+  /* Dark text (#172B4D) */
+  --foreground: oklch(0.28 0.06 250);
+
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.25 0.02 160);
+  --card-foreground: oklch(0.28 0.06 250);
+
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.25 0.02 160);
-  --primary: oklch(0.45 0.12 160);
-  --primary-foreground: oklch(0.99 0 0);
-  --secondary: oklch(0.96 0.015 160);
-  --secondary-foreground: oklch(0.35 0.08 160);
-  --muted: oklch(0.95 0.01 160);
-  --muted-foreground: oklch(0.50 0.02 160);
-  --accent: oklch(0.55 0.10 220);
-  --accent-foreground: oklch(0.99 0 0);
+  --popover-foreground: oklch(0.28 0.06 250);
+
+  /* Deep Navy (#102A43) - Primary Brand & CTA Cards */
+  --primary: oklch(0.27 0.06 245);
+  --primary-foreground: oklch(0.99 0.005 230);
+
+  /* Soft Sky (#EAF4FF) - Light Surfaces */
+  --secondary: oklch(0.96 0.02 240);
+  --secondary-foreground: oklch(0.27 0.06 245);
+
+  --muted: oklch(0.96 0.01 240);
+  --muted-foreground: oklch(0.52 0.04 250);
+
+  /* Clinical Blue (#1976D2) - Links & Highlights */
+  --accent: oklch(0.55 0.16 250);
+  --accent-foreground: oklch(1 0 0);
+
   --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: oklch(0.90 0.02 160);
-  --input: oklch(0.92 0.01 160);
-  --ring: oklch(0.45 0.12 160);
-  --chart-1: oklch(0.45 0.12 160);
-  --chart-2: oklch(0.55 0.10 220);
-  --chart-3: oklch(0.65 0.08 180);
-  --chart-4: oklch(0.70 0.06 140);
-  --chart-5: oklch(0.60 0.09 200);
+  --destructive-foreground: oklch(0.99 0 0);
+
+  --border: oklch(0.91 0.015 240);
+  --input: oklch(0.91 0.015 240);
+  --ring: oklch(0.55 0.16 250);
+
   --radius: 0.75rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.25 0.02 160);
-  --sidebar-primary: oklch(0.45 0.12 160);
-  --sidebar-primary-foreground: oklch(0.99 0 0);
-  --sidebar-accent: oklch(0.96 0.015 160);
-  --sidebar-accent-foreground: oklch(0.35 0.08 160);
-  --sidebar-border: oklch(0.90 0.02 160);
-  --sidebar-ring: oklch(0.45 0.12 160);
+
+  --sidebar: oklch(0.985 0.008 240);
+  --sidebar-foreground: oklch(0.28 0.06 250);
+  --sidebar-primary: oklch(0.27 0.06 245);
+  --sidebar-primary-foreground: oklch(0.99 0.005 230);
+  --sidebar-accent: oklch(0.96 0.02 240);
+  --sidebar-accent-foreground: oklch(0.27 0.06 245);
+  --sidebar-border: oklch(0.91 0.015 240);
+  --sidebar-ring: oklch(0.55 0.16 250);
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.145 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.145 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.985 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.396 0.141 25.723);
-  --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.269 0 0);
-  --input: oklch(0.269 0 0);
-  --ring: oklch(0.439 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(0.269 0 0);
-  --sidebar-ring: oklch(0.439 0 0);
+  --background: oklch(0.18 0.04 245);
+  --foreground: oklch(0.97 0.01 230);
+
+  --card: oklch(0.22 0.05 245);
+  --card-foreground: oklch(0.97 0.01 230);
+
+  --popover: oklch(0.22 0.05 245);
+  --popover-foreground: oklch(0.97 0.01 230);
+
+  --primary: oklch(0.65 0.15 250);
+  --primary-foreground: oklch(0.18 0.04 245);
+
+  --secondary: oklch(0.28 0.05 245);
+  --secondary-foreground: oklch(0.97 0.01 230);
+
+  --muted: oklch(0.26 0.04 245);
+  --muted-foreground: oklch(0.72 0.03 240);
+
+  --accent: oklch(0.65 0.15 250);
+  --accent-foreground: oklch(0.18 0.04 245);
+
+  --destructive: oklch(0.48 0.18 25.7);
+  --destructive-foreground: oklch(0.98 0 0);
+
+  --border: oklch(0.30 0.04 245);
+  --input: oklch(0.30 0.04 245);
+  --ring: oklch(0.65 0.15 250);
+
+  --sidebar: oklch(0.18 0.04 245);
+  --sidebar-foreground: oklch(0.97 0.01 230);
+  --sidebar-primary: oklch(0.65 0.15 250);
+  --sidebar-primary-foreground: oklch(0.18 0.04 245);
+  --sidebar-accent: oklch(0.28 0.05 245);
+  --sidebar-accent-foreground: oklch(0.97 0.01 230);
+  --sidebar-border: oklch(0.30 0.04 245);
+  --sidebar-ring: oklch(0.65 0.15 250);
 }
 
 @theme inline {
   --font-sans: var(--font-inter), 'Inter', system-ui, sans-serif;
   --font-mono: 'Geist Mono', 'Geist Mono Fallback';
   --font-display: var(--font-dm-sans), 'DM Sans', system-ui, sans-serif;
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -95,15 +112,12 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
+
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+
   --color-sidebar: var(--sidebar);
   --color-sidebar-foreground: var(--sidebar-foreground);
   --color-sidebar-primary: var(--sidebar-primary);
@@ -121,4 +135,22 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Custom conversion buttons & top strip helper */
+.btn-whatsapp {
+  background-color: #25D366 !important;
+  color: #ffffff !important;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+.btn-whatsapp:hover {
+  background-color: #1EBE5D !important;
+}
+
+.btn-call-outline {
+  background-color: #ffffff !important;
+  color: #102A43 !important;
+  border: 1.5px solid #102A43 !important;
+  font-weight: 600;
 }
