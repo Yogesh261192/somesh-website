@@ -32,16 +32,17 @@ export function Header() {
         <header className="bg-white border-b border-gray-200">
           <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
 
-            {/* LOGO - Clean Single Tone Navy */}
+            {/* LOGO - Perfect Circle Badge */}
             <Link href="/" className="flex items-center gap-3">
-              <Image
-  src="/assets/logo.webp"
-  alt="Delhi Physio at Home Logo"
-  width={38}
-  height={38}
-  style={{ width: "auto", height: "38px" }}
-  className="object-contain shrink-0"
-/>
+              <div className="relative w-9 h-9 rounded-full overflow-hidden shrink-0 border border-slate-200/70 bg-white flex items-center justify-center">
+                <Image
+                  src="/assets/logo.webp"
+                  alt="Delhi Physio at Home Logo"
+                  width={36}
+                  height={36}
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <span className="font-bold text-lg tracking-tight text-[#102A43]">
                 Delhi Physio at Home
               </span>
@@ -100,7 +101,7 @@ export function Header() {
             <div className="flex justify-between items-center px-4 py-4 border-b">
               <span className="font-bold text-[#102A43]">Menu</span>
               <button 
-                onClick={() => setOpen(false)}
+                onClick={() => setOpen(false)} 
                 aria-label="Close Navigation Menu"
                 className="p-1 text-gray-700"
               >
