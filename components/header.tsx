@@ -23,7 +23,7 @@ export function Header() {
     <>
       {/* HEADER WRAPPER */}
       <div className="sticky top-0 z-50">
-        {/* TOP STRIP - Deep Navy Matching 'Areas We Serve' */}
+        {/* TOP STRIP */}
         <div className="w-full bg-[#102A43] text-white text-center text-[10px] sm:text-xs py-2 relative z-[9999]">
           Personalized Physiotherapy Care • At Home & Online Sessions Available
         </div>
@@ -32,17 +32,17 @@ export function Header() {
         <header className="bg-white border-b border-gray-200">
           <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
 
-            {/* LOGO */}
+            {/* LOGO - Clean Single Tone Navy */}
             <Link href="/" className="flex items-center gap-3">
               <Image
-                src="/assets/logo.webp"
-                alt="Delhi Physio at Home"
-                width={38}
-                height={38}
-                className="rounded-full"
-              />
-              <span className="font-semibold text-lg tracking-tight text-[#102A43]">
-                Delhi Physio <span className="text-[#1976D2]">at Home</span>
+  src="/assets/logo.webp"
+  alt="Delhi Physio at Home Logo"
+  width={38}
+  height={38}
+  className="w-[38px] h-[38px] rounded-full object-cover shrink-0"
+/>
+              <span className="font-bold text-lg tracking-tight text-[#102A43]">
+                Delhi Physio at Home
               </span>
             </Link>
 
@@ -55,17 +55,18 @@ export function Header() {
                   className="text-[15px] font-medium text-gray-700 hover:text-[#102A43] flex items-center gap-1 transition"
                 >
                   {item.name === "Virtual Consult" && (
-                    <Video className="w-4 h-4 text-gray-500" />
+                    <Video className="w-4 h-4 text-gray-500" aria-hidden="true" />
                   )}
                   {item.name}
                 </Link>
               ))}
 
-              {/* CTA - Deep Navy Button */}
+              {/* CTA */}
               <a
                 href="https://wa.me/918130171272"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Book appointment on WhatsApp"
                 className="bg-[#102A43] hover:bg-[#173a5e] text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition"
               >
                 Book on WhatsApp
@@ -73,8 +74,12 @@ export function Header() {
             </div>
 
             {/* MOBILE MENU BUTTON */}
-            <button onClick={() => setOpen(true)} className="lg:hidden text-gray-700">
-              <Menu />
+            <button 
+              onClick={() => setOpen(true)} 
+              aria-label="Open Navigation Menu"
+              className="lg:hidden text-gray-700 p-1"
+            >
+              <Menu aria-hidden="true" />
             </button>
 
           </div>
@@ -87,13 +92,18 @@ export function Header() {
           <div
             className="fixed inset-0 bg-black/40 z-40"
             onClick={() => setOpen(false)}
+            aria-hidden="true"
           />
 
           <div className="fixed top-0 left-0 right-0 bg-white z-50 rounded-b-2xl shadow-lg">
             <div className="flex justify-between items-center px-4 py-4 border-b">
               <span className="font-bold text-[#102A43]">Menu</span>
-              <button onClick={() => setOpen(false)}>
-                <X />
+              <button 
+                onClick={() => setOpen(false)}
+                aria-label="Close Navigation Menu"
+                className="p-1 text-gray-700"
+              >
+                <X aria-hidden="true" />
               </button>
             </div>
 
@@ -106,7 +116,7 @@ export function Header() {
                   className="text-gray-700 flex items-center gap-2 text-base"
                 >
                   {item.name === "Virtual Consult" && (
-                    <Video className="w-4 h-4 text-gray-500" />
+                    <Video className="w-4 h-4 text-gray-500" aria-hidden="true" />
                   )}
                   {item.name}
                 </Link>
@@ -117,6 +127,7 @@ export function Header() {
                 href="https://wa.me/918130171272"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Book appointment on WhatsApp"
                 className="mt-2 bg-[#102A43] text-white py-3 rounded-xl text-center font-semibold"
               >
                 Book on WhatsApp

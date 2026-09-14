@@ -13,7 +13,7 @@ export function HeroSection() {
             
             {/* Clinical Trust Badge */}
             <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-3.5 py-1.5 shadow-sm">
-              <ShieldCheck className="h-4 w-4 text-primary" />
+              <ShieldCheck className="h-4 w-4 text-primary shrink-0" aria-hidden="true" />
               <span className="text-xs font-semibold uppercase tracking-wider text-primary">
                 Verified Clinical Care Across Delhi NCR
               </span>
@@ -32,15 +32,15 @@ export function HeroSection() {
 
             {/* Trust Rating Bar */}
             <div className="flex flex-wrap items-center gap-3 pt-1">
-              <div className="flex items-center text-amber-500">
+              <div className="flex items-center text-amber-500" aria-label="5 out of 5 stars">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-4 w-4 fill-amber-400 stroke-amber-400" />
+                  <Star key={i} className="h-4 w-4 fill-amber-400 stroke-amber-400" aria-hidden="true" />
                 ))}
               </div>
               <span className="text-sm font-semibold text-foreground">
                 5.0 Rated
               </span>
-              <span className="text-muted-foreground text-sm">|</span>
+              <span className="text-muted-foreground text-sm" aria-hidden="true">|</span>
               <span className="text-sm text-muted-foreground font-medium">
                 1,500+ Patients Treated Across Delhi, Noida & Ghaziabad
               </span>
@@ -57,7 +57,7 @@ export function HeroSection() {
                     key={item} 
                     className="flex items-center gap-2 rounded-lg border border-border bg-card px-3 py-2 text-xs font-medium text-foreground shadow-sm"
                   >
-                    <CheckCircle2 className="h-3.5 w-3.5 text-primary shrink-0" />
+                    <CheckCircle2 className="h-3.5 w-3.5 text-primary shrink-0" aria-hidden="true" />
                     <span className="truncate">{item}</span>
                   </div>
                 ))}
@@ -70,24 +70,26 @@ export function HeroSection() {
                 href="https://wa.me/918130171272"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Book Home Visit on WhatsApp"
                 className="inline-flex items-center justify-center gap-2.5 bg-primary text-primary-foreground px-7 py-3.5 rounded-xl font-semibold text-sm shadow-sm hover:opacity-95 transition"
               >
-                <MessageSquare className="h-4 w-4" />
+                <MessageSquare className="h-4 w-4" aria-hidden="true" />
                 Book Home Visit on WhatsApp
               </a>
 
               <Link
                 href="/virtual-consultation"
+                aria-label="Book a Video Consultation"
                 className="inline-flex items-center justify-center gap-2 border border-border bg-card text-foreground hover:bg-muted/50 px-6 py-3.5 rounded-xl font-semibold text-sm shadow-sm transition"
               >
-                <Video className="h-4 w-4 text-muted-foreground" />
+                <Video className="h-4 w-4 text-muted-foreground" aria-hidden="true" />
                 Video Consultation
               </Link>
             </div>
 
             {/* Location Indicator */}
             <div className="flex items-center gap-1.5 text-xs text-muted-foreground pt-1">
-              <MapPin className="h-3.5 w-3.5 text-primary/70 shrink-0" />
+              <MapPin className="h-3.5 w-3.5 text-primary/70 shrink-0" aria-hidden="true" />
               <span>Direct visits available in Delhi, Noida, Greater Noida, Ghaziabad & Gurgaon</span>
             </div>
           </div>
@@ -102,8 +104,10 @@ export function HeroSection() {
                   src="/hero-image.webp"
                   alt="Senior physiotherapist providing home rehabilitation"
                   fill
-                  className="object-cover"
                   priority
+                  sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 480px"
+                  quality={75}
+                  className="object-cover"
                 />
               </div>
 
