@@ -137,20 +137,40 @@
   }
 }
 
-/* Custom conversion buttons & top strip helper */
+/* WhatsApp button matching Navy / Blue theme */
 .btn-whatsapp {
-  background-color: #25D366 !important;
-  color: #ffffff !important;
+  background-color: var(--primary) !important;
+  color: var(--primary-foreground) !important;
   font-weight: 600;
   transition: all 0.2s ease;
 }
 .btn-whatsapp:hover {
-  background-color: #1EBE5D !important;
+  opacity: 0.9;
 }
 
 .btn-call-outline {
   background-color: #ffffff !important;
-  color: #102A43 !important;
-  border: 1.5px solid #102A43 !important;
+  color: var(--primary) !important;
+  border: 1.5px solid var(--primary) !important;
   font-weight: 600;
+}
+
+/* Header ke green strips/buttons ko global navy blue me convert karne ke overrides */
+header div[class*="bg-green"],
+header div[class*="bg-emerald"],
+header [class*="bg-[#0"] {
+  background-color: var(--primary) !important;
+}
+
+header button[class*="bg-green"],
+header button[class*="bg-emerald"],
+header a[class*="bg-green"],
+header a[class*="bg-emerald"] {
+  background-color: var(--primary) !important;
+  color: var(--primary-foreground) !important;
+}
+
+header span[class*="text-green"],
+header span[class*="text-emerald"] {
+  color: var(--accent) !important;
 }
