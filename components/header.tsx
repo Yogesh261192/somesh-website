@@ -39,7 +39,8 @@ export function Header() {
   alt="Delhi Physio at Home Logo"
   width={38}
   height={38}
-  className="w-[38px] h-[38px] rounded-full object-cover shrink-0"
+  style={{ width: "auto", height: "38px" }}
+  className="object-contain shrink-0"
 />
               <span className="font-bold text-lg tracking-tight text-[#102A43]">
                 Delhi Physio at Home
