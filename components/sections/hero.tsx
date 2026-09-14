@@ -32,7 +32,7 @@ export function HeroSection() {
 
             {/* Trust Rating Bar */}
             <div className="flex flex-wrap items-center gap-3 pt-1">
-              <div className="flex items-center text-amber-500" aria-label="5 out of 5 stars">
+              <div className="flex items-center text-amber-500" role="img" aria-label="5 out of 5 stars">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="h-4 w-4 fill-amber-400 stroke-amber-400" aria-hidden="true" />
                 ))}
@@ -105,7 +105,8 @@ export function HeroSection() {
                   alt="Senior physiotherapist providing home rehabilitation"
                   fill
                   priority
-                  sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 480px"
+                  fetchPriority="high"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 420px"
                   quality={75}
                   className="object-cover"
                 />
