@@ -1,9 +1,10 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 export default function GoogleReviews() {
   const [loadWidget, setLoadWidget] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleInteraction = () => {
@@ -24,16 +25,24 @@ export default function GoogleReviews() {
     };
   }, []);
 
+  useEffect(() => {
+    if (!loadWidget || !containerRef.current) return;
+
+    // Prevent duplicate script injection in React Strict Mode
+    if (containerRef.current.querySelector('script[data-repu]')) return;
+
+    const script = document.createElement('script');
+    script.src = 'https://business.repu.ai/widget/reviews.js';
+    script.setAttribute('data-repu', 'fe8bf1b1f623e4d2');
+    script.async = true;
+
+    containerRef.current.appendChild(script);
+  }, [loadWidget]);
+
   return (
     <section className="w-full py-10 px-4 flex flex-col items-center justify-center min-h-[350px]">
       {loadWidget ? (
-        <>
-          <script src="https://elfsightcdn.com/platform.js" async></script>
-          <div 
-            className="elfsight-app-2b5664ef-2ed4-4ab1-9a0f-9b3edcdc7b1c w-full max-w-6xl" 
-            data-elfsight-app-lazy
-          ></div>
-        </>
+        <div ref={containerRef} className="w-full max-w-6xl" />
       ) : (
         <div className="h-64 w-full flex items-center justify-center text-slate-400 text-sm">
           Loading patient reviews...
