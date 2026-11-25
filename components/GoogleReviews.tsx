@@ -1,10 +1,9 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function GoogleReviews() {
   const [loadWidget, setLoadWidget] = useState(false);
-  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleInteraction = () => {
@@ -26,23 +25,22 @@ export default function GoogleReviews() {
   }, []);
 
   useEffect(() => {
-    if (!loadWidget || !containerRef.current) return;
+    if (!loadWidget) return;
 
-    // Prevent duplicate script injection in React Strict Mode
-    if (containerRef.current.querySelector('script[data-repu]')) return;
+    if (document.querySelector('script[src="https://business.repu.ai/widget/reviews.js"]')) return;
 
     const script = document.createElement('script');
     script.src = 'https://business.repu.ai/widget/reviews.js';
-    script.setAttribute('data-repu', 'fe8bf1b1f623e4d2');
     script.async = true;
-
-    containerRef.current.appendChild(script);
+    document.body.appendChild(script);
   }, [loadWidget]);
 
   return (
     <section className="w-full py-10 px-4 flex flex-col items-center justify-center min-h-[350px]">
       {loadWidget ? (
-        <div ref={containerRef} className="w-full max-w-6xl" />
+        <div className="w-full max-w-6xl">
+          <div data-repu-inline="fe8bf1b1f623e4d2"></div>
+        </div>
       ) : (
         <div className="h-64 w-full flex items-center justify-center text-slate-400 text-sm">
           Loading patient reviews...
