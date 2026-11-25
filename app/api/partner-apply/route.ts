@@ -11,14 +11,14 @@ export async function POST(req: NextRequest) {
     }
 
     const transporter = nodemailer.createTransport({
-  host: "smtp.zoho.in",
-  port: 465,
-  secure: true,
-  auth: {
-    user: process.env.MAIL_USER,
-    pass: process.env.MAIL_PASS,
-  },
-});
+      host: "smtp.zoho.in",
+      port: 465,
+      secure: true,
+      auth: {
+        user: "info@delhiphysioathome.com",
+        pass: process.env.ZOHO_PASS,
+      },
+    });
 
     const html = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -82,12 +82,14 @@ export async function POST(req: NextRequest) {
       </div>
     `;
 
+    const senderEmail = process.env.MAIL_USER || "info@delhiphysioathome.com";
+
     await transporter.sendMail({
-      from: `"Delhi Physio At Home" <${process.env.MAIL_USER}>`,
-      to: process.env.MAIL_TO || process.env.MAIL_USER, // can be different from sender
+      from: '"Delhi Physio At Home" <info@delhiphysioathome.com>',
+      to: "info@delhiphysioathome.com",
       subject: `New partner application: ${name} — ${areas}`,
       html,
-      replyTo: email, // so you can reply directly to the applicant
+      replyTo: email,
     });
 
     return NextResponse.json({ success: true });

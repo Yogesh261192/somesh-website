@@ -209,21 +209,25 @@ export function VirtualConsultationCheckoutContent({
     }
 
     try {
-  await fetch("/api/virtual-lead", {  // पाथ सही और कोट बंद होना चाहिए
-  method: "POST",
-  headers: { "Content-Type": "application/json" },
-  body: JSON.stringify({
-    name: form.name,
-    phone: form.phone,
-    email: form.email,
-    condition: form.condition,
-    preferredSlot: form.preferredSlot,
-    currentConcern: form.currentConcern
-  }), // यहाँ ब्रैकेट और कर्ली ब्रेस सही बंद होने चाहिए
-});
-} catch (err) {
-  console.error("Zoho mail failed:", err);
-}
+      const leadres = await fetch("/api/virtual-lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: form.name,
+          phone: form.phone,
+          email: form.email,
+          condition: form.condition,
+          preferredSlot: form.preferredSlot,
+          currentConcern: form.currentConcern,
+        }),
+      });
+      const leadData = await leadRes.json().catch(() => null);
+      if (!leadRes.ok) {
+        console.error("Zoho mail API failed:", leadData);
+      }
+    } catch (err) {
+      console.error("Zoho mail network error:", err);
+    }
 
     setLoading(true);
     setMessage({ kind: "info", text: "Preparing your secure payment window..." });
@@ -447,13 +451,20 @@ export function VirtualConsultationCheckoutContent({
                 </div>
 
                 <div className="rounded-[28px] border border-emerald-100 bg-white p-6 shadow-sm">
-                  <p className="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-700">Why patients trust us</p>
-                  <blockquote className="mt-4 text-base leading-7 text-slate-700">
-                    "The virtual diagnosis was spot-on. I was struggling with back pain for weeks, and their recovery plan showed results within days. Highly professional and convenient!""
+                  <div className="flex items-center justify-between gap-2">
+                    <p className="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-700">Verified Patient Review</p>
+                    <span className="rounded-full bg-amber-50 px-2.5 py-0.5 text-xs font-semibold text-amber-700">
+                      ★★★★★ Google
+                    </span>
+                  </div>
+                  <blockquote className="mt-4 text-sm leading-6 text-slate-700">
+                    &ldquo;I&apos;m based in Sydney, Australia, and had tried two local physio sessions for severe heel pain and sciatica with no relief. Somesh went through all my reports, posture, chair, and footwear in detail, giving clear short-term relief and long-term solutions. When you&apos;re in pain, it means a lot to be listened to in this much detail. Highly recommend.&rdquo;
                   </blockquote>
-                  <p className="mt-4 text-sm font-semibold text-slate-900">-Delhi Physio At Home patients across Delhi NCR</p>
-                  <div className="mt-6 flex items-center gap-3 text-sm text-slate-600">
-                    <Clock3 className="h-4 w-4 text-emerald-700" />
+                  <p className="mt-4 text-sm font-semibold text-slate-900">
+                    — Ekta Agarwal, Sydney, Australia
+                  </p>
+                  <div className="mt-5 flex items-center gap-3 border-t border-slate-100 pt-4 text-sm text-slate-600">
+                    <Clock3 className="h-4 w-4 flex-none text-emerald-700" />
                     Same-day or priority slot support available on request
                   </div>
                 </div>
